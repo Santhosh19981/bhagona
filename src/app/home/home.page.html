@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
@@ -13,8 +14,42 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Testing App</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <div class="wrapper">
+    <div class="login-box">
+      <div class="login-header">
+        <span>Login</span>
+      </div>
+      <div class="input_box">
+        <input type="text" id="user" class="input-field" required>
+        <label for="user" class="label"><i class="fa fa-user-circle-o pr-2" aria-hidden="true"></i>Username
+        </label>
+      </div>
+      <div class="input_box">
+        <input type="password" id="pass" class="input-field" required oninput="checkPasswordStrength(this.value)">
+        <label for="pass" class="label"><i class="fa fa-lock pr-2" aria-hidden="true"></i>Password</label>
+        <i class="bx bx-lock-alt icon" id="togglePassword"></i>
+      </div>
+      <div id="passwordStrength" class="password-strength"></div>
+
+      <div class="input_box">
+        <input type="submit" class="input-submit" value="Login" onclick="handleLogin()">
+      </div>
+      
+    </div>
+
   </div>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+  
+  
+</div>
+
+<div class="bg bg-orange"></div>
+
+
 </ion-content>

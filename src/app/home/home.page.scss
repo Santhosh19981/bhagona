@@ -1,27 +1,294 @@
-#container {
-  text-align: center;
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
+* {
   margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+   font-family: "Noto Sans", sans-serif;
+}
+.pr-2{
+  padding-right: 5px;
+}
+/* ===== COLOR VARIABLES ===== */
+
+
+
+/* ===== BODY - BACKGROUND IMAGE ===== */
+
+body {
+  background: #9a90f5;
 }
 
-#container a {
+/* ===== Reusable CSS ===== */
+
+a {
   text-decoration: none;
+  color: #ffffff;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== WRAPPER ===== */
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+}
+
+.login-box {
+  position: relative;
+  width: 450px;
+  border: 3px solid #F77524;
+  border-radius: 15px;
+  padding: 7.5em 2.5em 4em 2.5em;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.login-header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F77524;
+  width: 140px;
+  height: 50px;
+  border-radius: 0 0 20px 20px;
+}
+
+.login-header span {
+  font-size: 25px;
+  color: #fff;
+}
+
+.login-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -30px;
+  width: 30px;
+  height: 30px;
+  border-top-right-radius: 50%;
+  background: transparent;
+  box-shadow: 15px 0 0 0 #F77524;
+}
+
+.login-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 30px;
+  height: 30px;
+  border-top-left-radius: 50%;
+  background: transparent;
+  box-shadow: -15px 0 0 0 #F77524;
+}
+
+.input_box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.input-field {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  background: transparent;
+  color: #000000;
+  padding-inline: 20px 50px;
+  border: 2px solid #F77524;
+  border-radius: 30px;
+  outline: none;
+}
+
+#user {
+  margin-bottom: 10px;
+}
+
+.label {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  transition: 0.2s ease-in-out;
+}
+
+.input-field:focus ~ .label,
+.input-field:valid ~ .label {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 14px;
+  background-color: #F77524;
+  border-radius: 30px;
+  color: #fff;
+  padding: 3px 10px;
+}
+
+.icon {
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.bx-hide {
+  content: "\eb2c"; /* Hide icon */
+}
+
+.bx-show {
+  content: "\eb25"; /* Show icon */
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.input-submit {
+  width: 100%;
+  height: 35px;
+  background: #F77524;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: #fff;
+}
+
+.input-submit:hover {
+  background: #1d0db2;
+}
+
+.register {
+  text-align: center;
+}
+
+.register a {
+  font-weight: 500;
+}
+
+a {
+  color: #F77524;
+}
+
+@media only screen and (max-width: 564px) {
+  .wrapper {
+    padding: 20px;
+  }
+  .login-box {
+    padding: 7.5em 1.5em 4em 2.5em;
+  }
+}
+
+/* For tablets and larger phones */
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    padding: 10px;
+  }
+  .login-box {
+    width: 80%; /* Adjust width */
+    padding: 5em 1.5em 1em 1.5em; /* Adjust padding */
+  }
+  .modal-content {
+    width: 70%; /* Adjust modal width */
+  }
+}
+
+/* For smaller screens like phones */
+@media only screen and (max-width: 564px) {
+  .wrapper {
+    padding: 15px;
+  }
+  .login-box {
+    padding: 7.5em 1.5em 4em 2.5em;
+  }
+  .modal-content {
+    width: 90%; /* Adjust modal width */
+  }
+  
+    .remember-forgot {
+   font-size: 11px;
+   margin: 0 10px;
+  }
+/* Hide the default checkbox */
+input[type="checkbox"] {
+    width: 11px; /* Set width */
+    height: 11px; /* Set height */
+  }
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.bg-orange{
+  background: linear-gradient(to right, #FDDE90, #F77524);
+ 
 }
