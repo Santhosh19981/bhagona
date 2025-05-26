@@ -10,7 +10,15 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'login',
+    loadChildren: () => import('./components/login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'switchapps',
+    loadChildren: () => import('./components/switchapps/switchapps.module').then( m => m.SwitchappsPageModule)
+  },
+
 ];
 
 @NgModule({

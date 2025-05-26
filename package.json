@@ -24,6 +24,7 @@
     "@capacitor/android": "^7.2.0",
     "@capacitor/core": "7.2.0",
     "@ionic/angular": "^8.0.0",
+    "bootstrap": "^5.3.6",
     "ionicons": "^7.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
