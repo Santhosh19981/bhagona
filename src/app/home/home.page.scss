@@ -60,7 +60,8 @@
     transition: all 0.5s ease;
 }
 .Product-Card .card-inner .blog-content {
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 12px;
 }
 .Product-Card .card-inner .blog-content .tag {
     line-height: 1;
@@ -196,7 +197,36 @@
 
 /** Chef CSS Start **/
 @media (min-width: 300px) and (max-width: 776px) {
-  
+  .col-sm-4{
+    width: 50% !important;
+    padding: 0 !important;
+  }
+  .col-sm-6{
+    padding: 0 !important;
+  }
+  .row{
+    margin: 0 !important;
+  }
+  .Product-Card{
+    margin:8px !important;
+  }
+  .Product-Card .card-inner .blog-content .tag img{
+    display: none !important;
+  }
+  .Product-Card .card-inner .blog-content .tag{
+    font-size: 11px;
+  }
+  .Product-Card .blog-btn{
+    width: 35px;
+    height: 35px;
+  }
+  .Product-Card .card-inner{
+    padding: 12px;
+  }
+  .Product-Card .card-inner .blog-content{
+    margin-top: 15px;
+    margin-bottom: 8px;
+  }
   .Menu-List .popular-inner-box {
     padding:20px 35px 20px 0px !important;
   }
@@ -351,3 +381,32 @@
   transition: all ease-in-out 0.3s;
   display:inline;
  }
+
+ /** Button CSS **/
+
+ 
+
+.Bhagona-Btn {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1em;
+    color: #ffffff;
+    text-transform: capitalize;
+    background-image: linear-gradient(to right, #ff4438 0%, #ffbe36 50%, #ff4438 100%);
+    background-size: 200% auto;
+    padding: 12px 30px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.Bhagona-Btn:hover {
+    background-position: right center;
+}
+
+.menu-list{
+    padding: 50px 0;
+}
