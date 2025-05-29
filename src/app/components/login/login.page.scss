@@ -1,15 +1,4 @@
-/* POPPINS FONT */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
-  margin: 0;
-
-  padding: 0;
-
-  box-sizing: border-box;
-
-   font-family: "Noto Sans", sans-serif;
-}
 .pr-2{
   padding-right: 5px;
 }
@@ -298,4 +287,356 @@ input[type="checkbox"] {
 .bg-orange{
   background: linear-gradient(to right, #FDDE90, #F77524);
  
+}
+
+
+
+/** Select Event Menu CSS Start **/
+
+@media (min-width: 300px) and (max-width: 776px) {
+
+.Event-Menu-List {
+
+  flex-direction: column !important;
+}
+
+}
+
+.Event-Menu-List-section{
+    padding: 30px 15px;
+}
+.Event-Menu-List {
+  display: flex;
+  gap: 12px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+ border-radius: 12px;
+ flex-direction: column;
+ align-items: center;
+}
+.Event-Menu-List:hover .Event-Menu-List-img img {
+  transform: scale(1.2);
+}
+.Event-Menu-List:hover .popular-inner-item-btn .main-btn-five {
+  color: #fff;
+}
+.Event-Menu-List:hover .popular-inner-item-btn .main-btn-five::before {
+  transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+}
+.Event-Menu-List:hover .popular-inner-item-btn .main-btn-five::after {
+  transform: translate3d(0, 0, 0);
+  transition-duration: 0.05s;
+  transition-delay: 0.4s;
+  transition-timing-function: linear;
+}
+.Event-Menu-List:hover .popular-inner-item-btn .main-btn-five span svg {
+  stroke: currentColor;
+  color: #fff;
+  transition: all 0.3s;
+}
+.Event-Menu-List .Event-Menu-List-img {
+  overflow: hidden;
+  border-radius: 12px 12px 0px 0px;
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 50%;
+}
+.Event-Menu-List .Event-Menu-List-img .Event-Menu-List-img-overlay {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  align-items: center;
+  padding: 4px 6px;
+  border-radius: 6px;
+  background: rgba(0, 9, 41, 0.80);
+  z-index: 11;
+}
+.Event-Menu-List .Event-Menu-List-img .Event-Menu-List-img-overlay .icon {
+  line-height: 0;
+}
+.Event-Menu-List .Event-Menu-List-img .Event-Menu-List-img-overlay .text p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+  margin: 0;
+}
+.Event-Menu-List .Event-Menu-List-img::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  transform: skewX(-25deg);
+  animation: shine 4s linear infinite;
+}
+.Event-Menu-List .Event-Menu-List-img img {
+  transition: all 0.3s ease-out 0s;
+}
+.Event-Menu-List .popular-inner-box {
+      width: 100%;
+    padding: 20px;
+}
+.Event-Menu-List .popular-inner-box .Event-Menu-List-text {
+  padding: 0px 0 5px 0;
+}
+.Event-Menu-List .popular-inner-box .Event-Menu-List-text h3 {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: left;
+  margin: 0 0 5px 0;
+}
+.Event-Menu-List .popular-inner-box .popular-inner-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.Event-Menu-List .popular-inner-box .popular-inner-item:last-child {
+  margin-bottom: 0;
+}
+.Event-Menu-List .popular-inner-box .popular-inner-item .icon {
+  line-height: 0;
+}
+.Event-Menu-List .popular-inner-box .popular-inner-item .text h5 {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 150%;
+  margin: 0;
+  text-align: left;
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+ }
+
+
+/** Form CSS Start  **/
+.form-group{
+    margin-bottom: 15px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #F77524;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+input {
+    width: 60%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    
+    border: 2px solid #bebed2;
+    transition: all .3s;
+}
+.form p:before {
+    content: attr(type);
+    display: block;
+    margin: 10px 0 0;
+    font-size: 13px;
+    color: #5a5a5a;
+    float: left;
+    width: 40%;
+    transition: all .3s;
+}
+button {
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    
+    border: 2px solid #78788c;
+    background: 0;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all .3s;
+}
+button:hover {
+    background: #78788c;
+    color: #fff;
+}
+.tright{
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ui-menu{
+    max-height: 150px;
+    overflow: auto;
+}
+.ui-menu .ui-menu-item{
+    padding:5px;
+    font-size: 14px;
+}
+.relative{
+    position: relative;
+}
+.relative i.fa:before{
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    left: -3px;
+    text-align: center;
+}
+
+.relative i.fa{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    text-align: center;
+    border-radius: 0 4px 4px 0;
+    width: 0;
+    height: 0;
+    z-index: 99;
+    border-left: 20px solid transparent;
+    border-right: 30px solid #F77524;
+    border-bottom: 34px solid #F77524;
+    transition: all 0.15s ease-in-out;
+
+}
+.form-control:focus{
+    border-color: #F77524;
+    // box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgb(30, 102, 195);
+}
+.relative input:focus + i.fa{
+    border-left: 20px solid transparent;
+    border-right: 30px solid #F77524;
+    border-bottom: 34px solid #F77524;
+}
+.relative input:focus + i.fa:before{
+    color: #fff;
+}
+.input-group .form-control:not(:first-child):not(:last-child),
+.input-group-addon:not(:first-child):not(:last-child),
+.input-group-btn:not(:first-child):not(:last-child){
+    border-radius: 0 4px 4px 0;
+}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{
+    background-color: #fff;
+}
+
+/* --- Thanks Message Popup --- */
+.thanks{
+    max-width: calc(100vw - 40px);
+    width: 200px;
+    height: auto;
+    background-color: #444;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: all .3s;
+}
+.thanks h4,
+.thanks p{
+    color: #fff;
+    text-align: center;
+}
+
+/* --- Animated Buttons --- */
+.movebtn{
+    background-color: transparent;
+    display:inline-block;
+    width:auto;
+    background-image: none;
+    padding: 6px 22px;
+    border-radius: 40px;
+    margin-bottom:20px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.5, 1.65, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.5, 1.65, 0.37, 0.66);
+}
+.movebtnre {
+    border: 2px solid #ff5501;
+    box-shadow: inset 0 0 0 0 #ff5501;
+    color:#ff5501;
+}
+.movebtnsu {
+    border: 2px solid #F77524;
+    box-shadow: inset 0 0 0 0 #F77524;
+    color: #F77524;
+}
+.movebtnre:focus,
+.movebtnre:hover,
+.movebtnre:active {
+    background-color: transparent;
+    color: #FFF;
+    border-color: #ff5501;
+    box-shadow: inset 96px 0 0 0 #ff5501;
+}
+.movebtnsu:focus,
+.movebtnsu:hover,
+.movebtnsu:active {
+    background-color: transparent;
+    color: #FFF;
+    border-color: #F77524;
+    box-shadow: inset 96px 0 0 0 #F77524;
+}
+
+
+/* --- Media Queries --- */
+
+@media only screen and (max-width: 600px) {
+    p:before{
+        content: attr(type);
+        width: 100%
+    }
+    input{
+        width: 100%;
+    }
+}
+
+
+.custom-btn {
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
 }
