@@ -18,6 +18,18 @@ const routes: Routes = [
     path: 'switchapps',
     loadChildren: () => import('./components/switchapps/switchapps.module').then( m => m.SwitchappsPageModule)
   },
+  {
+    path: 'menu',
+    loadChildren: () => import('./components/menu/menu.module').then( m => m.MenuPageModule)
+  },
+  {
+    path: 'event-details',
+    loadChildren: () => import('./components/event-details/event-details.module').then( m => m.EventDetailsPageModule)
+  },
+  {
+    path: 'cheffs',
+    loadChildren: () => import('./components/cheffs/cheffs.module').then( m => m.CheffsPageModule)
+  },
 
 ];
 

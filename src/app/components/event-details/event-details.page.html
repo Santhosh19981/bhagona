@@ -1,0 +1,74 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>eventDetails</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">eventDetails</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+    <!-- Select Event Menu Start -->
+<section class="Event-Menu-List-section">
+  <div class="Event-Menu-List">
+              <div class="Event-Menu-List-img">
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/031/848/553/large_2x/indian-wedding-couple-ai-generated-free-photo.jpg"
+                  alt="thumb">
+
+                
+
+              </div>
+
+              <div class="popular-inner-box">
+                
+      	<form class="form">
+	  <div class="form-group">
+		  <div class="relative">
+			  <input class="form-control" id="name" type="date" pattern="[a-zA-Z\s]+" required="" autofocus="" title="Username should only contain letters. e.g. Piyush Gupta" autocomplete="" placeholder="Type your name here...">
+			  <i class="fa fa-calendar"></i>
+		  </div>
+	  </div>
+	  
+	  
+	  <div class="form-group">
+	  	<div class="relative">
+	  		<input class="form-control" type="text" required="" placeholder="How Many Members">
+	  		<i class="fa fa-user"></i>
+	  	</div>
+	  </div>
+	  <div class="form-group">
+	  	<div class="relative">
+	  	<input class="form-control" type="text" id="menu" required="" placeholder="Edit Your Menu">
+	  	<i class="fa fa-suitcase"></i>
+	  </div>	
+	  </div>
+		<div class="form-group">
+	  	<div class="relative">
+	  		<input class="form-control" type="text" id="chef" required="" placeholder="Edit Your Cheff">
+	  		<i class="fa fa-user"></i>
+	  	</div>
+	  </div>
+		<div class="form-group">
+      <button class="custom-btn btn-7"><span>Order Value : $25,000/-</span></button>
+    </div>
+
+     <div class="tright">
+	  	<a href=""><button class="movebtn movebtnre" type="Reset"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Back </button></a>
+	  	<a href=""><button class="movebtn movebtnsu" type="Submit" (click)="gotomenu()">Proceed <i class="fa fa-fw fa-paper-plane"></i></button></a>
+	  </div>
+	 
+	</form>
+
+	
+              </div>
+
+
+            </div>
+</section>
+
+  <!-- Select Event Menu End -->
+</ion-content>
