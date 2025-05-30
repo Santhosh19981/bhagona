@@ -75,7 +75,7 @@ header {
 .btn.solid,
 .btn.transparent:hover {
   background-color: #FAFAFA;
-  color: #3D8361;
+  color: #b54803;
 }
 
 .btn.transparent,
@@ -287,11 +287,11 @@ header {
 
   .nav-btn {
     position: fixed;
-    height: calc(100vh - 3rem);
-    top: 3rem;
+    height: 100vh;
+    top: 0;
     left: 0;
     width: 100%;
-    background-color: #3D8361;
+    background-color: #b54803;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -313,6 +313,7 @@ header {
   .nav-links {
     flex: initial;
     width: 100%;
+            margin-top: 70px;
   }
 
   .nav-links > ul {
@@ -332,7 +333,7 @@ header {
 
   .nav-link:hover > a {
     transform: scale(1);
-    background-color: #1E6F5C;
+    background-color: #f99747;
   }
 
   .dropdown,
@@ -380,14 +381,14 @@ header {
 
   .arrow {
     z-index: 1;
-    background-color: #3D8361;
+    background-color: #b54803;
     left: 10%;
     transform: scale(1.1) rotate(45deg);
     transition: .5s;
   }
 
   .nav-link:hover .arrow {
-    background-color: #1E6F5C;
+    background-color: #f99747;
   }
 
   .dropdown .dropdown .arrow {
@@ -399,7 +400,7 @@ header {
   }
 
   .dropdown-link:first-child:hover ~ .arrow {
-    background-color: #1E6F5C;
+    background-color: #f99747;
   }
 
   .nav-link > a > i {
@@ -449,3 +450,5 @@ header {
 .red-cart {
 	color: #b54803; background:#f99747;
 }
+
+
