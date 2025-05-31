@@ -30,6 +30,14 @@ const routes: Routes = [
     path: 'cheffs',
     loadChildren: () => import('./components/cheffs/cheffs.module').then( m => m.CheffsPageModule)
   },
+  {
+    path: 'ourservice',
+    loadChildren: () => import('./components/ourservice/ourservice.module').then( m => m.OurservicePageModule)
+  },
+  {
+    path: 'orderconfirm',
+    loadChildren: () => import('./components/orderconfirm/orderconfirm.module').then( m => m.OrderconfirmPageModule)
+  },
 
 ];
 
