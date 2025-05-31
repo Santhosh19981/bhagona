@@ -244,13 +244,13 @@ A border-top applied to parent would curve due to border-radius.
   display: grid;
     place-items: center;
     height: 100vh;
-    background-size: 24px 24px;
-    background-image: linear-gradient(to right, #e7e9e7 1px, transparent 1px), linear-gradient(to bottom, #e7e9e7 1px, transparent 1px);
-    background-color: #eff1ef;
+    // background-size: 24px 24px;
+    // background-image: linear-gradient(to right, #e7e9e7 1px, transparent 1px), linear-gradient(to bottom, #e7e9e7 1px, transparent 1px);
+    // background-color: #eff1ef;
     
     color: #1d211c;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    // -webkit-font-smoothing: antialiased;
+    // -moz-osx-font-smoothing: grayscale;
 }
     .payment-section::before {
     content: "";
@@ -259,8 +259,8 @@ A border-top applied to parent would curve due to border-radius.
     height: 100%;
     left: 0;
     top: 0;
-    background-size: 96px 96px;
-    background-image: linear-gradient(to right, #dfe2df 1px, transparent 1px), linear-gradient(to bottom, #dfe2df 1px, transparent 1px);
+    // background-size: 96px 96px;
+    // background-image: linear-gradient(to right, #dfe2df 1px, transparent 1px), linear-gradient(to bottom, #dfe2df 1px, transparent 1px);
 }
 .payment{
   display: grid;

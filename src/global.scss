@@ -64,8 +64,9 @@
   
 }
 
-.bg-orange{
-  background: linear-gradient(to right, #FDDE90, #F77524);
+.bg-orange,#background-content{
+  background: linear-gradient(to right, #FDDE90, #F77524) !important;
+  
  
 }
 .Product-Card {
@@ -612,13 +613,13 @@ margin: auto;
   padding: 3px 10px;
 }
 
-.icon {
-  position: absolute;
-  top: 18px;
-  right: 25px;
-  font-size: 20px;
-  cursor: pointer;
-}
+// .icon {
+//   position: absolute;
+//   top: 18px;
+//   right: 25px;
+//   font-size: 20px;
+//   cursor: pointer;
+// }
 
 .bx-hide {
   content: "\eb2c"; /* Hide icon */
@@ -761,11 +762,7 @@ input[type="checkbox"] {
   
 }
 
-.bg-orange{
-  background: linear-gradient(to right, #FDDE90, #F77524);
-  height: 100vh;
- 
-}
+
 
 
 
@@ -981,6 +978,7 @@ button:hover {
     position: absolute;
     left: -3px;
     text-align: center;
+    font-size: 14px;
 }
 
 .relative i.fa{
@@ -1056,6 +1054,8 @@ button:hover {
     transition: all 0.5s;
     -webkit-transition-timing-function: cubic-bezier(0.5, 1.65, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.5, 1.65, 0.37, 0.66);
+    font-size: 14px;
+    font-weight: 600;
 }
 .movebtnre {
     border: 2px solid #ff5501;
@@ -1119,6 +1119,8 @@ button:hover {
   line-height: 42px;
   padding: 0;
   border: none;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 
@@ -1300,3 +1302,7 @@ button:hover {
     .about-bottom-banner { height: 400px; }
 }
 
+.form-control{
+  font-size: 14px !important;
+    font-weight: 500 !important;
+}
