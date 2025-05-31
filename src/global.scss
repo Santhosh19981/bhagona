@@ -249,6 +249,9 @@
 
 /** Chef CSS Start **/
 @media (min-width: 300px) and (max-width: 776px) {
+  .single-cta i{
+    font-size: 20px;
+  }
   .col-sm-4{
     width: 50% !important;
     padding: 0 !important;
