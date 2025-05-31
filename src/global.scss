@@ -249,6 +249,9 @@
 
 /** Chef CSS Start **/
 @media (min-width: 300px) and (max-width: 776px) {
+  .payment-card{
+    width:350px !important;
+  }
   .single-cta i{
     font-size: 20px;
   }
@@ -760,6 +763,7 @@ input[type="checkbox"] {
 
 .bg-orange{
   background: linear-gradient(to right, #FDDE90, #F77524);
+  height: 100vh;
  
 }
 
@@ -1295,3 +1299,4 @@ button:hover {
     
     .about-bottom-banner { height: 400px; }
 }
+
