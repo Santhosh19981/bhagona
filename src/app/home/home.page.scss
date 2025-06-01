@@ -279,8 +279,11 @@ header {
 @media (max-width: 920px) {
   .hamburger-menu-container {
     display: flex;
+    column-gap: 20px;
   }
-
+.fa-stack-2x{
+  font-size: 1.6em;
+}
   #check {
     display: block;
   }
@@ -291,7 +294,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #b54803;
+    background-color: #f99747;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -299,6 +302,7 @@ header {
     overflow-y: auto;
     transform: translateX(100%);
     transition: .65s;
+    z-index: 1;
   }
 
   #check:checked ~ .nav-btn {
@@ -329,6 +333,7 @@ header {
   .nav-link > a {
     line-height: 1;
     padding: 1.6rem 2rem;
+    font-size: 18px;
   }
 
   .nav-link:hover > a {
@@ -417,10 +422,17 @@ header {
   .log-sign {
     flex: initial;
     width: 100%;
-    padding: 1.5rem 1.9rem;
-    justify-content: flex-start;
-    opacity: 0;
-    transform: translateY(15px);
+    padding: 0;
+    // justify-content: flex-start;
+    opacity: 1;
+    // transform: translateY(15px);
+  }
+  .desktop{
+    display: none !important;
+  }
+  .mobile{
+    display: flex !important;
+    justify-content: end;
   }
 }
 
@@ -616,3 +628,9 @@ ul {
   color: #878787;
 }
 
+.desktop{
+    display: block;
+  }
+  .mobile{
+    display: none;
+  }
