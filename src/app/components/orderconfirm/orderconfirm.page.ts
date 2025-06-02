@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-orderconfirm',
@@ -8,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderconfirmPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
-
+  gotoHome(){
+    this.router.navigate(['/home']);
+  }
 }

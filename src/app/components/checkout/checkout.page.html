@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar class="text-center">
-    <ion-title>Event Details</ion-title>
+    <ion-title>Checkout</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -97,11 +97,11 @@
 	  
 	  <div class="form-group">
 	  	<div class="relative">
-	  		<input class="form-control" type="text" required="" placeholder="How Many Members">
+	  		<input class="form-control" type="text" required="" placeholder="How Many Members" value="250">
 	  		<i class="fa fa-user"></i>
 	  	</div>
 	  </div>
-	  <!-- <div class="form-group">
+	  <div class="form-group">
 	  	<div class="relative">
 	  	<input class="form-control" type="text" id="menu" required="" placeholder="Edit Your Menu">
 	  	<i class="fa fa-suitcase"></i>
@@ -109,21 +109,18 @@
 	  </div>
 		<div class="form-group">
 	  	<div class="relative">
-	  		<input class="form-control" type="text" id="chef" required="" placeholder="Edit Your Cheff">
+	  		<input class="form-control" type="text" id="chef" required="" placeholder="Edit Your Cheff" value="Hari Dasu">
 	  		<i class="fa fa-user"></i>
 	  	</div>
-	  </div> -->
-		<div class="form-group hidden">
+	  </div>
+		<div class="form-group ">
       <button class="custom-btn btn-7"><span>Order Value : $25,000/-</span></button>
     </div>
 
-    <div class="form-group">
-      <button class="custom-btn btn-7" (click)="gotomenu()"><span>Select Your Menu</span></button>
-    </div>
 
-     <div class="tright hidden">
-	  	<a href=""><button class="movebtn movebtnre" type="Reset"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Back </button></a>
-	  	<a href=""><button class="movebtn movebtnsu" type="Submit" (click)="gotomenu()">Proceed <i class="fa fa-fw fa-paper-plane"></i></button></a>
+     <div class="tright ">
+	  	<a><button class="movebtn movebtnre" type="Reset"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Back </button></a>
+	  	<a><button class="movebtn movebtnsu" type="Submit" (click)="gotoOrdder()">Proceed <i class="fa fa-fw fa-paper-plane"></i></button></a>
 	  </div>
 	 
 	</form>

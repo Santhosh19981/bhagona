@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>orderconfirm</ion-title>
+  <ion-toolbar class="text-center">
+    <ion-title>Order Confirm</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -46,7 +46,7 @@
   <!-- Reciept CTA -->
   <div class="payment-card">
     <div class="cta-row">
-      <button class="secondary">
+      <button class="secondary" (click)="gotoHome()">
         Back to Home
       </button>
       <button>

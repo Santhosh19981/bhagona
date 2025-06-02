@@ -13,4 +13,7 @@ export class HomePage {
   gotoevent(){
     this.router.navigate(['/event-details']);
   }
+  logout(){
+    this.router.navigate(['/login']);
+  }
 }

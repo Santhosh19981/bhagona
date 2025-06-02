@@ -4,8 +4,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>menu</ion-title>
+  <ion-toolbar class="text-center">
+    <ion-title>Cheff</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -327,8 +327,8 @@
       </div>
       
       <div class="next-btn md:px-5 py-3">
-        <a  class="Bhagona-Btn float-start" >Cart <i class="fa fa-cart-plus" aria-hidden="true"></i></a>
-        <a  class="Bhagona-Btn float-end">Continue <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+        <!-- <a  class="Bhagona-Btn float-start" >Cart <i class="fa fa-cart-plus" aria-hidden="true"></i></a> -->
+        <a  class="Bhagona-Btn float-end" (click)="gotoCheckoput()">Continue <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
       </div>
     </div>
 </section>

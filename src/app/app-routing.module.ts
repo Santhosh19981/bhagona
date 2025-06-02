@@ -38,6 +38,10 @@ const routes: Routes = [
     path: 'orderconfirm',
     loadChildren: () => import('./components/orderconfirm/orderconfirm.module').then( m => m.OrderconfirmPageModule)
   },
+  {
+    path: 'checkout',
+    loadChildren: () => import('./components/checkout/checkout.module').then( m => m.CheckoutPageModule)
+  },
 
 ];
 
