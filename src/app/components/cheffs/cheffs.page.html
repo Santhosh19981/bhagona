@@ -3,9 +3,23 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<ion-header [translucent]="true">
-  <ion-toolbar class="text-center">
-    <ion-title>Cheff</ion-title>
+<ion-header>
+  <ion-toolbar class="custom-toolbar">
+    <!-- Back Button -->
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <!-- Page Title -->
+    <ion-title class="custom-title">Cheffs</ion-title>
+
+    <!-- Cart Button with Badge -->
+    <ion-buttons slot="end">
+      <span class="fa-stack fa-2x has-badge" data-count="5">
+  <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+  <i style="" class="fa fa-shopping-cart fa-stack-2x red-cart"></i>
+</span>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 

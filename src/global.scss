@@ -454,7 +454,7 @@
     line-height: 1em;
     color: #ffffff;
     text-transform: capitalize;
-    background-image: linear-gradient(to right, #ff4438 0%, #f6ba3d 50%, #ff4438 100%);
+    background: #ff4438;
     background-size: 200% auto;
     padding: 12px 30px;
     border-radius: 10px;
@@ -1309,4 +1309,49 @@ button:hover {
 .form-control{
   font-size: 14px !important;
     font-weight: 500 !important;
+}
+
+
+.custom-toolbar {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.custom-title {
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+
+
+.custom-toolbar .fa-stack[data-count]:after{
+  position:absolute;
+  right:0%;
+  top:0%;
+  content: attr(data-count);
+  font-size:10px;
+  padding:.6em;
+  border-radius:999px;
+  line-height:.75em;
+  color: white;
+  color:#DF0000;
+  text-align:center;
+  min-width:2em;
+  font-weight:bold;
+  background: #f7f7f7;
+  border-style:solid;
+}
+.custom-toolbar .fa-circle {
+  color:#DF0000;
+}
+.custom-toolbar .button-inner{
+  color: #000 !important;
+}
+.custom-toolbar .red-cart {
+	color: #DF0000; background:#f7f7f7;
+}
+.custom-toolbar .fa-stack-2x {
+    font-size: 1.35em !important;
+    top: 10px;
+
 }
