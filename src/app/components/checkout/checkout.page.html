@@ -1,6 +1,20 @@
-<ion-header [translucent]="true">
-  <ion-toolbar class="text-center">
-    <ion-title>Checkout</ion-title>
+<ion-header>
+  <ion-toolbar class="custom-toolbar">
+    <!-- Back Button -->
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <!-- Page Title -->
+    <ion-title class="custom-title">Check Out</ion-title>
+
+    <!-- Cart Button with Badge -->
+    <ion-buttons slot="end">
+      <span class="fa-stack fa-2x has-badge" data-count="5">
+  <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+  <i style="" class="fa fa-shopping-cart fa-stack-2x red-cart"></i>
+</span>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
