@@ -11,7 +11,7 @@ a {
 header {
   position: sticky;
   top: 0px;
-  background: linear-gradient(to right, #f99747, #f99747);
+  background: linear-gradient(to right, #df7b4c, #df7b4c);
   width: 100%;
   z-index: 1000;
 }
@@ -31,7 +31,7 @@ header {
 }
 
 .nav-btn {
-  flex: 3;
+  flex: 4;
   display: flex;
   align-items: center;
 }
@@ -46,7 +46,9 @@ header {
   align-items: center;
   flex: 1;
 }
-
+.log-sign .fa-stack{
+  float: right;
+}
 .logo {
   color: #FAFAFA;
   font-size: 1.1rem;
@@ -294,7 +296,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #f99747;
+    background-color: #df7b4c;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -338,7 +340,7 @@ header {
 
   .nav-link:hover > a {
     transform: scale(1);
-    background-color: #f99747;
+    background-color: #df7b4c;
   }
 
   .dropdown,
@@ -393,7 +395,7 @@ header {
   }
 
   .nav-link:hover .arrow {
-    background-color: #f99747;
+    background-color: #df7b4c;
   }
 
   .dropdown .dropdown .arrow {
@@ -405,7 +407,7 @@ header {
   }
 
   .dropdown-link:first-child:hover ~ .arrow {
-    background-color: #f99747;
+    background-color: #df7b4c;
   }
 
   .nav-link > a > i {
@@ -460,7 +462,7 @@ header {
 }
 
 .red-cart {
-	color: #b54803; background:#f99747;
+	color: #b54803; background:#df7b4c;
 }
 
 
