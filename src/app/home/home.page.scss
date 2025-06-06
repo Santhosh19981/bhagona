@@ -11,7 +11,7 @@ a {
 header {
   position: sticky;
   top: 0px;
-  background: linear-gradient(to right, #df7b4c, #df7b4c);
+  background: linear-gradient(to right, #e4c815, #e4c815);
   width: 100%;
   z-index: 1000;
 }
@@ -296,7 +296,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #df7b4c;
+    background-color: #e4c815;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -340,7 +340,7 @@ header {
 
   .nav-link:hover > a {
     transform: scale(1);
-    background-color: #df7b4c;
+    background-color: #e4c815;
   }
 
   .dropdown,
@@ -395,7 +395,7 @@ header {
   }
 
   .nav-link:hover .arrow {
-    background-color: #df7b4c;
+    background-color: #e4c815;
   }
 
   .dropdown .dropdown .arrow {
@@ -407,7 +407,7 @@ header {
   }
 
   .dropdown-link:first-child:hover ~ .arrow {
-    background-color: #df7b4c;
+    background-color: #e4c815;
   }
 
   .nav-link > a > i {
@@ -462,7 +462,7 @@ header {
 }
 
 .red-cart {
-	color: #b54803; background:#df7b4c;
+	color: #b54803; background:#e4c815;
 }
 
 
