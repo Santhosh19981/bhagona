@@ -1,143 +1,773 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>websitehome</ion-title>
-  </ion-toolbar>
-</ion-header>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">websitehome</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
-<div class="website-body">
-<!-- Featured Services Section -->
-<section id="featured-services" class="featured-services section">
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div
+      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-  <!-- Section Title -->
-  <div class="container section-title aos-init aos-animate" data-aos="fade-up">
-    <h2>Featured Services</h2>
-  </div><!-- End Section Title -->
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="../../../assets/home-logo.png" style="width: 145px;">
+      </a>
 
-  <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
 
-    <div class="row gy-5">
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-x"></i>
+      </nav>
 
-      <div class="col-xl-4 col-md-6">
-        <div class="service-item">
-          <div class="img">
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/031/848/553/large_2x/indian-wedding-couple-ai-generated-free-photo.jpg"
-              class="img-fluid" alt="">
+      <div class="header-social-links">
+        <span data-count="5" class="fa-stack fa-2x has-badge sc-ion-buttons-md"><i
+            class="fa fa-circle fa-stack-2x fa-inverse sc-ion-buttons-md"></i><i
+            class="fa fa-shopping-cart fa-stack-2x red-cart sc-ion-buttons-md"></i></span>
+      </div>
+
+    </div>
+  </header>
+  <div class="website-body">
+    <div class="">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+
+          <div class="item active">
+            <img src="../../../assets/banner-1.png" alt="Marraige Events" style="width:100%;">
+            <div class="carousel-caption">
+              <h3>Marraige Events</h3>
+              <p>LA is always so much fun!</p>
+            </div>
           </div>
-          <div class="details position-relative">
 
-            <a href="service-details.html" class="stretched-link">
-              <h3>Nesciunt Mete</h3>
-            </a>
-            <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.
-            </p>
+          <div class="item">
+            <img src="../../../assets/banner-2.png" alt="Marraige Events" style="width:100%;">
+            <div class="carousel-caption">
+              <h3>Marraige Events</h3>
+              <p>Thank you, Marraige Events!</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="../../../assets/banner-3.png" alt="Marraige Events" style="width:100%;">
+            <div class="carousel-caption">
+              <h3>Marraige Events</h3>
+              <p>We love the Big Apple!</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="about-one">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="about-one__img">
+              <div class="about-one__shape1 float-bob-y">
+                <img src="https://figtheme.com/html/techlab/assets/img/shape/about-one__shape1.png" alt="">
+              </div>
+              <div class="about-one__img-icon">
+                <a href="about.html"><span class="icon-plus-1"></span></a>
+              </div>
+              <!--Start About One Img Top-->
+              <div class="about-one__img-top">
+                <ul class="clearfix">
+                  <li>
+                    <div class="about-one__single-img-box wow  fadeInRight animated" data-wow-delay="0.1s"
+                      style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInRight;">
+                      <div class="inner">
+                        <img
+                          src="https://images.stockcake.com/public/9/d/a/9da234ad-1e18-476b-89be-37b101e57b59_medium/birthday-cake-celebration-stockcake.jpg"
+                          alt="">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="about-one__single-img-box wow  fadeInLeft animated" data-wow-delay="0.1s"
+                      style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                      <div class="inner">
+                        <img
+                          src="https://t3.ftcdn.net/jpg/06/79/18/48/360_F_679184899_vkb4XBBaKi3yScsH82wQCeKaOMEL25CG.jpg"
+                          alt="">
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!--End About One Img Top-->
+
+              <!--Start About One Img Bottom-->
+              <div class="about-one__img-bottom">
+                <ul class="clearfix">
+                  <li>
+                    <div class="about-one__single-img-box wow  fadeInRight animated" data-wow-delay="0.1s"
+                      style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInRight;">
+                      <div class="inner">
+                        <img
+                          src="https://img.freepik.com/premium-photo/beautiful-wedding-ring-eternal-love-journey-wedding-rings-generative-ai_894903-10000.jpg"
+                          alt="">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="about-one__single-img-box wow  fadeInLeft animated" data-wow-delay="0.1s"
+                      style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                      <div class="inner">
+                        <img
+                          src="https://img.freepik.com/premium-photo/haldi-ceremony-setup-haldi-decor-generative-ai_1004028-3482.jpg"
+                          alt="">
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!--End About One Img Bottom-->
+            </div>
+          </div>
+
+          <div class="col-xl-6">
+            <div class="about-one__content">
+              <!-- Section Title -->
+              <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+                <h2>About Us</h2>
+              </div><!-- End Section Title -->
+              <div class="about-one__content-text">
+                <p>It is a long established fact that a reader will be distracted by the readablejk
+                  content of a page when looking at its layout. Lorem Ipsum is simply dum text of the
+                  printing and typesetting industry loren ipsumIt is a long established fact that a reader will be
+                  distracted by the readablejk
+                  content of a page when looking at its layout. Lorem Ipsum is simply dum text of the
+                  printing and typesetting industry loren ipsum</p>
+                <p>It is a long established fact that a reader will be distracted by the readablejk
+                  content of a page when looking at its layout. Lorem Ipsum is simply dum text of the
+                  printing and typesetting industry loren ipsumIt is a long established fact that a reader will be
+                  distracted by the readablejk
+                  content of a page when looking at its layout. Lorem Ipsum is simply dum text of the
+                  printing and typesetting industry loren ipsum</p>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Featured Services Section -->
+    <section id="featured-services" class="featured-services section bg_color-dark-1">
+
+      <!-- Section Title -->
+      <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+        <h2 class="text-white">Services</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+
+          <div class="col-xl-4 col-md-6">
+            <div class="service-item">
+              <div class="img">
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/031/848/553/large_2x/indian-wedding-couple-ai-generated-free-photo.jpg"
+                  class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+
+                <a href="#" class="stretched-link">
+                  <h3>Marriage</h3>
+                </a>
+                <p>Two hearts become one, a journey just begun. Wishing love, laughter, and a happily ever after.
+                </p>
+              </div>
+              <a href="#" class="thm-btn product-card_btn">Book Now<span></span></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6">
+            <div class="service-item">
+              <div class="img">
+                <img
+                  src="https://img.freepik.com/free-psd/3d-blue-pink-gender-reveal-podium-with-toys_23-2150816968.jpg?semt=ais_hybrid&w=740"
+                  class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+
+                <a href="#" class="stretched-link">
+                  <h3>Baby Shower</h3>
+                </a>
+                <p>Little hands and tiny feet, a bundle of joy we can’t wait to meet.
+Showering love before the baby’s debut.</p>
+              </div>
+              <a href="#" class="thm-btn product-card_btn">Book Now<span></span></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6">
+            <div class="service-item">
+              <div class="img">
+                <img src="https://img.freepik.com/premium-photo/engaged-couple-with-rings_908985-39841.jpg"
+                  class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+
+                <a href="#" class="stretched-link">
+                  <h3>Engagement</h3>
+                </a>
+                <p>They found each other, and love found its way.
+A promise made for a beautiful forever.</p>
+              </div>
+              <a href="#" class="thm-btn product-card_btn">Book Now<span></span></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6">
+            <div class="service-item">
+              <div class="img">
+                <img
+                  src="https://img.freepik.com/premium-photo/happy-birthday-background-wallpaper-illustration_492154-7372.jpg"
+                  class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+
+                <a href="#" class="stretched-link">
+                  <h3>Birthday</h3>
+                </a>
+                <p>Celebrate the gift of life and the joy it brings.
+Another year older, brighter, and bold with wings.
+
+</p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+              <a href="#" class="thm-btn product-card_btn">Book Now<span></span></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6">
+            <div class="service-item">
+              <div class="img">
+                <img src="https://koala.sh/api/image/v2-ggrb4-uzcpp.jpg?width=1216&height=832&dream" class="img-fluid"
+                  alt="">
+              </div>
+              <div class="details position-relative">
+
+                <a href="#" class="stretched-link">
+                  <h3>Puberty Ceremony</h3>
+                </a>
+                <p>A step into tradition, growth, and grace,
+Welcoming a new role with pride in place.</p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+              <a href="#" class="thm-btn product-card_btn">Book Now<span></span></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6">
+            <div class="service-item">
+              <div class="img">
+                <img
+                  src="https://static.vecteezy.com/system/resources/thumbnails/035/479/734/small_2x/ai-generated-funeral-casket-with-flowers-on-dark-background-photo.jpg"
+                  class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+
+                <a href="#" class="stretched-link">
+                  <h3>Funeral</h3>
+                </a>
+                <p>A life well lived, a soul set free,
+Gone from sight, but in our hearts eternally.</p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+              <a href="#" class="thm-btn product-card_btn">Book Now<span></span></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+
+    <section class="team" id="team"
+      style="background-image:url(https://thetork.com/demos/html/uevent/assets/images/team/bg.png)">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+          <h2>Our Cheff's</h2>
+        </div><!-- End Section Title -->
+        <div class="team__wrapper">
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="Menu-List">
+                <div class="Menu-List-img">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/thumbnails/028/636/826/small_2x/handsome-master-chef-ready-generate-ai-photo.jpg"
+                    alt="thumb">
+
+                  <div class="Menu-List-img-overlay">
+                    <div class="icon">
+                      <span>
+                        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M8.361 2.72748C9.03157 1.3148 10.9691 1.3148 11.6396 2.72748L12.7986 5.16895C13.0649 5.72993 13.5796 6.11875 14.175 6.20871L16.7664 6.60021C18.2659 6.82675 18.8646 8.74259 17.7796 9.84221L15.9044 11.7426C15.4736 12.1793 15.277 12.8084 15.3787 13.425L15.8213 16.1084C16.0775 17.6611 14.51 18.8452 13.1689 18.1121L10.851 16.8451C10.3184 16.554 9.68221 16.554 9.14964 16.8451L6.8318 18.1121C5.49065 18.8452 3.92318 17.6611 4.17931 16.1084L4.62198 13.425C4.72369 12.8084 4.52709 12.1793 4.09623 11.7426L2.22105 9.84221C1.13605 8.74259 1.73477 6.82675 3.23421 6.60021L5.82564 6.20871C6.42107 6.11875 6.9358 5.72993 7.20208 5.16895L8.361 2.72748Z"
+                            fill="#FFB23E"></path>
+                        </svg>
+                      </span>
+                    </div>
+
+                    <div class="text pl-1">
+                      <p>4.7(2.5K)</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="popular-inner-box">
+                  <div class="Menu-List-text">
+                    <h3>K. Subba Rao</h3>
+                  </div>
+
+                  <div class="popular-inner-item">
+                    <div class="text">
+                      <h5>"Proficient in crafting classic and modern cuisine, with a knack for developing unique flavor
+                        profiles." </h5>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="Menu-List">
+                <div class="Menu-List-img">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/thumbnails/028/636/826/small_2x/handsome-master-chef-ready-generate-ai-photo.jpg"
+                    alt="thumb">
+
+                  <div class="Menu-List-img-overlay">
+                    <div class="icon">
+                      <span>
+                        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M8.361 2.72748C9.03157 1.3148 10.9691 1.3148 11.6396 2.72748L12.7986 5.16895C13.0649 5.72993 13.5796 6.11875 14.175 6.20871L16.7664 6.60021C18.2659 6.82675 18.8646 8.74259 17.7796 9.84221L15.9044 11.7426C15.4736 12.1793 15.277 12.8084 15.3787 13.425L15.8213 16.1084C16.0775 17.6611 14.51 18.8452 13.1689 18.1121L10.851 16.8451C10.3184 16.554 9.68221 16.554 9.14964 16.8451L6.8318 18.1121C5.49065 18.8452 3.92318 17.6611 4.17931 16.1084L4.62198 13.425C4.72369 12.8084 4.52709 12.1793 4.09623 11.7426L2.22105 9.84221C1.13605 8.74259 1.73477 6.82675 3.23421 6.60021L5.82564 6.20871C6.42107 6.11875 6.9358 5.72993 7.20208 5.16895L8.361 2.72748Z"
+                            fill="#FFB23E"></path>
+                        </svg>
+                      </span>
+                    </div>
+
+                    <div class="text pl-1">
+                      <p>4.7(2.5K)</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="popular-inner-box">
+                  <div class="Menu-List-text">
+                    <h3>K. Subba Rao</h3>
+                  </div>
+
+                  <div class="popular-inner-item">
+                    <div class="text">
+                      <h5>"Proficient in crafting classic and modern cuisine, with a knack for developing unique flavor
+                        profiles." </h5>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="Menu-List">
+                <div class="Menu-List-img">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/thumbnails/028/636/826/small_2x/handsome-master-chef-ready-generate-ai-photo.jpg"
+                    alt="thumb">
+
+                  <div class="Menu-List-img-overlay">
+                    <div class="icon">
+                      <span>
+                        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M8.361 2.72748C9.03157 1.3148 10.9691 1.3148 11.6396 2.72748L12.7986 5.16895C13.0649 5.72993 13.5796 6.11875 14.175 6.20871L16.7664 6.60021C18.2659 6.82675 18.8646 8.74259 17.7796 9.84221L15.9044 11.7426C15.4736 12.1793 15.277 12.8084 15.3787 13.425L15.8213 16.1084C16.0775 17.6611 14.51 18.8452 13.1689 18.1121L10.851 16.8451C10.3184 16.554 9.68221 16.554 9.14964 16.8451L6.8318 18.1121C5.49065 18.8452 3.92318 17.6611 4.17931 16.1084L4.62198 13.425C4.72369 12.8084 4.52709 12.1793 4.09623 11.7426L2.22105 9.84221C1.13605 8.74259 1.73477 6.82675 3.23421 6.60021L5.82564 6.20871C6.42107 6.11875 6.9358 5.72993 7.20208 5.16895L8.361 2.72748Z"
+                            fill="#FFB23E"></path>
+                        </svg>
+                      </span>
+                    </div>
+
+                    <div class="text pl-1">
+                      <p>4.7(2.5K)</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="popular-inner-box">
+                  <div class="Menu-List-text">
+                    <h3>K. Subba Rao</h3>
+                  </div>
+
+                  <div class="popular-inner-item">
+                    <div class="text">
+                      <h5>"Proficient in crafting classic and modern cuisine, with a knack for developing unique flavor
+                        profiles." </h5>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="Menu-List">
+                <div class="Menu-List-img">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/thumbnails/028/636/826/small_2x/handsome-master-chef-ready-generate-ai-photo.jpg"
+                    alt="thumb">
+
+                  <div class="Menu-List-img-overlay">
+                    <div class="icon">
+                      <span>
+                        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M8.361 2.72748C9.03157 1.3148 10.9691 1.3148 11.6396 2.72748L12.7986 5.16895C13.0649 5.72993 13.5796 6.11875 14.175 6.20871L16.7664 6.60021C18.2659 6.82675 18.8646 8.74259 17.7796 9.84221L15.9044 11.7426C15.4736 12.1793 15.277 12.8084 15.3787 13.425L15.8213 16.1084C16.0775 17.6611 14.51 18.8452 13.1689 18.1121L10.851 16.8451C10.3184 16.554 9.68221 16.554 9.14964 16.8451L6.8318 18.1121C5.49065 18.8452 3.92318 17.6611 4.17931 16.1084L4.62198 13.425C4.72369 12.8084 4.52709 12.1793 4.09623 11.7426L2.22105 9.84221C1.13605 8.74259 1.73477 6.82675 3.23421 6.60021L5.82564 6.20871C6.42107 6.11875 6.9358 5.72993 7.20208 5.16895L8.361 2.72748Z"
+                            fill="#FFB23E"></path>
+                        </svg>
+                      </span>
+                    </div>
+
+                    <div class="text pl-1">
+                      <p>4.7(2.5K)</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="popular-inner-box">
+                  <div class="Menu-List-text">
+                    <h3>K. Subba Rao</h3>
+                  </div>
+
+                  <div class="popular-inner-item">
+                    <div class="text">
+                      <h5>"Proficient in crafting classic and modern cuisine, with a knack for developing unique flavor
+                        profiles." </h5>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="our-blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <!-- Our Blog Content Start -->
+            <div class="our-blog-content">
+              <!-- Section Title Start -->
+              <div class="section-title">
+
+                <h2>Our <span>Cheffs</span></h2>
+              </div>
+              <!-- Section Title End -->
+              <p>It is a long established fact that a reader will be distracted by the readablejk content of a page when
+                looking at its layout. Lorem Ipsum is simply dum text of the printing and typesetting industry loren
+                ipsumIt is a long established fact that a reader will be distracted by the readablejk content of a page
+                when looking at its layout. Lorem Ipsum is simply dum text of the printing and typesetting industry
+                loren ipsum</p>
+
+
+            </div>
+            <!-- Our Blog Content End -->
+          </div>
+
+          <div class="col-lg-8">
+            <!-- Blog Box Start -->
+            <div class="blog-box">
+              <!-- Blog Item Start -->
+              <div class="blog-item wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                <!-- Blog Featured Image Start -->
+                <div class="blog-featured-image">
+                  <a href="blog-single.html" class="image-anime" data-cursor-text="View">
+                    <figure>
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/028/636/826/small_2x/handsome-master-chef-ready-generate-ai-photo.jpg"
+                        alt="">
+                    </figure>
+                  </a>
+                </div>
+                <!-- Blog Featured Image End -->
+
+                <!-- Blog Item Body Start -->
+                <div class="blog-item-body">
+                  <!-- Blog Item Content Start -->
+                  <div class="blog-item-content">
+                    <h2><a href="blog-single.html">Mental Wellness and Resilience The Power of Coaching</a></h2>
+                    <p>Mental wellness and resilience are crucial for navigating life's challenges.</p>
+                  </div>
+                  <!-- Blog Item Content End -->
+
+                  <!-- Blog Item Button Start -->
+                  <div class="blog-item-btn">
+                    <a href="blog-single.html" class="btn-default">read more</a>
+                  </div>
+                  <!-- Blog Item Button End -->
+                </div>
+                <!-- Blog Item Body End -->
+              </div>
+              <!-- Blog Item End -->
+
+              <!-- Blog Item Start -->
+              <div class="blog-item wow fadeInUp" data-wow-delay="0.25s"
+                style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">
+                <!-- Blog Featured Image Start -->
+                <div class="blog-featured-image">
+                  <a href="blog-single.html" class="image-anime" data-cursor-text="View">
+                    <figure>
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/028/636/826/small_2x/handsome-master-chef-ready-generate-ai-photo.jpg"
+                        alt="">
+                    </figure>
+                  </a>
+                </div>
+                <!-- Blog Featured Image End -->
+
+                <!-- Blog Item Body Start -->
+                <div class="blog-item-body">
+                  <!-- Blog Item Content Start -->
+                  <div class="blog-item-content">
+                    <h2><a href="blog-single.html">How to Maintain Work-Life Balance in a Busy World</a></h2>
+                    <p>Maintaining work-life balance in today's fast-paced world can be challenging.</p>
+                  </div>
+                  <!-- Blog Item Content End -->
+
+                  <!-- Blog Item Button Start -->
+                  <div class="blog-item-btn">
+                    <a href="blog-single.html" class="btn-default">read more</a>
+                  </div>
+                  <!-- Blog Item Button End -->
+                </div>
+                <!-- Blog Item Body End -->
+              </div>
+              <!-- Blog Item End -->
+
+              <!-- Blog Item Start -->
+              <div class="blog-item">
+                <!-- Blog Featured Image Start -->
+                <div class="blog-featured-image">
+                  <a href="blog-single.html" class="image-anime" data-cursor-text="View">
+                    <figure>
+                      <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/028/636/826/small_2x/handsome-master-chef-ready-generate-ai-photo.jpg"
+                        alt="">
+                    </figure>
+                  </a>
+                </div>
+                <!-- Blog Featured Image End -->
+
+                <!-- Blog Item Body Start -->
+                <div class="blog-item-body">
+                  <!-- Blog Item Content Start -->
+                  <div class="blog-item-content">
+                    <h2><a href="blog-single.html">The Power of Mindset Transforming Your Life &amp; Business</a></h2>
+                    <p>A positive mindset fuels growth, success, and resilience in life and business.</p>
+                  </div>
+                  <!-- Blog Item Content End -->
+
+                  <!-- Blog Item Button Start -->
+                  <div class="blog-item-btn">
+                    <a href="blog-single.html" class="btn-default">read more</a>
+                  </div>
+                  <!-- Blog Item Button End -->
+                </div>
+                <!-- Blog Item Body End -->
+              </div>
+              <!-- Blog Item End -->
+            </div>
+            <!-- Blog Box End -->
           </div>
         </div>
-      </div><!-- End Service Item -->
+      </div>
+    </section>
 
-      <div class="col-xl-4 col-md-6">
-        <div class="service-item">
-          <div class="img">
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/031/848/553/large_2x/indian-wedding-couple-ai-generated-free-photo.jpg"
-              class="img-fluid" alt="">
-          </div>
-          <div class="details position-relative">
-
-            <a href="service-details.html" class="stretched-link">
-              <h3>Eosle Commodi</h3>
-            </a>
-            <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut
-              nesciunt dolorem.</p>
+    <div class="our-service-area-start bg_color-dark-1 rts-section-gap">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div data-aos="fade-up" class="container section-title aos-init aos-animate">
+              <h2 class="text-white">About Us</h2>
+            </div>
           </div>
         </div>
-      </div><!-- End Service Item -->
+        <div class="row mt--50">
+          <div class="col-lg-12">
+            <div class="rts-service-main-wrapper-10">
+              <div class="signle-service-style-10">
+                <div class="content-area-wrapper">
 
-      <div class="col-xl-4 col-md-6">
-        <div class="service-item">
-          <div class="img">
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/031/848/553/large_2x/indian-wedding-couple-ai-generated-free-photo.jpg"
-              class="img-fluid" alt="">
-          </div>
-          <div class="details position-relative">
+                  <h5 class="title">Business Solution</h5>
+                  <p>
+                    Fusce dignissim erat dis proin ornare class sem nibh
+                  </p>
 
-            <a href="service-details.html" class="stretched-link">
-              <h3>Ledo Markt</h3>
-            </a>
-            <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos
-              earum corrupti.</p>
-          </div>
-        </div>
-      </div><!-- End Service Item -->
+                </div>
+                <div class="thumbnail">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/031/848/553/large_2x/indian-wedding-couple-ai-generated-free-photo.jpg"
+                    alt="service">
+                </div>
+              </div>
+              <div class="signle-service-style-10">
+                <div class="content-area-wrapper">
 
-      <div class="col-xl-4 col-md-6">
-        <div class="service-item">
-          <div class="img">
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/031/848/553/large_2x/indian-wedding-couple-ai-generated-free-photo.jpg"
-              class="img-fluid" alt="">
-          </div>
-          <div class="details position-relative">
+                  <h5 class="title">Marketing Solution</h5>
+                  <p class="disc">
+                    Fusce dignissim erat dis proin ornare class sem nibh
+                  </p>
 
-            <a href="service-details.html" class="stretched-link">
-              <h3>Asperiores Commodit</h3>
-            </a>
-            <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident
-              adipisci neque.</p>
-            <a href="service-details.html" class="stretched-link"></a>
-          </div>
-        </div>
-      </div><!-- End Service Item -->
+                </div>
+                <div class="thumbnail">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/031/848/553/large_2x/indian-wedding-couple-ai-generated-free-photo.jpg"
+                    alt="service">
+                </div>
+              </div>
+              <div class="signle-service-style-10 order-control-sm-device">
+                <div class="thumbnail">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/031/848/553/large_2x/indian-wedding-couple-ai-generated-free-photo.jpg"
+                    alt="service">
+                </div>
+                <div class="content-area-wrapper">
 
-      <div class="col-xl-4 col-md-6">
-        <div class="service-item">
-          <div class="img">
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/031/848/553/large_2x/indian-wedding-couple-ai-generated-free-photo.jpg"
-              class="img-fluid" alt="">
-          </div>
-          <div class="details position-relative">
+                  <h5 class="title">Agency Marketing</h5>
+                  <p class="disc">
+                    Fusce dignissim erat dis proin ornare class sem nibh
+                  </p>
 
-            <a href="service-details.html" class="stretched-link">
-              <h3>Velit Doloremque</h3>
-            </a>
-            <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem
-              alias eius labore.</p>
-            <a href="service-details.html" class="stretched-link"></a>
-          </div>
-        </div>
-      </div><!-- End Service Item -->
+                </div>
+              </div>
+              <div class="signle-service-style-10 order-control-sm-device">
 
-      <div class="col-xl-4 col-md-6">
-        <div class="service-item">
-          <div class="img">
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/031/848/553/large_2x/indian-wedding-couple-ai-generated-free-photo.jpg"
-              class="img-fluid" alt="">
-          </div>
-          <div class="details position-relative">
+                <div class="thumbnail">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/031/848/553/large_2x/indian-wedding-couple-ai-generated-free-photo.jpg"
+                    alt="service">
+                </div>
+                <div class="content-area-wrapper">
 
-            <a href="service-details.html" class="stretched-link">
-              <h3>Dolori Architecto</h3>
-            </a>
-            <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae
-              ducimus enim.</p>
-            <a href="service-details.html" class="stretched-link"></a>
+                  <h5 class="title">Startup Paskages</h5>
+                  <p class="disc">
+                    Fusce dignissim erat dis proin ornare class sem nibh
+                  </p>
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div><!-- End Service Item -->
-
+      </div>
+      <div class="filter-right"></div>
+      <div class="filter-left"></div>
+      <div class="filter-center"></div>
     </div>
 
   </div>
+  <footer id="footer" class="footer light-background">
 
-</section>
-</div>
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="../../../assets/home-logo.png" style="width: 145px;">
+          </a>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
+            donna mare fermentum iaculis eu non diam phasellus.</p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Marriage</a></li>
+            <li><a href="#">Baby Shower</a></li>
+            <li><a href="#">Engagement</a></li>
+            <li><a href="#">Birthday</a></li>
+            <li><a href="#">Puberty Ceremony</a></li>
+            <li><a href="#">Funeral</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>A108 Adam Street</p>
+          <p>New York, NY 535022</p>
+          <p>United States</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+          <p><strong>Email:</strong> <span>infoexample.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>Copyright © 2025, All Right Reserved Bhagona</p>
+
+    </div>
+
+  </footer>
+</ion-content>
