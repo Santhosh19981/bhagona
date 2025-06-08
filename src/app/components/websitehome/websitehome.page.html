@@ -1,4 +1,8 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 <ion-content [fullscreen]="true">
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div
@@ -22,15 +26,16 @@
       </nav>
 
       <div class="header-social-links">
-        <span data-count="5" class="fa-stack fa-2x has-badge sc-ion-buttons-md"><i
-            class="fa fa-circle fa-stack-2x fa-inverse sc-ion-buttons-md"></i><i
-            class="fa fa-shopping-cart fa-stack-2x red-cart sc-ion-buttons-md"></i></span>
+        <div class="cart-icon" onclick="toggleCart()">
+                <img src="https://cdn-icons-png.flaticon.com/512/777/777205.png" style="width: 30px;">
+                <span class="cart-count">0</span>
+            </div>
       </div>
 
     </div>
   </header>
   <div class="website-body">
-    <div class="">
+    <div class="container my-5 p-0">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -43,7 +48,7 @@
         <div class="carousel-inner">
 
           <div class="item active">
-            <img src="../../../assets/banner-1.png" alt="Marraige Events" style="width:100%;">
+            <img src="../../../assets/banner-1.png" alt="Marraige Events" style="width:100%;border-radius: 22px;">
             <div class="carousel-caption">
               <h3>Marraige Events</h3>
               <p>LA is always so much fun!</p>
@@ -51,7 +56,7 @@
           </div>
 
           <div class="item">
-            <img src="../../../assets/banner-2.png" alt="Marraige Events" style="width:100%;">
+            <img src="../../../assets/banner-2.png" alt="Marraige Events" style="width:100%;border-radius: 22px">
             <div class="carousel-caption">
               <h3>Marraige Events</h3>
               <p>Thank you, Marraige Events!</p>
@@ -59,7 +64,7 @@
           </div>
 
           <div class="item">
-            <img src="../../../assets/banner-3.png" alt="Marraige Events" style="width:100%;">
+            <img src="../../../assets/banner-3.png" alt="Marraige Events" style="width:100%;border-radius: 22px">
             <div class="carousel-caption">
               <h3>Marraige Events</h3>
               <p>We love the Big Apple!</p>
@@ -79,6 +84,9 @@
         </a>
       </div>
     </div>
+
+
+    <!-- About Us Section -->
     <div class="about-one">
       <div class="container">
         <div class="row">
@@ -175,24 +183,23 @@
     </div>
 
 
-
-    <!-- Featured Services Section -->
-    <section id="featured-services" class="featured-services section bg_color-dark-1">
+    <!-- Events Section -->
+    <section id="Events" class="Events section bg_color-dark-1">
 
       <!-- Section Title -->
       <div class="container section-title aos-init aos-animate" data-aos="fade-up">
-        <h2 class="text-white">Services</h2>
+        <h2 class="text-white">Our <span>Events</span></h2>
       </div><!-- End Section Title -->
 
       <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-5">
 
-          <div class="col-xl-4 col-md-6">
+          <div class="col-xl-4 col-md-4">
             <div class="service-item">
               <div class="img">
                 <img
-                  src="https://static.vecteezy.com/system/resources/previews/031/848/553/large_2x/indian-wedding-couple-ai-generated-free-photo.jpg"
+                  src="../../../assets/Events/1.png"
                   class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
@@ -203,15 +210,15 @@
                 <p>Two hearts become one, a journey just begun. Wishing love, laughter, and a happily ever after.
                 </p>
               </div>
-              <a href="#" class="thm-btn product-card_btn">Book Now<span></span></a>
+               <a  class="thm-btn product-card_btn" data-toggle="modal" data-target="#myModal">Book Event<span></span></a>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-xl-4 col-md-6">
+          <div class="col-xl-4 col-md-4">
             <div class="service-item">
               <div class="img">
                 <img
-                  src="https://img.freepik.com/free-psd/3d-blue-pink-gender-reveal-podium-with-toys_23-2150816968.jpg?semt=ais_hybrid&w=740"
+                  src="../../../assets/Events/2.png"
                   class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
@@ -220,16 +227,16 @@
                   <h3>Baby Shower</h3>
                 </a>
                 <p>Little hands and tiny feet, a bundle of joy we can’t wait to meet.
-Showering love before the baby’s debut.</p>
+                  </p>
               </div>
-              <a href="#" class="thm-btn product-card_btn">Book Now<span></span></a>
+               <a  class="thm-btn product-card_btn" data-toggle="modal" data-target="#myModal">Book Event<span></span></a>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-xl-4 col-md-6">
+          <div class="col-xl-4 col-md-4">
             <div class="service-item">
               <div class="img">
-                <img src="https://img.freepik.com/premium-photo/engaged-couple-with-rings_908985-39841.jpg"
+                <img src="../../../assets/Events/3.png"
                   class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
@@ -238,17 +245,17 @@ Showering love before the baby’s debut.</p>
                   <h3>Engagement</h3>
                 </a>
                 <p>They found each other, and love found its way.
-A promise made for a beautiful forever.</p>
+                  A promise made for a beautiful forever.</p>
               </div>
-              <a href="#" class="thm-btn product-card_btn">Book Now<span></span></a>
+               <a  class="thm-btn product-card_btn" data-toggle="modal" data-target="#myModal">Book Event<span></span></a>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-xl-4 col-md-6">
+          <div class="col-xl-4 col-md-4">
             <div class="service-item">
               <div class="img">
                 <img
-                  src="https://img.freepik.com/premium-photo/happy-birthday-background-wallpaper-illustration_492154-7372.jpg"
+                  src="../../../assets/Events/4.png"
                   class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
@@ -257,19 +264,19 @@ A promise made for a beautiful forever.</p>
                   <h3>Birthday</h3>
                 </a>
                 <p>Celebrate the gift of life and the joy it brings.
-Another year older, brighter, and bold with wings.
+                  Another year older, brighter, and bold with wings.
 
-</p>
+                </p>
                 <a href="#" class="stretched-link"></a>
               </div>
-              <a href="#" class="thm-btn product-card_btn">Book Now<span></span></a>
+               <a  class="thm-btn product-card_btn" data-toggle="modal" data-target="#myModal">Book Event<span></span></a>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-xl-4 col-md-6">
+          <div class="col-xl-4 col-md-4">
             <div class="service-item">
               <div class="img">
-                <img src="https://koala.sh/api/image/v2-ggrb4-uzcpp.jpg?width=1216&height=832&dream" class="img-fluid"
+                <img src="../../../assets/Events/5.png" class="img-fluid"
                   alt="">
               </div>
               <div class="details position-relative">
@@ -278,18 +285,18 @@ Another year older, brighter, and bold with wings.
                   <h3>Puberty Ceremony</h3>
                 </a>
                 <p>A step into tradition, growth, and grace,
-Welcoming a new role with pride in place.</p>
+                  Welcoming a new role with pride in place.</p>
                 <a href="#" class="stretched-link"></a>
               </div>
-              <a href="#" class="thm-btn product-card_btn">Book Now<span></span></a>
+               <a  class="thm-btn product-card_btn" data-toggle="modal" data-target="#myModal">Book Event<span></span></a>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-xl-4 col-md-6">
+          <div class="col-xl-4 col-md-4">
             <div class="service-item">
               <div class="img">
                 <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/035/479/734/small_2x/ai-generated-funeral-casket-with-flowers-on-dark-background-photo.jpg"
+                  src="../../../assets/Events/6.png"
                   class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
@@ -298,15 +305,237 @@ Welcoming a new role with pride in place.</p>
                   <h3>Funeral</h3>
                 </a>
                 <p>A life well lived, a soul set free,
-Gone from sight, but in our hearts eternally.</p>
+                  Gone from sight, but in our hearts eternally.</p>
                 <a href="#" class="stretched-link"></a>
               </div>
-              <a href="#" class="thm-btn product-card_btn">Book Now<span></span></a>
+               <a  class="thm-btn product-card_btn" data-toggle="modal" data-target="#myModal">Book Event<span></span></a>
             </div>
           </div><!-- End Service Item -->
 
         </div>
 
+      </div>
+
+    </section>
+
+    <!-- Our Service Section Start -->
+
+    <section id="Events" class="Events section ">
+
+      <!-- Section Title -->
+      <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+        <h2>Our <span>Services</span></h2>
+      </div><!-- End Section Title -->
+
+      <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+          <div class="col-xl-4 col-md-4">
+            <div class="service-item">
+              <div class="img">
+                <img
+                  src="../../../assets/Services/10.png"
+                  class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+
+                <a href="#" class="stretched-link">
+                  <h3>⁠Function halls</h3>
+                </a>
+                <p>Celebrate the gift of life and the joy it brings.
+                  Another year older, brighter, and bold with wings.
+
+                </p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+              <a href="#" class="thm-btn product-card_btn">Book Service<span></span></a>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4">
+            <div class="service-item">
+              <div class="img">
+                <img
+                  src="../../../assets/Services/1.png"
+                  class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+
+                <a href="#" class="stretched-link">
+                  <h3>Kirana/grocery </h3>
+                </a>
+                <p>Two hearts become one, a journey just begun. Wishing love, laughter, and a happily ever after.
+                </p>
+              </div>
+              <a href="#" class="thm-btn product-card_btn">Book Service<span></span></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-4">
+            <div class="service-item">
+              <div class="img">
+                <img
+                  src="../../../assets/Services/2.png"
+                  class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+
+                <a href="#" class="stretched-link">
+                  <h3>Poultry & Mutton</h3>
+                </a>
+                <p>Little hands and tiny feet, a bundle of joy we can’t wait to meet.
+                  </p>
+              </div>
+              <a href="#" class="thm-btn product-card_btn">Book Service<span></span></a>
+            </div>
+          </div><!-- End Service Item -->
+<div class="col-xl-4 col-md-4">
+            <div class="service-item">
+              <div class="img">
+                <img src="../../../assets/Services/5.png" class="img-fluid"
+                  alt="">
+              </div>
+              <div class="details position-relative">
+
+                <a href="#" class="stretched-link">
+                  <h3>Vegetables & leafs</h3>
+                </a>
+                <p>A step into tradition, growth, and grace,
+                  Welcoming a new role with pride in place.</p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+              <a href="#" class="thm-btn product-card_btn">Book Service<span></span></a>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-xl-4 col-md-4">
+            <div class="service-item">
+              <div class="img">
+                <img src="../../../assets/Services/3.png"
+                  class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+
+                <a href="#" class="stretched-link">
+                  <h3>⁠Tenthouse/ Cooking Vessels</h3>
+                </a>
+                <p>They found each other, and love found its way.
+                  A promise made for a beautiful forever.</p>
+              </div>
+              <a href="#" class="thm-btn product-card_btn">Book Service<span></span></a>
+            </div>
+          </div><!-- End Service Item -->
+          
+
+          <div class="col-xl-4 col-md-4">
+            <div class="service-item">
+              <div class="img">
+                <img
+                  src="../../../assets/Services/4.png"
+                  class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+
+                <a href="#" class="stretched-link">
+                  <h3>Dairy products</h3>
+                </a>
+                <p>Celebrate the gift of life and the joy it brings.
+                  Another year older, brighter, and bold with wings.
+
+                </p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+              <a href="#" class="thm-btn product-card_btn">Book Service<span></span></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          
+
+         
+
+        </div>
+        <div class="collapse" id="demo">
+        <div class="row my-5 gy-5">
+
+          <div class="col-xl-4 col-md-4">
+            <div class="service-item">
+              <div class="img">
+                <img
+                  src="../../../assets/Services/7.png"
+                  class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+
+                <a href="#" class="stretched-link">
+                  <h3>Photography / pre wedding Shoots</h3>
+                </a>
+                <p>Two hearts become one, a journey just begun. Wishing love, laughter, and a happily ever after.
+                </p>
+              </div>
+              <a href="#" class="thm-btn product-card_btn">Book Service<span></span></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-4">
+            <div class="service-item">
+              <div class="img">
+                <img
+                  src="../../../assets/Services/8.png"
+                  class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+
+                <a href="#" class="stretched-link">
+                  <h3>⁠Catering Service</h3>
+                </a>
+                <p>Little hands and tiny feet, a bundle of joy we can’t wait to meet.
+                  </p>
+              </div>
+              <a href="#" class="thm-btn product-card_btn">Book Service<span></span></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-4">
+            <div class="service-item">
+              <div class="img">
+                <img src="../../../assets/Services/9.png"
+                  class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+
+                <a href="#" class="stretched-link">
+                  <h3>⁠Decorators/ Decoration </h3>
+                </a>
+                <p>They found each other, and love found its way.
+                  A promise made for a beautiful forever.</p>
+              </div>
+              <a href="#" class="thm-btn product-card_btn">Book Service<span></span></a>
+            </div>
+          </div><!-- End Service Item -->
+ <div class="col-xl-4 col-md-4">
+            <div class="service-item">
+              <div class="img">
+                <img
+                  src="../../../assets/Services/6.png"
+                  class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+
+                <a href="#" class="stretched-link">
+                  <h3>⁠Water Supply</h3>
+                </a>
+                <p>A life well lived, a soul set free,
+                  Gone from sight, but in our hearts eternally.</p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+              <a href="#" class="thm-btn product-card_btn">Book Service<span></span></a>
+            </div>
+          </div><!-- End Service Item -->
+          
+
+        </div>
+        </div>
+        <div class="col-md-12 show-more-btn mx-auto text-center mt-5">
+          <a class="btn-default" data-toggle="collapse" data-target="#demo">Show More</a>
+        </div>
       </div>
 
     </section>
@@ -319,178 +548,97 @@ Gone from sight, but in our hearts eternally.</p>
       <div class="container">
         <!-- Section Title -->
         <div class="container section-title aos-init aos-animate" data-aos="fade-up">
-          <h2>Our Cheff's</h2>
+          <h2>Our Vendors</h2>
         </div><!-- End Section Title -->
-        <div class="team__wrapper">
-          <div class="row g-4">
-            <div class="col-lg-6">
-              <div class="Menu-List">
-                <div class="Menu-List-img">
-                  <img
-                    src="https://static.vecteezy.com/system/resources/thumbnails/028/636/826/small_2x/handsome-master-chef-ready-generate-ai-photo.jpg"
-                    alt="thumb">
+        <div id="Vendors" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#Vendors" data-slide-to="0" class="active"></li>
+          <li data-target="#Vendors" data-slide-to="1"></li>
+          <li data-target="#Vendors" data-slide-to="2"></li>
+        </ol>
 
-                  <div class="Menu-List-img-overlay">
-                    <div class="icon">
-                      <span>
-                        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M8.361 2.72748C9.03157 1.3148 10.9691 1.3148 11.6396 2.72748L12.7986 5.16895C13.0649 5.72993 13.5796 6.11875 14.175 6.20871L16.7664 6.60021C18.2659 6.82675 18.8646 8.74259 17.7796 9.84221L15.9044 11.7426C15.4736 12.1793 15.277 12.8084 15.3787 13.425L15.8213 16.1084C16.0775 17.6611 14.51 18.8452 13.1689 18.1121L10.851 16.8451C10.3184 16.554 9.68221 16.554 9.14964 16.8451L6.8318 18.1121C5.49065 18.8452 3.92318 17.6611 4.17931 16.1084L4.62198 13.425C4.72369 12.8084 4.52709 12.1793 4.09623 11.7426L2.22105 9.84221C1.13605 8.74259 1.73477 6.82675 3.23421 6.60021L5.82564 6.20871C6.42107 6.11875 6.9358 5.72993 7.20208 5.16895L8.361 2.72748Z"
-                            fill="#FFB23E"></path>
-                        </svg>
-                      </span>
-                    </div>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
 
-                    <div class="text pl-1">
-                      <p>4.7(2.5K)</p>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="popular-inner-box">
-                  <div class="Menu-List-text">
-                    <h3>K. Subba Rao</h3>
-                  </div>
-
-                  <div class="popular-inner-item">
-                    <div class="text">
-                      <h5>"Proficient in crafting classic and modern cuisine, with a knack for developing unique flavor
-                        profiles." </h5>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
+          <div class="item active">
+            <div class="row">
+               <div class="col-xl-2 col-md-2">
+                <img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
+               </div>
+               <div class="col-xl-2 col-md-2">
+                <img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg">
+               </div>
+               <div class="col-xl-2 col-md-2">
+                <img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg">
+               </div>
+               <div class="col-xl-2 col-md-2">
+                <img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg">
+               </div>
+               <div class="col-xl-2 col-md-2">
+                <img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg">
+               </div>
+               <div class="col-xl-2 col-md-2">
+                <img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
+               </div>
+               
+                
             </div>
-            <div class="col-lg-6">
-              <div class="Menu-List">
-                <div class="Menu-List-img">
-                  <img
-                    src="https://static.vecteezy.com/system/resources/thumbnails/028/636/826/small_2x/handsome-master-chef-ready-generate-ai-photo.jpg"
-                    alt="thumb">
+          </div>
 
-                  <div class="Menu-List-img-overlay">
-                    <div class="icon">
-                      <span>
-                        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M8.361 2.72748C9.03157 1.3148 10.9691 1.3148 11.6396 2.72748L12.7986 5.16895C13.0649 5.72993 13.5796 6.11875 14.175 6.20871L16.7664 6.60021C18.2659 6.82675 18.8646 8.74259 17.7796 9.84221L15.9044 11.7426C15.4736 12.1793 15.277 12.8084 15.3787 13.425L15.8213 16.1084C16.0775 17.6611 14.51 18.8452 13.1689 18.1121L10.851 16.8451C10.3184 16.554 9.68221 16.554 9.14964 16.8451L6.8318 18.1121C5.49065 18.8452 3.92318 17.6611 4.17931 16.1084L4.62198 13.425C4.72369 12.8084 4.52709 12.1793 4.09623 11.7426L2.22105 9.84221C1.13605 8.74259 1.73477 6.82675 3.23421 6.60021L5.82564 6.20871C6.42107 6.11875 6.9358 5.72993 7.20208 5.16895L8.361 2.72748Z"
-                            fill="#FFB23E"></path>
-                        </svg>
-                      </span>
-                    </div>
-
-                    <div class="text pl-1">
-                      <p>4.7(2.5K)</p>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="popular-inner-box">
-                  <div class="Menu-List-text">
-                    <h3>K. Subba Rao</h3>
-                  </div>
-
-                  <div class="popular-inner-item">
-                    <div class="text">
-                      <h5>"Proficient in crafting classic and modern cuisine, with a knack for developing unique flavor
-                        profiles." </h5>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
+          <div class="item">
+           <div class="row">
+               <div class="col-xl-2 col-md-2">
+                <img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
+               </div>
+               <div class="col-xl-2 col-md-2">
+                <img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg">
+               </div>
+               <div class="col-xl-2 col-md-2">
+                <img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg">
+               </div>
+               <div class="col-xl-2 col-md-2">
+                <img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg">
+               </div>
+               <div class="col-xl-2 col-md-2">
+                <img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg">
+               </div>
+               <div class="col-xl-2 col-md-2">
+                <img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
+               </div>
+               
+                
             </div>
-            <div class="col-lg-6">
-              <div class="Menu-List">
-                <div class="Menu-List-img">
-                  <img
-                    src="https://static.vecteezy.com/system/resources/thumbnails/028/636/826/small_2x/handsome-master-chef-ready-generate-ai-photo.jpg"
-                    alt="thumb">
+          </div>
 
-                  <div class="Menu-List-img-overlay">
-                    <div class="icon">
-                      <span>
-                        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M8.361 2.72748C9.03157 1.3148 10.9691 1.3148 11.6396 2.72748L12.7986 5.16895C13.0649 5.72993 13.5796 6.11875 14.175 6.20871L16.7664 6.60021C18.2659 6.82675 18.8646 8.74259 17.7796 9.84221L15.9044 11.7426C15.4736 12.1793 15.277 12.8084 15.3787 13.425L15.8213 16.1084C16.0775 17.6611 14.51 18.8452 13.1689 18.1121L10.851 16.8451C10.3184 16.554 9.68221 16.554 9.14964 16.8451L6.8318 18.1121C5.49065 18.8452 3.92318 17.6611 4.17931 16.1084L4.62198 13.425C4.72369 12.8084 4.52709 12.1793 4.09623 11.7426L2.22105 9.84221C1.13605 8.74259 1.73477 6.82675 3.23421 6.60021L5.82564 6.20871C6.42107 6.11875 6.9358 5.72993 7.20208 5.16895L8.361 2.72748Z"
-                            fill="#FFB23E"></path>
-                        </svg>
-                      </span>
-                    </div>
-
-                    <div class="text pl-1">
-                      <p>4.7(2.5K)</p>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="popular-inner-box">
-                  <div class="Menu-List-text">
-                    <h3>K. Subba Rao</h3>
-                  </div>
-
-                  <div class="popular-inner-item">
-                    <div class="text">
-                      <h5>"Proficient in crafting classic and modern cuisine, with a knack for developing unique flavor
-                        profiles." </h5>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
+          <div class="item">
+           <div class="row">
+               <div class="col-xl-2 col-md-2">
+                <img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
+               </div>
+               <div class="col-xl-2 col-md-2">
+                <img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg">
+               </div>
+               <div class="col-xl-2 col-md-2">
+                <img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg">
+               </div>
+               <div class="col-xl-2 col-md-2">
+                <img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg">
+               </div>
+               <div class="col-xl-2 col-md-2">
+                <img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg">
+               </div>
+               <div class="col-xl-2 col-md-2">
+                <img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
+               </div>
+               
+                
             </div>
-            <div class="col-lg-6">
-              <div class="Menu-List">
-                <div class="Menu-List-img">
-                  <img
-                    src="https://static.vecteezy.com/system/resources/thumbnails/028/636/826/small_2x/handsome-master-chef-ready-generate-ai-photo.jpg"
-                    alt="thumb">
-
-                  <div class="Menu-List-img-overlay">
-                    <div class="icon">
-                      <span>
-                        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M8.361 2.72748C9.03157 1.3148 10.9691 1.3148 11.6396 2.72748L12.7986 5.16895C13.0649 5.72993 13.5796 6.11875 14.175 6.20871L16.7664 6.60021C18.2659 6.82675 18.8646 8.74259 17.7796 9.84221L15.9044 11.7426C15.4736 12.1793 15.277 12.8084 15.3787 13.425L15.8213 16.1084C16.0775 17.6611 14.51 18.8452 13.1689 18.1121L10.851 16.8451C10.3184 16.554 9.68221 16.554 9.14964 16.8451L6.8318 18.1121C5.49065 18.8452 3.92318 17.6611 4.17931 16.1084L4.62198 13.425C4.72369 12.8084 4.52709 12.1793 4.09623 11.7426L2.22105 9.84221C1.13605 8.74259 1.73477 6.82675 3.23421 6.60021L5.82564 6.20871C6.42107 6.11875 6.9358 5.72993 7.20208 5.16895L8.361 2.72748Z"
-                            fill="#FFB23E"></path>
-                        </svg>
-                      </span>
-                    </div>
-
-                    <div class="text pl-1">
-                      <p>4.7(2.5K)</p>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="popular-inner-box">
-                  <div class="Menu-List-text">
-                    <h3>K. Subba Rao</h3>
-                  </div>
-
-                  <div class="popular-inner-item">
-                    <div class="text">
-                      <h5>"Proficient in crafting classic and modern cuisine, with a knack for developing unique flavor
-                        profiles." </h5>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-            </div>
-
           </div>
 
         </div>
+
+      </div>
       </div>
     </section>
 
@@ -628,87 +776,7 @@ Gone from sight, but in our hearts eternally.</p>
       </div>
     </section>
 
-    <div class="our-service-area-start bg_color-dark-1 rts-section-gap">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div data-aos="fade-up" class="container section-title aos-init aos-animate">
-              <h2 class="text-white">About Us</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row mt--50">
-          <div class="col-lg-12">
-            <div class="rts-service-main-wrapper-10">
-              <div class="signle-service-style-10">
-                <div class="content-area-wrapper">
-
-                  <h5 class="title">Business Solution</h5>
-                  <p>
-                    Fusce dignissim erat dis proin ornare class sem nibh
-                  </p>
-
-                </div>
-                <div class="thumbnail">
-                  <img
-                    src="https://static.vecteezy.com/system/resources/previews/031/848/553/large_2x/indian-wedding-couple-ai-generated-free-photo.jpg"
-                    alt="service">
-                </div>
-              </div>
-              <div class="signle-service-style-10">
-                <div class="content-area-wrapper">
-
-                  <h5 class="title">Marketing Solution</h5>
-                  <p class="disc">
-                    Fusce dignissim erat dis proin ornare class sem nibh
-                  </p>
-
-                </div>
-                <div class="thumbnail">
-                  <img
-                    src="https://static.vecteezy.com/system/resources/previews/031/848/553/large_2x/indian-wedding-couple-ai-generated-free-photo.jpg"
-                    alt="service">
-                </div>
-              </div>
-              <div class="signle-service-style-10 order-control-sm-device">
-                <div class="thumbnail">
-                  <img
-                    src="https://static.vecteezy.com/system/resources/previews/031/848/553/large_2x/indian-wedding-couple-ai-generated-free-photo.jpg"
-                    alt="service">
-                </div>
-                <div class="content-area-wrapper">
-
-                  <h5 class="title">Agency Marketing</h5>
-                  <p class="disc">
-                    Fusce dignissim erat dis proin ornare class sem nibh
-                  </p>
-
-                </div>
-              </div>
-              <div class="signle-service-style-10 order-control-sm-device">
-
-                <div class="thumbnail">
-                  <img
-                    src="https://static.vecteezy.com/system/resources/previews/031/848/553/large_2x/indian-wedding-couple-ai-generated-free-photo.jpg"
-                    alt="service">
-                </div>
-                <div class="content-area-wrapper">
-
-                  <h5 class="title">Startup Paskages</h5>
-                  <p class="disc">
-                    Fusce dignissim erat dis proin ornare class sem nibh
-                  </p>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="filter-right"></div>
-      <div class="filter-left"></div>
-      <div class="filter-center"></div>
-    </div>
+    
 
   </div>
   <footer id="footer" class="footer light-background">
@@ -770,4 +838,25 @@ Gone from sight, but in our hearts eternally.</p>
     </div>
 
   </footer>
+
+<!-- POPup Code start -->
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog video-dialog">
+    <!-- Modal content-->
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <div class='embed-container'>
+         
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
 </ion-content>

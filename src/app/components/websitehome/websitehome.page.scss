@@ -6,7 +6,7 @@
 
 }
 
-a {
+a,.btn:hover {
   text-decoration: none;
 }
 
@@ -28,11 +28,11 @@ p {
 /*--------------------------------------------------------------
 # Featured Services Section
 --------------------------------------------------------------*/
-.featured-services {
+.Events {
   padding: 35px 0;
 }
 
-.featured-services .img {
+.Events .img {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -40,13 +40,13 @@ p {
     border: 1.5px solid #e4c815;
 }
 
-.featured-services .img img {
+.Events .img img {
   transition: 0.6s;
 }
 
-.featured-services .details {
+.Events .details {
   background: color-mix(in srgb, #fff, transparent 5%);
-  padding: 10px 15px 30px 15px;
+  padding: 10px 12px 30px 12px;
   margin: -42px 30px 20px 30px;
   transition: all ease-in-out 0.3s;
   position: relative;
@@ -56,7 +56,7 @@ p {
   border: 1px solid #ccc;
 }
 
-.featured-services .details .icon {
+.Events .details .icon {
   margin: 0;
   width: 72px;
   height: 72px;
@@ -75,39 +75,39 @@ p {
   left: calc(50% - 36px);
 }
 
-.featured-services .details a {
+.Events .details a {
   text-decoration: none;
   color: #031119;
 }
 
-.featured-services .details h3 {
+.Events .details h3 {
   font-weight: 700;
   margin: 10px 0 10px 0;
-  font-size: 22px;
+  font-size: 16px;
   transition: ease-in-out 0.3s;
 }
 
-.featured-services .details p {
+.Events .details p {
   color: color-mix(in srgb, #444444, transparent 10%);
   line-height: 24px;
-  font-size: 13px;
+  font-size: 12px;
   margin-bottom: 0;
 }
 
-.featured-services .service-item:hover .details h3 {
+.Events .service-item:hover .details h3 {
   color: #fdc134;
 }
 
-.featured-services .service-item:hover .details .icon {
+.Events .service-item:hover .details .icon {
   background: #fff;
   border: 2px solid #fdc134;
 }
 
-.featured-services .service-item:hover .details .icon i {
+.Events .service-item:hover .details .icon i {
   color: #fdc134;
 }
 
-.featured-services .service-item:hover .img img {
+.Events .service-item:hover .img img {
   transform: scale(1.2);
 }
 
@@ -229,37 +229,37 @@ section-title {
 .section-title h2 {
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   padding-bottom: 20px;
   position: relative;
-  text-align: left;
+  text-align: center;
 }
 
-// .section-title h2:before {
-//   content: "";
-//   position: absolute;
-//   display: block;
-//   width: 160px;
-//   height: 1px;
-//   background: color-mix(in srgb, #444444, transparent 60%);
-//   left: 0;
-//   right: 0;
-//   bottom: 1px;
-//   margin: auto;
-// }
+.section-title h2:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 1px;
+  background: color-mix(in srgb, #444444, transparent 60%);
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  margin: auto;
+}
 
-// .section-title h2::after {
-//   content: "";
-//   position: absolute;
-//   display: block;
-//   width: 60px;
-//   height: 3px;
-//   background: #fdc134;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   margin: auto;
-// }
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fdc134;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
 
 .section-title p {
   margin-bottom: 0;
@@ -292,7 +292,7 @@ section-title {
 	About One Css
 ===============================*/
 .about-one {
-  padding: 90px 0 50px;
+  padding: 50px 0 50px;
 }
 
 .about-one__img {
@@ -1281,19 +1281,19 @@ section-title {
 --------------------------------------------------------------*/
 .header {
   color: #0a0f14;
-  background-color: #ffffff !important;
-  padding: 20px 0;
+  background-color: #e4c815 !important;
+  padding: 12px 0;
   transition: all 0.5s;
   z-index: 997;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.header .header-container {
-  background: #e4c815;
-  border-radius: 50px;
-  padding: 5px 25px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
+
+// .header .header-container {
+//   background: #e4c815;
+//   border-radius: 50px;
+//   padding: 5px 25px;
+//   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+// }
 
 .header .logo {
   line-height: 1;
@@ -1629,3 +1629,39 @@ section-title {
 .carousel-inner>.item{
   background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
 }
+.carousel-control.left,.carousel-control.right,.carousel-inner{
+  border-radius: 22px;
+}
+
+/** Logo Section **/
+#Vendors .carousel-inner > .item{
+background-image: none !important;
+}
+#Vendors .carousel-inner{
+  border-radius: 0 !important;
+  padding-bottom: 30px;
+}
+
+
+        .cart-icon {
+            font-size: 24px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .cart-count {
+           position: absolute;
+    top: -12px;
+    right: -12px;
+     background-color: #e8733a;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+        }
