@@ -1630,7 +1630,9 @@ a {
 #check:checked ~ .hamburger-menu-container .hamburger-menu div:after {
   transform: translateY(0) rotate(45deg);
 }
-
+.modal-backdrop.in {
+  opacity: 0 !important;
+}
 @keyframes animation {
   from {
     opacity: 0;

@@ -13,8 +13,9 @@ import { EventDetailsPage } from './event-details.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    EventDetailsPageRoutingModule
+    EventDetailsPageRoutingModule,
+    EventDetailsPage
   ],
-  declarations: [EventDetailsPage]
+  declarations: []
 })
 export class EventDetailsPageModule {}

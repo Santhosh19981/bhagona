@@ -7,14 +7,17 @@ import { IonicModule } from '@ionic/angular';
 import { WebsitehomePageRoutingModule } from './websitehome-routing.module';
 
 import { WebsitehomePage } from './websitehome.page';
+import { EventDetailsPage } from '../event-details/event-details.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    WebsitehomePageRoutingModule
+    WebsitehomePageRoutingModule,
+    WebsitehomePage,
+    EventDetailsPage
   ],
-  declarations: [WebsitehomePage]
+  declarations: []
 })
 export class WebsitehomePageModule {}

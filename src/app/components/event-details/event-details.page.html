@@ -2,14 +2,14 @@
   <ion-toolbar class="custom-toolbar">
     <!-- Back Button -->
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/"></ion-back-button>
+      <ion-back-button (click)="gottoHome()"></ion-back-button>
     </ion-buttons>
 
     <!-- Page Title -->
     <ion-title class="custom-title">Event Details</ion-title>
 
     <!-- Cart Button with Badge -->
-    <ion-buttons slot="end">
+    <ion-buttons slot="end" *ngIf="from != 'websitehome'">
       <span class="fa-stack fa-2x has-badge" data-count="5">
   <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
   <i style="" class="fa fa-shopping-cart fa-stack-2x red-cart"></i>
@@ -112,6 +112,18 @@
 	  <div class="form-group">
 	  	<div class="relative">
 	  		<input class="form-control" type="text" required="" placeholder="How Many Members">
+	  		<i class="fa fa-user"></i>
+	  	</div>
+	  </div>
+    <div class="form-group">
+	  	<div class="relative">
+	  		<input class="form-control" type="text" required="" placeholder="How Many Veg Members">
+	  		<i class="fa fa-user"></i>
+	  	</div>
+	  </div>
+    <div class="form-group">
+	  	<div class="relative">
+	  		<input class="form-control" type="text" required="" placeholder="How Many Non-Veg Members">
 	  		<i class="fa fa-user"></i>
 	  	</div>
 	  </div>
