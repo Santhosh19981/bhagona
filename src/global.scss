@@ -455,7 +455,7 @@
     line-height: 1em;
     color: #ffffff;
     text-transform: capitalize;
-    background: #e4c815;
+    background-image: linear-gradient(to right, #fb923c 0%, #ea580c 50%, #fb923c 100%);
     background-size: 200% auto;
     padding: 12px 30px;
     border-radius: 10px;
@@ -467,6 +467,8 @@
 }
 .Bhagona-Btn:hover {
     background-position: right center;
+    text-decoration: none;
+    color: #fff;
 }
 
 .menu-list{

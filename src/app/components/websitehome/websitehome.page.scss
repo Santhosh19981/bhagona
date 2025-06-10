@@ -1000,7 +1000,7 @@ section-title {
   margin: 0;
 }
 
-.btn-default {
+.bhagona-btn-2 {
   position: relative;
   display: inline-block;
   background-image: linear-gradient(to right, #e4c815 0%, #e4c815 50%, #e4c815 100%);
@@ -1019,7 +1019,7 @@ section-title {
 }
 
 
-.btn-default:hover {
+.bhagona-btn-2:hover {
   background-position: right center;
 }
 
@@ -1041,7 +1041,7 @@ section-title {
   z-index: 1;
 }
 
-.btn-default::before {
+.bhagona-btn-2::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1057,7 +1057,7 @@ section-title {
   transition: all 0.4s ease-in-out;
 }
 
-.btn-default:hover::before {
+.bhagona-btn-2:hover::before {
   transform: translate(-20px, 50%) rotate(45deg);
 }
 
@@ -1672,7 +1672,7 @@ border-radius: 20px !important;
 
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
-.btn-default {
+.bhagona-btn-2 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -1693,7 +1693,7 @@ border-radius: 20px !important;
     z-index: 1;
 }
 
-.btn-default:hover {
+.bhagona-btn-2:hover {
     background-position: right center;
     text-decoration: none;
 }
@@ -1893,6 +1893,7 @@ border: 3.5px dashed transparent;
     line-height: 21px;
     margin-bottom: 8px;
     color: #000;
+    font-weight: 500;
 }
 
 .image-wrapper {
@@ -2362,4 +2363,10 @@ border: 3.5px dashed transparent;
             display: none; // Safari and Chrome
         }
        
+        }
+        .cont-sec{
+          display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
         }
