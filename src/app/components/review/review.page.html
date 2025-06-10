@@ -1,13 +1,171 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>review</ion-title>
-  </ion-toolbar>
-</ion-header>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">review</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div
+      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="../../../assets/home-logo.png" style="width: 145px;">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-x"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <div class="cart-icon" onclick="toggleCart()">
+          <img src="https://cdn-icons-png.flaticon.com/512/777/777205.png" style="width: 30px;">
+          <span class="cart-count">0</span>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <div class="website-body" style="padding: 150px 0;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="review-img">
+            <img src="https://cdni.iconscout.com/illustration/premium/thumb/food-critic-sitting-at-table-enjoying-delicious-five-stars-meals-illustration-download-in-svg-png-gif-file-formats--order-reviews-customer-giving-review-and-drink-pack-people-illustrations-4621164.png?f=webp">
+          </div>
+        </div>
+        <div class="col-md-8">
+          <!-- App Review-Card -->
+          <div class="Review-Card m-b15">
+            <div class="icon">
+              <!-- Placeholder for the icon image (replace with actual icon if available) -->
+              <img src="https://cdn-icons-png.flaticon.com/512/6951/6951794.png" alt="Lighthouse Icon">
+            </div>
+            <div class="content">
+              <h2>hygienic</h2>
+            </div>
+            <div class="actions">
+              <div class="rating">
+                <!-- Star icons for rating -->
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="reviews">279</span>
+              </div>
+            </div>
+          </div>
+          <div class="Review-Card m-b15">
+            <div class="icon">
+              <!-- Placeholder for the icon image (replace with actual icon if available) -->
+              <img src="https://cdn-icons-png.flaticon.com/512/4785/4785959.png" alt="Lighthouse Icon">
+            </div>
+            <div class="content">
+              <h2>Food Taste</h2>
+            </div>
+            <div class="actions">
+              <div class="rating">
+                <!-- Star icons for rating -->
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="reviews">279</span>
+              </div>
+            </div>
+          </div>
+          <div class="Review-Card m-b15">
+            <div class="icon">
+              <!-- Placeholder for the icon image (replace with actual icon if available) -->
+              <img src="https://cdn-icons-png.flaticon.com/512/7414/7414124.png" alt="Lighthouse Icon">
+            </div>
+            <div class="content">
+              <h2>Chef Behavior</h2>
+            </div>
+            <div class="actions">
+              <div class="rating">
+                <!-- Star icons for rating -->
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="reviews">279</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer" class="footer light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="../../../assets/home-logo.png" style="width: 145px;">
+          </a>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
+            donna mare fermentum iaculis eu non diam phasellus.</p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Marriage</a></li>
+            <li><a href="#">Baby Shower</a></li>
+            <li><a href="#">Engagement</a></li>
+            <li><a href="#">Birthday</a></li>
+            <li><a href="#">Puberty Ceremony</a></li>
+            <li><a href="#">Funeral</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>A108 Adam Street</p>
+          <p>New York, NY 535022</p>
+          <p>United States</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+          <p><strong>Email:</strong> <span>infoexample.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>Copyright © 2025, All Right Reserved Bhagona</p>
+
+    </div>
+
+  </footer>
 </ion-content>
