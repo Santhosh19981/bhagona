@@ -228,7 +228,7 @@
 }
 
 .option_item .checkbox:checked ~ .option_inner.facebook {
-  border-color: #e4c815;
+  border:3.5px dashed #01833e;
   color: #585c68;
 }
 
@@ -239,7 +239,7 @@
     transition: all 300ms ease;
     right: -10px;
     top: 10px;
-    z-index: 1;
+    z-index: 2;
   display: none;
 }
 
@@ -294,7 +294,7 @@
     padding:20px 35px 20px 0px !important;
   }
 .option_item .option_inner .tickmark img{
-    width: 30px !important;
+    width: 60px !important;
 }
 .option_item{
     margin: 0 !important;
@@ -783,7 +783,7 @@ input[type="checkbox"] {
 }
 
 .Event-Menu-List-section{
-    padding: 30px 15px;
+    padding: 0;
 }
 .Event-Menu-List {
   display: flex;
@@ -792,7 +792,7 @@ input[type="checkbox"] {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
  border-radius: 12px;
- flex-direction: row;
+ flex-direction: column;
  align-items: center;
 }
 .Event-Menu-List:hover .Event-Menu-List-img img {

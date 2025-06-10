@@ -1,8 +1,9 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <ion-content [fullscreen]="true">
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div
@@ -27,9 +28,9 @@
 
       <div class="header-social-links">
         <div class="cart-icon" onclick="toggleCart()">
-                <img src="https://cdn-icons-png.flaticon.com/512/777/777205.png" style="width: 30px;">
-                <span class="cart-count">0</span>
-            </div>
+          <img src="https://cdn-icons-png.flaticon.com/512/777/777205.png" style="width: 30px;">
+          <span class="cart-count">0</span>
+        </div>
       </div>
 
     </div>
@@ -157,7 +158,7 @@
           <div class="col-xl-6">
             <div class="about-one__content">
               <!-- Section Title -->
-              <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+              <div class="section-title aos-init aos-animate" data-aos="fade-up">
                 <h2>About Us</h2>
               </div><!-- End Section Title -->
               <div class="about-one__content-text">
@@ -185,136 +186,1124 @@
 
     <!-- Events Section -->
     <section id="Events" class="Events section bg_color-dark-1">
+      <div class="events-data">
+        <!-- Section Title -->
+        <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+          <h2 class="text-white">Our <span>Events</span></h2>
+        </div><!-- End Section Title -->
+        <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
 
-      <!-- Section Title -->
-      <div class="container section-title aos-init aos-animate" data-aos="fade-up">
-        <h2 class="text-white">Our <span>Events</span></h2>
-      </div><!-- End Section Title -->
+          <div class="row gy-5">
 
-      <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-xl-4 col-md-4">
+              <div class="service-item">
+                <div class="img">
+                  <img src="../../../assets/Events/1.png" class="img-fluid" alt="">
+                </div>
+                <div class="details position-relative">
 
-        <div class="row gy-5">
-
-          <div class="col-xl-4 col-md-4">
-            <div class="service-item">
-              <div class="img">
-                <img
-                  src="../../../assets/Events/1.png"
-                  class="img-fluid" alt="">
-              </div>
-              <div class="details position-relative">
-
-                <a href="#" class="stretched-link">
-                  <h3>Marriage</h3>
-                </a>
-                <p>Two hearts become one, a journey just begun. Wishing love, laughter, and a happily ever after.
-                </p>
-              </div>
-               <a  class="thm-btn product-card_btn"(click)="openEventDetailsModal()">Book Event<span></span></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-4 col-md-4">
-            <div class="service-item">
-              <div class="img">
-                <img
-                  src="../../../assets/Events/2.png"
-                  class="img-fluid" alt="">
-              </div>
-              <div class="details position-relative">
-
-                <a href="#" class="stretched-link">
-                  <h3>Baby Shower</h3>
-                </a>
-                <p>Little hands and tiny feet, a bundle of joy we can’t wait to meet.
+                  <a href="#" class="stretched-link">
+                    <h3>Marriage</h3>
+                  </a>
+                  <p>Two hearts become one, a journey just begun. Wishing love, laughter, and a happily ever after.
                   </p>
+                </div>
+                <a class="thm-btn product-card_btn" (click)="openEventDetailsModal()">Book Event<span></span></a>
               </div>
-               <a  class="thm-btn product-card_btn"(click)="openEventDetailsModal()">Book Event<span></span></a>
-            </div>
-          </div><!-- End Service Item -->
+            </div><!-- End Service Item -->
 
-          <div class="col-xl-4 col-md-4">
-            <div class="service-item">
-              <div class="img">
-                <img src="../../../assets/Events/3.png"
-                  class="img-fluid" alt="">
+            <div class="col-xl-4 col-md-4">
+              <div class="service-item">
+                <div class="img">
+                  <img src="../../../assets/Events/2.png" class="img-fluid" alt="">
+                </div>
+                <div class="details position-relative">
+
+                  <a href="#" class="stretched-link">
+                    <h3>Baby Shower</h3>
+                  </a>
+                  <p>Little hands and tiny feet, a bundle of joy we can’t wait to meet.
+                  </p>
+                </div>
+                <a class="thm-btn product-card_btn" (click)="openEventDetailsModal()">Book Event<span></span></a>
               </div>
-              <div class="details position-relative">
+            </div><!-- End Service Item -->
 
-                <a href="#" class="stretched-link">
-                  <h3>Engagement</h3>
-                </a>
-                <p>They found each other, and love found its way.
-                  A promise made for a beautiful forever.</p>
+            <div class="col-xl-4 col-md-4">
+              <div class="service-item">
+                <div class="img">
+                  <img src="../../../assets/Events/3.png" class="img-fluid" alt="">
+                </div>
+                <div class="details position-relative">
+
+                  <a href="#" class="stretched-link">
+                    <h3>Engagement</h3>
+                  </a>
+                  <p>They found each other, and love found its way.
+                    A promise made for a beautiful forever.</p>
+                </div>
+                <a class="thm-btn product-card_btn" (click)="openEventDetailsModal()">Book Event<span></span></a>
               </div>
-               <a  class="thm-btn product-card_btn"(click)="openEventDetailsModal()">Book Event<span></span></a>
-            </div>
-          </div><!-- End Service Item -->
+            </div><!-- End Service Item -->
 
-          <div class="col-xl-4 col-md-4">
-            <div class="service-item">
-              <div class="img">
-                <img
-                  src="../../../assets/Events/4.png"
-                  class="img-fluid" alt="">
+            <div class="col-xl-4 col-md-4">
+              <div class="service-item">
+                <div class="img">
+                  <img src="../../../assets/Events/4.png" class="img-fluid" alt="">
+                </div>
+                <div class="details position-relative">
+
+                  <a href="#" class="stretched-link">
+                    <h3>Birthday</h3>
+                  </a>
+                  <p>Celebrate the gift of life and the joy it brings.
+                    Another year older, brighter, and bold with wings.
+
+                  </p>
+                  <a href="#" class="stretched-link"></a>
+                </div>
+                <a class="thm-btn product-card_btn" (click)="openEventDetailsModal()">Book Event<span></span></a>
               </div>
-              <div class="details position-relative">
+            </div><!-- End Service Item -->
 
-                <a href="#" class="stretched-link">
-                  <h3>Birthday</h3>
-                </a>
-                <p>Celebrate the gift of life and the joy it brings.
-                  Another year older, brighter, and bold with wings.
+            <div class="col-xl-4 col-md-4">
+              <div class="service-item">
+                <div class="img">
+                  <img src="../../../assets/Events/5.png" class="img-fluid" alt="">
+                </div>
+                <div class="details position-relative">
 
-                </p>
-                <a href="#" class="stretched-link"></a>
+                  <a href="#" class="stretched-link">
+                    <h3>Puberty Ceremony</h3>
+                  </a>
+                  <p>A step into tradition, growth, and grace,
+                    Welcoming a new role with pride in place.</p>
+                  <a href="#" class="stretched-link"></a>
+                </div>
+                <a class="thm-btn product-card_btn" (click)="openEventDetailsModal()">Book Event<span></span></a>
               </div>
-               <a  class="thm-btn product-card_btn"(click)="openEventDetailsModal()">Book Event<span></span></a>
-            </div>
-          </div><!-- End Service Item -->
+            </div><!-- End Service Item -->
 
-          <div class="col-xl-4 col-md-4">
-            <div class="service-item">
-              <div class="img">
-                <img src="../../../assets/Events/5.png" class="img-fluid"
-                  alt="">
-              </div>
-              <div class="details position-relative">
+            <div class="col-xl-4 col-md-4">
+              <div class="service-item">
+                <div class="img">
+                  <img src="../../../assets/Events/6.png" class="img-fluid" alt="">
+                </div>
+                <div class="details position-relative">
 
-                <a href="#" class="stretched-link">
-                  <h3>Puberty Ceremony</h3>
-                </a>
-                <p>A step into tradition, growth, and grace,
-                  Welcoming a new role with pride in place.</p>
-                <a href="#" class="stretched-link"></a>
+                  <a href="#" class="stretched-link">
+                    <h3>Funeral</h3>
+                  </a>
+                  <p>A life well lived, a soul set free,
+                    Gone from sight, but in our hearts eternally.</p>
+                  <a href="#" class="stretched-link"></a>
+                </div>
+                <a class="thm-btn product-card_btn" (click)="openEventDetailsModal()">Book Event<span></span></a>
               </div>
-               <a  class="thm-btn product-card_btn"(click)="openEventDetailsModal()">Book Event<span></span></a>
-            </div>
-          </div><!-- End Service Item -->
+            </div><!-- End Service Item -->
 
-          <div class="col-xl-4 col-md-4">
-            <div class="service-item">
-              <div class="img">
-                <img
-                  src="../../../assets/Events/6.png"
-                  class="img-fluid" alt="">
-              </div>
-              <div class="details position-relative">
-
-                <a href="#" class="stretched-link">
-                  <h3>Funeral</h3>
-                </a>
-                <p>A life well lived, a soul set free,
-                  Gone from sight, but in our hearts eternally.</p>
-                <a href="#" class="stretched-link"></a>
-              </div>
-               <a  class="thm-btn product-card_btn"(click)="openEventDetailsModal()">Book Event<span></span></a>
-            </div>
-          </div><!-- End Service Item -->
+          </div>
 
         </div>
-
       </div>
+      <div class="menu-data">
+
+        <!-- Section Title -->
+        <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+          <h2 class="text-white">Our <span>Menu</span></h2>
+        </div><!-- End Section Title -->
+        <div class="container">
+          <div class="row">
+            <div class="">
+              <!-- Nav tabs -->
+              <div class="">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                      data-toggle="tab"><i class="fa-solid fa-helmet-safety pr-2"></i> Non-vegetarian </a></li>
+                  <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i
+                        class="fa-solid fa-utensils pr-2"></i> Vegetarian </a></li>
+
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="home">
+                    <div class="container">
+                      <div class="row gy-5">
+                        <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                          <label class="option_item">
+                            <input type="checkbox" class="checkbox">
+                            <div class="option_inner facebook">
+                              <div class="tickmark">
+                                <img
+                                  src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                              </div>
+                              <div class="Menu box-hover">
+                                <div class="Menu-Media"><img
+                                    src="https://png.pngtree.com/png-clipart/20241129/original/pngtree-chicken-biryani-png-image_17408423.png"
+                                    alt="/"></div>
+                                <div class="Menu-Content">
+                                  <h4>Chicken Biryani</h4>
+                                  <p>Juicy chicken cooked with aromatic spices and layered with fragrant basmati rice
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </label>
+
+
+
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                          <label class="option_item">
+                            <input type="checkbox" class="checkbox">
+                            <div class="option_inner facebook">
+                              <div class="tickmark">
+                                <img
+                                  src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                              </div>
+                              <div class="Menu box-hover">
+                                <div class="Menu-Media"><img
+                                    src="https://png.pngtree.com/png-clipart/20240927/original/pngtree-a-illustration-of-prawn-biryani-png-image_16106674.png"
+                                    alt="/"></div>
+                                <div class="Menu-Content">
+                                  <h4>Prawn Biryani</h4>
+                                  <p>Succulent prawns blended with coastal spices and fluffy rice for a seafood delight.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                          <label class="option_item">
+                            <input type="checkbox" class="checkbox">
+                            <div class="option_inner facebook">
+                              <div class="tickmark">
+                                <img
+                                  src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                              </div>
+                              <div class="Menu box-hover">
+                                <div class="Menu-Media"><img
+                                    src="https://myblacktree.com/cdn/shop/files/Best-Mutton-Biryani-Recipe-removebg-preview.png?v=1691298028"
+                                    alt="/"></div>
+                                <div class="Menu-Content">
+                                  <h4>Mutton Biryani</h4>
+                                  <p>Tender mutton slow-cooked in rich masala and layered with saffron-infused rice.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                          <label class="option_item">
+                            <input type="checkbox" class="checkbox">
+                            <div class="option_inner facebook">
+                              <div class="tickmark">
+                                <img
+                                  src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                              </div>
+                              <div class="Menu box-hover">
+                                <div class="Menu-Media"><img
+                                    src="https://png.pngtree.com/png-clipart/20231020/original/pngtree-egg-biryani-varieties-artfully-arranged-on-a-transparent-background-png-image_13388361.png"
+                                    alt="/"></div>
+                                <div class="Menu-Content">
+                                  <h4>Egg Biryani</h4>
+                                  <p>Boiled eggs in a spiced gravy, paired with flavorful rice for a hearty meal.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                          <label class="option_item">
+                            <input type="checkbox" class="checkbox">
+                            <div class="option_inner facebook">
+                              <div class="tickmark">
+                                <img
+                                  src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                              </div>
+                              <div class="Menu box-hover">
+                                <div class="Menu-Media"><img
+                                    src="https://png.pngtree.com/png-clipart/20250418/original/pngtree-top-view-of-fish-biryani-on-white-background-png-image_20787585.png"
+                                    alt="/"></div>
+                                <div class="Menu-Content">
+                                  <h4>Fish Biryani</h4>
+                                  <p>Fresh fish fillets marinated and cooked with herbs and long-grain rice.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                          <label class="option_item">
+                            <input type="checkbox" class="checkbox">
+                            <div class="option_inner facebook">
+                              <div class="tickmark">
+                                <img
+                                  src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                              </div>
+                              <div class="Menu box-hover">
+                                <div class="Menu-Media"><img
+                                    src="https://png.pngtree.com/png-vector/20240528/ourmid/pngtree-tasty-authentic-biryani-bowl-on-transparent-background-png-image_12515642.png"
+                                    alt="/"></div>
+                                <div class="Menu-Content">
+                                  <h4>Crab Biryani</h4>
+                                  <p>Spicy crab meat simmered in masala and layered with aromatic rice.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                          <label class="option_item">
+                            <input type="checkbox" class="checkbox">
+                            <div class="option_inner facebook">
+                              <div class="tickmark">
+                                <img
+                                  src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                              </div>
+                              <div class="Menu box-hover">
+                                <div class="Menu-Media"><img
+                                    src="https://png.pngtree.com/png-clipart/20241129/original/pngtree-chicken-biryani-png-image_17408423.png"
+                                    alt="/"></div>
+                                <div class="Menu-Content">
+                                  <h4>Chicken Biryani</h4>
+                                  <p>Juicy chicken cooked with aromatic spices and layered with fragrant basmati rice
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </label>
+
+
+
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                          <label class="option_item">
+                            <input type="checkbox" class="checkbox">
+                            <div class="option_inner facebook">
+                              <div class="tickmark">
+                                <img
+                                  src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                              </div>
+                              <div class="Menu box-hover">
+                                <div class="Menu-Media"><img
+                                    src="https://png.pngtree.com/png-clipart/20240927/original/pngtree-a-illustration-of-prawn-biryani-png-image_16106674.png"
+                                    alt="/"></div>
+                                <div class="Menu-Content">
+                                  <h4>Prawn Biryani</h4>
+                                  <p>Succulent prawns blended with coastal spices and fluffy rice for a seafood delight.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row collapse" id="non-veg">
+                        <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                          <label class="option_item">
+                            <input type="checkbox" class="checkbox">
+                            <div class="option_inner facebook">
+                              <div class="tickmark">
+                                <img
+                                  src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                              </div>
+                              <div class="Menu box-hover">
+                                <div class="Menu-Media"><img
+                                    src="https://png.pngtree.com/png-clipart/20241129/original/pngtree-chicken-biryani-png-image_17408423.png"
+                                    alt="/"></div>
+                                <div class="Menu-Content">
+                                  <h4>Chicken Biryani</h4>
+                                  <p>Juicy chicken cooked with aromatic spices and layered with fragrant basmati rice
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </label>
+
+
+
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                          <label class="option_item">
+                            <input type="checkbox" class="checkbox">
+                            <div class="option_inner facebook">
+                              <div class="tickmark">
+                                <img
+                                  src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                              </div>
+                              <div class="Menu box-hover">
+                                <div class="Menu-Media"><img
+                                    src="https://png.pngtree.com/png-clipart/20240927/original/pngtree-a-illustration-of-prawn-biryani-png-image_16106674.png"
+                                    alt="/"></div>
+                                <div class="Menu-Content">
+                                  <h4>Prawn Biryani</h4>
+                                  <p>Succulent prawns blended with coastal spices and fluffy rice for a seafood delight.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                          <label class="option_item">
+                            <input type="checkbox" class="checkbox">
+                            <div class="option_inner facebook">
+                              <div class="tickmark">
+                                <img
+                                  src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                              </div>
+                              <div class="Menu box-hover">
+                                <div class="Menu-Media"><img
+                                    src="https://myblacktree.com/cdn/shop/files/Best-Mutton-Biryani-Recipe-removebg-preview.png?v=1691298028"
+                                    alt="/"></div>
+                                <div class="Menu-Content">
+                                  <h4>Mutton Biryani</h4>
+                                  <p>Tender mutton slow-cooked in rich masala and layered with saffron-infused rice.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                          <label class="option_item">
+                            <input type="checkbox" class="checkbox">
+                            <div class="option_inner facebook">
+                              <div class="tickmark">
+                                <img
+                                  src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                              </div>
+                              <div class="Menu box-hover">
+                                <div class="Menu-Media"><img
+                                    src="https://png.pngtree.com/png-clipart/20231020/original/pngtree-egg-biryani-varieties-artfully-arranged-on-a-transparent-background-png-image_13388361.png"
+                                    alt="/"></div>
+                                <div class="Menu-Content">
+                                  <h4>Egg Biryani</h4>
+                                  <p>Boiled eggs in a spiced gravy, paired with flavorful rice for a hearty meal.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+
+
+                      </div>
+                      <div class="col-md-12 show-more-btn mx-auto text-center mt-5">
+                        <a class="btn-default" data-toggle="collapse" data-target="#non-veg">Show More</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="profile">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                        <label class="option_item">
+                          <input type="checkbox" class="checkbox">
+                          <div class="option_inner facebook">
+                            <div class="tickmark">
+                              <img
+                                src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                            </div>
+                            <div class="Menu box-hover">
+                              <div class="Menu-Media"><img
+                                  src="https://png.pngtree.com/png-clipart/20250105/original/pngtree-vegetable-biryani-on-plate-png-image_19293237.png"
+                                  alt="/"></div>
+                              <div class="Menu-Content">
+                                <h4>Veg Biryani</h4>
+                                <p>Aromatic basmati rice cooked with spiced mixed vegetables.
+                                  A wholesome and flavorful.</p>
+
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                        <label class="option_item">
+                          <input type="checkbox" class="checkbox">
+                          <div class="option_inner facebook">
+                            <div class="tickmark">
+                              <img
+                                src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                            </div>
+                            <div class="Menu box-hover">
+                              <div class="Menu-Media"><img
+                                  src="https://png.pngtree.com/png-clipart/20240923/original/pngtree-mastering-the-art-of-biryani-authentic-recipes-and-techniques-png-image_16071203.png"
+                                  alt="/"></div>
+                              <div class="Menu-Content">
+                                <h4>Panner Biryani</h4>
+                                <p>Fragrant rice layered with marinated paneer and spices.A rich and satisfying
+                                  vegetarian.</p>
+
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                        <label class="option_item">
+                          <input type="checkbox" class="checkbox">
+                          <div class="option_inner facebook">
+                            <div class="tickmark">
+                              <img
+                                src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                            </div>
+                            <div class="Menu box-hover">
+                              <div class="Menu-Media"><img
+                                  src="https://static.vecteezy.com/system/resources/previews/055/325/837/non_2x/chithirai-kani-traditional-plate-featuring-a-variety-of-dishes-served-on-a-banana-leaf-with-rice-and-colorful-curries-chithirai-kani-plate-top-view-isolated-on-transparent-background-free-png.png"
+                                  alt="/"></div>
+                              <div class="Menu-Content">
+                                <h4>Vegtable Thali</h4>
+                                <p>A complete Indian meal with a variety of dishes.
+                                  Includes rice, roti, curries, dal, and dessert.</p>
+
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                        <label class="option_item">
+                          <input type="checkbox" class="checkbox">
+                          <div class="option_inner facebook">
+                            <div class="tickmark">
+                              <img
+                                src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                            </div>
+                            <div class="Menu box-hover">
+                              <div class="Menu-Media"><img
+                                  src="https://png.pngtree.com/png-vector/20240515/ourmid/pngtree-delicious-vegetarian-chana-chaat-bowl-recipe-spicy-for-veggie-lovers-isolated-png-image_12471002.png"
+                                  alt="/"></div>
+                              <div class="Menu-Content">
+                                <h4>Chaat</h4>
+                                <p>A popular street snack bursting with sweet, tangy, and spicy flavors.
+                                  Made with crispy puris.</p>
+
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                        <label class="option_item">
+                          <input type="checkbox" class="checkbox">
+                          <div class="option_inner facebook">
+                            <div class="tickmark">
+                              <img
+                                src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                            </div>
+                            <div class="Menu box-hover">
+                              <div class="Menu-Media"><img
+                                  src="https://png.pngtree.com/png-vector/20250512/ourmid/pngtree-dahi-puri-panipuri-doi-fuchka-png-image_16213251.png"
+                                  alt="/"></div>
+                              <div class="Menu-Content">
+                                <h4>Pani Puri</h4>
+                                <p>Hollow puris filled with spicy, tangy flavored water and fillings.
+                                  A refreshing and fun-to-eat street.</p>
+
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                        <label class="option_item">
+                          <input type="checkbox" class="checkbox">
+                          <div class="option_inner facebook">
+                            <div class="tickmark">
+                              <img
+                                src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                            </div>
+                            <div class="Menu box-hover">
+                              <div class="Menu-Media"><img
+                                  src="https://static.vecteezy.com/system/resources/previews/046/380/741/non_2x/a-basket-of-chapati-or-indian-flat-bread-isolated-on-a-transparent-background-png.png"
+                                  alt="/"></div>
+                              <div class="Menu-Content">
+                                <h4>Chapati</h4>
+                                <p>Soft, round flatbread made from whole wheat flour.
+                                  Perfect accompaniment to curries.</p>
+
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                        <label class="option_item">
+                          <input type="checkbox" class="checkbox">
+                          <div class="option_inner facebook">
+                            <div class="tickmark">
+                              <img
+                                src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                            </div>
+                            <div class="Menu box-hover">
+                              <div class="Menu-Media"><img
+                                  src="https://png.pngtree.com/png-clipart/20250105/original/pngtree-vegetable-biryani-on-plate-png-image_19293237.png"
+                                  alt="/"></div>
+                              <div class="Menu-Content">
+                                <h4>Veg Biryani</h4>
+                                <p>Aromatic basmati rice cooked with spiced mixed vegetables.
+                                  A wholesome and flavorful.</p>
+
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                        <label class="option_item">
+                          <input type="checkbox" class="checkbox">
+                          <div class="option_inner facebook">
+                            <div class="tickmark">
+                              <img
+                                src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                            </div>
+                            <div class="Menu box-hover">
+                              <div class="Menu-Media"><img
+                                  src="https://png.pngtree.com/png-clipart/20240923/original/pngtree-mastering-the-art-of-biryani-authentic-recipes-and-techniques-png-image_16071203.png"
+                                  alt="/"></div>
+                              <div class="Menu-Content">
+                                <h4>Panner Biryani</h4>
+                                <p>Fragrant rice layered with marinated paneer and spices.A rich and satisfying
+                                  vegetarian.</p>
+
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row collapse" id="veg">
+                      <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                        <label class="option_item">
+                          <input type="checkbox" class="checkbox">
+                          <div class="option_inner facebook">
+                            <div class="tickmark">
+                              <img
+                                src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                            </div>
+                            <div class="Menu box-hover">
+                              <div class="Menu-Media"><img
+                                  src="https://png.pngtree.com/png-clipart/20250105/original/pngtree-vegetable-biryani-on-plate-png-image_19293237.png"
+                                  alt="/"></div>
+                              <div class="Menu-Content">
+                                <h4>Veg Biryani</h4>
+                                <p>Aromatic basmati rice cooked with spiced mixed vegetables.
+                                  A wholesome and flavorful.</p>
+
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                        <label class="option_item">
+                          <input type="checkbox" class="checkbox">
+                          <div class="option_inner facebook">
+                            <div class="tickmark">
+                              <img
+                                src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                            </div>
+                            <div class="Menu box-hover">
+                              <div class="Menu-Media"><img
+                                  src="https://png.pngtree.com/png-clipart/20240923/original/pngtree-mastering-the-art-of-biryani-authentic-recipes-and-techniques-png-image_16071203.png"
+                                  alt="/"></div>
+                              <div class="Menu-Content">
+                                <h4>Panner Biryani</h4>
+                                <p>Fragrant rice layered with marinated paneer and spices.A rich and satisfying
+                                  vegetarian.</p>
+
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                        <label class="option_item">
+                          <input type="checkbox" class="checkbox">
+                          <div class="option_inner facebook">
+                            <div class="tickmark">
+                              <img
+                                src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                            </div>
+                            <div class="Menu box-hover">
+                              <div class="Menu-Media"><img
+                                  src="https://static.vecteezy.com/system/resources/previews/055/325/837/non_2x/chithirai-kani-traditional-plate-featuring-a-variety-of-dishes-served-on-a-banana-leaf-with-rice-and-colorful-curries-chithirai-kani-plate-top-view-isolated-on-transparent-background-free-png.png"
+                                  alt="/"></div>
+                              <div class="Menu-Content">
+                                <h4>Vegtable Thali</h4>
+                                <p>A complete Indian meal with a variety of dishes.
+                                  Includes rice, roti, curries, dal, and dessert.</p>
+
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                        <label class="option_item">
+                          <input type="checkbox" class="checkbox">
+                          <div class="option_inner facebook">
+                            <div class="tickmark">
+                              <img
+                                src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                            </div>
+                            <div class="Menu box-hover">
+                              <div class="Menu-Media"><img
+                                  src="https://png.pngtree.com/png-vector/20240515/ourmid/pngtree-delicious-vegetarian-chana-chaat-bowl-recipe-spicy-for-veggie-lovers-isolated-png-image_12471002.png"
+                                  alt="/"></div>
+                              <div class="Menu-Content">
+                                <h4>Chaat</h4>
+                                <p>A popular street snack bursting with sweet, tangy, and spicy flavors.
+                                  Made with crispy puris.</p>
+
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                        <label class="option_item">
+                          <input type="checkbox" class="checkbox">
+                          <div class="option_inner facebook">
+                            <div class="tickmark">
+                              <img
+                                src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                            </div>
+                            <div class="Menu box-hover">
+                              <div class="Menu-Media"><img
+                                  src="https://png.pngtree.com/png-vector/20250512/ourmid/pngtree-dahi-puri-panipuri-doi-fuchka-png-image_16213251.png"
+                                  alt="/"></div>
+                              <div class="Menu-Content">
+                                <h4>Pani Puri</h4>
+                                <p>Hollow puris filled with spicy, tangy flavored water and fillings.
+                                  A refreshing and fun-to-eat street.</p>
+
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                        <label class="option_item">
+                          <input type="checkbox" class="checkbox">
+                          <div class="option_inner facebook">
+                            <div class="tickmark">
+                              <img
+                                src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                            </div>
+                            <div class="Menu box-hover">
+                              <div class="Menu-Media"><img
+                                  src="https://static.vecteezy.com/system/resources/previews/046/380/741/non_2x/a-basket-of-chapati-or-indian-flat-bread-isolated-on-a-transparent-background-png.png"
+                                  alt="/"></div>
+                              <div class="Menu-Content">
+                                <h4>Chapati</h4>
+                                <p>Soft, round flatbread made from whole wheat flour.
+                                  Perfect accompaniment to curries.</p>
+
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                        <label class="option_item">
+                          <input type="checkbox" class="checkbox">
+                          <div class="option_inner facebook">
+                            <div class="tickmark">
+                              <img
+                                src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                            </div>
+                            <div class="Menu box-hover">
+                              <div class="Menu-Media"><img
+                                  src="https://png.pngtree.com/png-clipart/20250105/original/pngtree-vegetable-biryani-on-plate-png-image_19293237.png"
+                                  alt="/"></div>
+                              <div class="Menu-Content">
+                                <h4>Veg Biryani</h4>
+                                <p>Aromatic basmati rice cooked with spiced mixed vegetables.
+                                  A wholesome and flavorful.</p>
+
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+                        <label class="option_item">
+                          <input type="checkbox" class="checkbox">
+                          <div class="option_inner facebook">
+                            <div class="tickmark">
+                              <img
+                                src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                            </div>
+                            <div class="Menu box-hover">
+                              <div class="Menu-Media"><img
+                                  src="https://png.pngtree.com/png-clipart/20240923/original/pngtree-mastering-the-art-of-biryani-authentic-recipes-and-techniques-png-image_16071203.png"
+                                  alt="/"></div>
+                              <div class="Menu-Content">
+                                <h4>Panner Biryani</h4>
+                                <p>Fragrant rice layered with marinated paneer and spices.A rich and satisfying
+                                  vegetarian.</p>
+
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-12 show-more-btn mx-auto text-center mt-5">
+                      <a class="btn-default" data-toggle="collapse" data-target="#veg">Show More</a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cheff-data">
+
+        <!-- Section Title -->
+        <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+          <h2 class="text-white">Our <span>Cheff's</span></h2>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://static.vecteezy.com/system/resources/thumbnails/046/822/712/small/a-chef-in-uniform-holding-a-tray-of-food-isolated-on-a-transparent-background-png.png"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Executive Chef </h5>
+                      <p>Oversees the entire kitchen, manages staff, and designs the menu.</p>
+                      <a href="#" class="btn-default mt-2"><span><img
+                            src="https://venus-scocu-assets.s3.amazonaws.com/3885070672685172"
+                            style="width: 20px;"></span>
+                        Call</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://static.vecteezy.com/system/resources/thumbnails/044/813/614/small/chef-crossed-arms-isolated-on-transparent-background-png.png"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Executive Chef </h5>
+                      <p>Oversees the entire kitchen, manages staff, and designs the menu.</p>
+                      <a href="#" class="btn-default mt-2"><span><img
+                            src="https://venus-scocu-assets.s3.amazonaws.com/3885070672685172"
+                            style="width: 20px;"></span>
+                        Call</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://png.pngtree.com/png-clipart/20250515/original/pngtree-confident-man-chef-displaying-his-signature-dish-png-image_20984944.png"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Executive Chef </h5>
+                      <p>Oversees the entire kitchen, manages staff, and designs the menu.</p>
+                      <a href="#" class="btn-default mt-2"><span><img
+                            src="https://venus-scocu-assets.s3.amazonaws.com/3885070672685172"
+                            style="width: 20px;"></span>
+                        Call</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://png.pngtree.com/png-vector/20231125/ourmid/pngtree-cooking-culinary-and-people-concept-happy-smiling-male-chef-in-toque-png-image_10718552.png"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Executive Chef </h5>
+                      <p>Oversees the entire kitchen, manages staff, and designs the menu.</p>
+                      <a href="#" class="btn-default mt-2"><span><img
+                            src="https://venus-scocu-assets.s3.amazonaws.com/3885070672685172"
+                            style="width: 20px;"></span>
+                        Call</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
+
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://png.pngtree.com/png-vector/20240807/ourmid/pngtree-cute-chef-giving-thumb-up-png-image_13152889.png"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Executive Chef </h5>
+                      <p>Oversees the entire kitchen, manages staff, and designs the menu.</p>
+                      <a href="#" class="btn-default mt-2"><span><img
+                            src="https://venus-scocu-assets.s3.amazonaws.com/3885070672685172"
+                            style="width: 20px;"></span>
+                        Call</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://png.pngtree.com/png-vector/20250317/ourmid/pngtree-adorable-young-chef-girl-baking-a-cake-clipart-illustration-png-image_15762496.png"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Executive Chef </h5>
+                      <p>Oversees the entire kitchen, manages staff, and designs the menu.</p>
+                      <a href="#" class="btn-default mt-2"><span><img
+                            src="https://venus-scocu-assets.s3.amazonaws.com/3885070672685172"
+                            style="width: 20px;"></span>
+                        Call</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://png.pngtree.com/png-vector/20240807/ourmid/pngtree-cute-chef-giving-thumb-up-png-image_13152889.png"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Executive Chef </h5>
+                      <p>Oversees the entire kitchen, manages staff, and designs the menu.</p>
+                      <a href="#" class="btn-default mt-2"><span><img
+                            src="https://venus-scocu-assets.s3.amazonaws.com/3885070672685172"
+                            style="width: 20px;"></span>
+                        Call</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://png.pngtree.com/png-vector/20250317/ourmid/pngtree-adorable-young-chef-girl-baking-a-cake-clipart-illustration-png-image_15762496.png"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Executive Chef </h5>
+                      <p>Oversees the entire kitchen, manages staff, and designs the menu.</p>
+                      <a href="#" class="btn-default mt-2"><span><img
+                            src="https://venus-scocu-assets.s3.amazonaws.com/3885070672685172"
+                            style="width: 20px;"></span>
+                        Call</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
+            </div>
+
+          </div>
+          <div class="row collapse" id="cheff-data">
+
+            <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://static.vecteezy.com/system/resources/thumbnails/046/822/712/small/a-chef-in-uniform-holding-a-tray-of-food-isolated-on-a-transparent-background-png.png"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Executive Chef </h5>
+                      <p>Oversees the entire kitchen, manages staff, and designs the menu.</p>
+                      <a href="#" class="btn-default mt-2"><span><img
+                            src="https://venus-scocu-assets.s3.amazonaws.com/3885070672685172"
+                            style="width: 20px;"></span>
+                        Call</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://static.vecteezy.com/system/resources/thumbnails/044/813/614/small/chef-crossed-arms-isolated-on-transparent-background-png.png"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Executive Chef </h5>
+                      <p>Oversees the entire kitchen, manages staff, and designs the menu.</p>
+                      <a href="#" class="btn-default mt-2"><span><img
+                            src="https://venus-scocu-assets.s3.amazonaws.com/3885070672685172"
+                            style="width: 20px;"></span>
+                        Call</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://png.pngtree.com/png-clipart/20250515/original/pngtree-confident-man-chef-displaying-his-signature-dish-png-image_20984944.png"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Executive Chef </h5>
+                      <p>Oversees the entire kitchen, manages staff, and designs the menu.</p>
+                      <a href="#" class="btn-default mt-2"><span><img
+                            src="https://venus-scocu-assets.s3.amazonaws.com/3885070672685172"
+                            style="width: 20px;"></span>
+                        Call</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://png.pngtree.com/png-vector/20231125/ourmid/pngtree-cooking-culinary-and-people-concept-happy-smiling-male-chef-in-toque-png-image_10718552.png"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Executive Chef </h5>
+                      <p>Oversees the entire kitchen, manages staff, and designs the menu.</p>
+                      <a href="#" class="btn-default mt-2"><span><img
+                            src="https://venus-scocu-assets.s3.amazonaws.com/3885070672685172"
+                            style="width: 20px;"></span>
+                        Call</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
+
+            </div>
+            
+
+          </div>
+          <div class="col-md-12 show-more-btn mx-auto text-center mt-5"><a data-toggle="collapse" data-target="#cheff-data"
+              class="btn-default">Show More</a></div>
+
+        </div>
+      </div>
+
+
+
 
     </section>
 
@@ -333,9 +1322,7 @@
           <div class="col-xl-4 col-md-4">
             <div class="service-item">
               <div class="img">
-                <img
-                  src="../../../assets/Services/10.png"
-                  class="img-fluid" alt="">
+                <img src="../../../assets/Services/10.png" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
 
@@ -354,9 +1341,7 @@
           <div class="col-xl-4 col-md-4">
             <div class="service-item">
               <div class="img">
-                <img
-                  src="../../../assets/Services/1.png"
-                  class="img-fluid" alt="">
+                <img src="../../../assets/Services/1.png" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
 
@@ -373,9 +1358,7 @@
           <div class="col-xl-4 col-md-4">
             <div class="service-item">
               <div class="img">
-                <img
-                  src="../../../assets/Services/2.png"
-                  class="img-fluid" alt="">
+                <img src="../../../assets/Services/2.png" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
 
@@ -383,16 +1366,15 @@
                   <h3>Poultry & Mutton</h3>
                 </a>
                 <p>Little hands and tiny feet, a bundle of joy we can’t wait to meet.
-                  </p>
+                </p>
               </div>
               <a href="#" class="thm-btn product-card_btn">Book Service<span></span></a>
             </div>
           </div><!-- End Service Item -->
-<div class="col-xl-4 col-md-4">
+          <div class="col-xl-4 col-md-4">
             <div class="service-item">
               <div class="img">
-                <img src="../../../assets/Services/5.png" class="img-fluid"
-                  alt="">
+                <img src="../../../assets/Services/5.png" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
 
@@ -409,8 +1391,7 @@
           <div class="col-xl-4 col-md-4">
             <div class="service-item">
               <div class="img">
-                <img src="../../../assets/Services/3.png"
-                  class="img-fluid" alt="">
+                <img src="../../../assets/Services/3.png" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
 
@@ -423,14 +1404,12 @@
               <a href="#" class="thm-btn product-card_btn">Book Service<span></span></a>
             </div>
           </div><!-- End Service Item -->
-          
+
 
           <div class="col-xl-4 col-md-4">
             <div class="service-item">
               <div class="img">
-                <img
-                  src="../../../assets/Services/4.png"
-                  class="img-fluid" alt="">
+                <img src="../../../assets/Services/4.png" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
 
@@ -447,94 +1426,87 @@
             </div>
           </div><!-- End Service Item -->
 
-          
 
-         
+
+
 
         </div>
-        <div class="collapse" id="demo">
-        <div class="row my-5 gy-5">
+        <div class="collapse" id="services">
+          <div class="row my-5 gy-5">
 
-          <div class="col-xl-4 col-md-4">
-            <div class="service-item">
-              <div class="img">
-                <img
-                  src="../../../assets/Services/7.png"
-                  class="img-fluid" alt="">
-              </div>
-              <div class="details position-relative">
+            <div class="col-xl-4 col-md-4">
+              <div class="service-item">
+                <div class="img">
+                  <img src="../../../assets/Services/7.png" class="img-fluid" alt="">
+                </div>
+                <div class="details position-relative">
 
-                <a href="#" class="stretched-link">
-                  <h3>Photography / pre wedding Shoots</h3>
-                </a>
-                <p>Two hearts become one, a journey just begun. Wishing love, laughter, and a happily ever after.
-                </p>
-              </div>
-              <a href="#" class="thm-btn product-card_btn">Book Service<span></span></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-4 col-md-4">
-            <div class="service-item">
-              <div class="img">
-                <img
-                  src="../../../assets/Services/8.png"
-                  class="img-fluid" alt="">
-              </div>
-              <div class="details position-relative">
-
-                <a href="#" class="stretched-link">
-                  <h3>⁠Catering Service</h3>
-                </a>
-                <p>Little hands and tiny feet, a bundle of joy we can’t wait to meet.
+                  <a href="#" class="stretched-link">
+                    <h3>Photography / pre wedding Shoots</h3>
+                  </a>
+                  <p>Two hearts become one, a journey just begun. Wishing love, laughter, and a happily ever after.
                   </p>
+                </div>
+                <a href="#" class="thm-btn product-card_btn">Book Service<span></span></a>
               </div>
-              <a href="#" class="thm-btn product-card_btn">Book Service<span></span></a>
-            </div>
-          </div><!-- End Service Item -->
+            </div><!-- End Service Item -->
 
-          <div class="col-xl-4 col-md-4">
-            <div class="service-item">
-              <div class="img">
-                <img src="../../../assets/Services/9.png"
-                  class="img-fluid" alt="">
-              </div>
-              <div class="details position-relative">
+            <div class="col-xl-4 col-md-4">
+              <div class="service-item">
+                <div class="img">
+                  <img src="../../../assets/Services/8.png" class="img-fluid" alt="">
+                </div>
+                <div class="details position-relative">
 
-                <a href="#" class="stretched-link">
-                  <h3>⁠Decorators/ Decoration </h3>
-                </a>
-                <p>They found each other, and love found its way.
-                  A promise made for a beautiful forever.</p>
+                  <a href="#" class="stretched-link">
+                    <h3>⁠Catering Service</h3>
+                  </a>
+                  <p>Little hands and tiny feet, a bundle of joy we can’t wait to meet.
+                  </p>
+                </div>
+                <a href="#" class="thm-btn product-card_btn">Book Service<span></span></a>
               </div>
-              <a href="#" class="thm-btn product-card_btn">Book Service<span></span></a>
-            </div>
-          </div><!-- End Service Item -->
- <div class="col-xl-4 col-md-4">
-            <div class="service-item">
-              <div class="img">
-                <img
-                  src="../../../assets/Services/6.png"
-                  class="img-fluid" alt="">
-              </div>
-              <div class="details position-relative">
+            </div><!-- End Service Item -->
 
-                <a href="#" class="stretched-link">
-                  <h3>⁠Water Supply</h3>
-                </a>
-                <p>A life well lived, a soul set free,
-                  Gone from sight, but in our hearts eternally.</p>
-                <a href="#" class="stretched-link"></a>
-              </div>
-              <a href="#" class="thm-btn product-card_btn">Book Service<span></span></a>
-            </div>
-          </div><!-- End Service Item -->
-          
+            <div class="col-xl-4 col-md-4">
+              <div class="service-item">
+                <div class="img">
+                  <img src="../../../assets/Services/9.png" class="img-fluid" alt="">
+                </div>
+                <div class="details position-relative">
 
-        </div>
+                  <a href="#" class="stretched-link">
+                    <h3>⁠Decorators/ Decoration </h3>
+                  </a>
+                  <p>They found each other, and love found its way.
+                    A promise made for a beautiful forever.</p>
+                </div>
+                <a href="#" class="thm-btn product-card_btn">Book Service<span></span></a>
+              </div>
+            </div><!-- End Service Item -->
+            <div class="col-xl-4 col-md-4">
+              <div class="service-item">
+                <div class="img">
+                  <img src="../../../assets/Services/6.png" class="img-fluid" alt="">
+                </div>
+                <div class="details position-relative">
+
+                  <a href="#" class="stretched-link">
+                    <h3>⁠Water Supply</h3>
+                  </a>
+                  <p>A life well lived, a soul set free,
+                    Gone from sight, but in our hearts eternally.</p>
+                  <a href="#" class="stretched-link"></a>
+                </div>
+                <a href="#" class="thm-btn product-card_btn">Book Service<span></span></a>
+              </div>
+            </div><!-- End Service Item -->
+
+
+          </div>
         </div>
         <div class="col-md-12 show-more-btn mx-auto text-center mt-5">
-          <a class="btn-default" data-toggle="collapse" data-target="#demo">Show More</a>
+          <a class="btn-default" data-toggle="collapse" data-target="#services">Show More</a>
         </div>
       </div>
 
@@ -551,94 +1523,94 @@
           <h2>Our Vendors</h2>
         </div><!-- End Section Title -->
         <div id="Vendors" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#Vendors" data-slide-to="0" class="active"></li>
-          <li data-target="#Vendors" data-slide-to="1"></li>
-          <li data-target="#Vendors" data-slide-to="2"></li>
-        </ol>
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#Vendors" data-slide-to="0" class="active"></li>
+            <li data-target="#Vendors" data-slide-to="1"></li>
+            <li data-target="#Vendors" data-slide-to="2"></li>
+          </ol>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
 
-          <div class="item active">
-            <div class="row">
-               <div class="col-xl-2 col-md-2">
-                <img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
-               </div>
-               <div class="col-xl-2 col-md-2">
-                <img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg">
-               </div>
-               <div class="col-xl-2 col-md-2">
-                <img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg">
-               </div>
-               <div class="col-xl-2 col-md-2">
-                <img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg">
-               </div>
-               <div class="col-xl-2 col-md-2">
-                <img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg">
-               </div>
-               <div class="col-xl-2 col-md-2">
-                <img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
-               </div>
-               
-                
+            <div class="item active">
+              <div class="row">
+                <div class="col-xl-2 col-md-2">
+                  <img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
+                </div>
+                <div class="col-xl-2 col-md-2">
+                  <img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg">
+                </div>
+                <div class="col-xl-2 col-md-2">
+                  <img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg">
+                </div>
+                <div class="col-xl-2 col-md-2">
+                  <img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg">
+                </div>
+                <div class="col-xl-2 col-md-2">
+                  <img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg">
+                </div>
+                <div class="col-xl-2 col-md-2">
+                  <img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
+                </div>
+
+
+              </div>
             </div>
-          </div>
 
-          <div class="item">
-           <div class="row">
-               <div class="col-xl-2 col-md-2">
-                <img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
-               </div>
-               <div class="col-xl-2 col-md-2">
-                <img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg">
-               </div>
-               <div class="col-xl-2 col-md-2">
-                <img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg">
-               </div>
-               <div class="col-xl-2 col-md-2">
-                <img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg">
-               </div>
-               <div class="col-xl-2 col-md-2">
-                <img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg">
-               </div>
-               <div class="col-xl-2 col-md-2">
-                <img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
-               </div>
-               
-                
-            </div>
-          </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-xl-2 col-md-2">
+                  <img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
+                </div>
+                <div class="col-xl-2 col-md-2">
+                  <img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg">
+                </div>
+                <div class="col-xl-2 col-md-2">
+                  <img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg">
+                </div>
+                <div class="col-xl-2 col-md-2">
+                  <img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg">
+                </div>
+                <div class="col-xl-2 col-md-2">
+                  <img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg">
+                </div>
+                <div class="col-xl-2 col-md-2">
+                  <img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
+                </div>
 
-          <div class="item">
-           <div class="row">
-               <div class="col-xl-2 col-md-2">
-                <img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
-               </div>
-               <div class="col-xl-2 col-md-2">
-                <img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg">
-               </div>
-               <div class="col-xl-2 col-md-2">
-                <img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg">
-               </div>
-               <div class="col-xl-2 col-md-2">
-                <img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg">
-               </div>
-               <div class="col-xl-2 col-md-2">
-                <img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg">
-               </div>
-               <div class="col-xl-2 col-md-2">
-                <img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
-               </div>
-               
-                
+
+              </div>
             </div>
+
+            <div class="item">
+              <div class="row">
+                <div class="col-xl-2 col-md-2">
+                  <img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
+                </div>
+                <div class="col-xl-2 col-md-2">
+                  <img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg">
+                </div>
+                <div class="col-xl-2 col-md-2">
+                  <img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg">
+                </div>
+                <div class="col-xl-2 col-md-2">
+                  <img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg">
+                </div>
+                <div class="col-xl-2 col-md-2">
+                  <img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg">
+                </div>
+                <div class="col-xl-2 col-md-2">
+                  <img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
+                </div>
+
+
+              </div>
+            </div>
+
           </div>
 
         </div>
-
-      </div>
       </div>
     </section>
 
@@ -776,7 +1748,7 @@
       </div>
     </section>
 
-    
+
 
   </div>
   <footer id="footer" class="footer light-background">
@@ -839,11 +1811,11 @@
 
   </footer>
 
-<!-- POPup Code start -->
+  <!-- POPup Code start -->
 
 
-<!-- Modal -->
-<!-- <div id="myModal" class="modal fade" role="dialog">
+  <!-- Modal -->
+  <!-- <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog video-dialog">
     
     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
