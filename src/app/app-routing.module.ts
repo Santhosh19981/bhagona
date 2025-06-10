@@ -10,7 +10,8 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  },  {
+  },
+  {
     path: 'login',
     loadChildren: () => import('./components/login/login.module').then( m => m.LoginPageModule)
   },
@@ -45,6 +46,26 @@ const routes: Routes = [
   {
     path: 'websitehome',
     loadChildren: () => import('./components/websitehome/websitehome.module').then( m => m.WebsitehomePageModule)
+  },
+  {
+    path: 'webcheckout',
+    loadChildren: () => import('./components/webcheckout/webcheckout.module').then( m => m.WebcheckoutPageModule)
+  },
+  {
+    path: 'chefforders',
+    loadChildren: () => import('./components/chefforders/chefforders.module').then( m => m.CheffordersPageModule)
+  },
+  {
+    path: 'customerorders',
+    loadChildren: () => import('./components/customerorders/customerorders.module').then( m => m.CustomerordersPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./components/profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'review',
+    loadChildren: () => import('./components/review/review.module').then( m => m.ReviewPageModule)
   },
 
 ];
