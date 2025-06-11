@@ -1,0 +1,103 @@
+.btn-primary {
+    background-color: #308e87 !important;
+    border: 1px solid #308e87;
+    color: #ffffff;
+}
+.btn-xs {
+    padding: 5px 10px;
+    font-size: 11px;
+}
+.order-card-header h3{
+        margin: 0;
+   
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.order-card {
+    border-radius: 1.5rem;
+    border: 1px solid #f2f3f7;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.order-card-header.order-card-no-border {
+    border-bottom: none !important;
+}
+.order-card-header{
+    background:#e4c815;
+    padding: 15px;
+}
+.order-card-header:first-child {
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+.order-card-body {
+    padding: 20px;
+    background-color: transparent;
+}
+/**=====================
+    3.31 Order-history CSS start
+==========================**/
+.prooduct-details-box .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 16px;
+  cursor: pointer;
+}
+.prooduct-details-box .event-img{
+    width: 65px;
+    height: 65px;
+}
+.prooduct-details-box .btn {
+  line-height: 13px;
+}
+.prooduct-details-box .d-flex {
+  border: 1px solid #e4c815;
+  border-radius: 10px;
+  padding: 15px;
+  align-items: center;
+  width: 100%;
+  gap: 18px;
+  padding-left: 10px;
+  position: relative;
+  background: #fff0e3;
+}
+@media only screen and (max-width: 360px) {
+  .prooduct-details-box .d-flex {
+    padding: 15px;
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .prooduct-details-box .d-flex .flex-grow-1 {
+    margin-top: 15px;
+  }
+}
+.prooduct-details-box .rating {
+  color: var(--warning-color);
+  letter-spacing: 0;
+  margin: 5px 0;
+}
+.prooduct-details-box .rating i {
+  font-size: 12px;
+}
+.prooduct-details-box .product-name a {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+}
+.prooduct-details-box .product-name h6, .prooduct-details-box .product-name .h6 {
+ font-size: 16px;
+    font-weight: 600;
+    margin: 0
+}
+// .prooduct-details-box .btn {
+//   position: absolute;
+//   right: 15px;
+//   bottom: 15px;
+// }
+
+/**=====================
+      3.31 Order-history CSS End
+  ==========================**/

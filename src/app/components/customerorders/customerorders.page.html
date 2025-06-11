@@ -1,13 +1,504 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>customerorders</ion-title>
-  </ion-toolbar>
-</ion-header>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">customerorders</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div
+      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="../../../assets/home-logo.png" style="width: 145px;">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-x"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <div class="cart-icon" onclick="toggleCart()">
+          <img src="https://cdn-icons-png.flaticon.com/512/777/777205.png" style="width: 30px;">
+          <span class="cart-count">0</span>
+        </div>
+        <div>|</div>
+        <div class="">
+          <img src="https://cdn-icons-png.flaticon.com/512/5987/5987424.png" style="width: 30px;">
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <div class="website-body" style="padding: 100px 0;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="order-card">
+            <div class="order-card-header order-card-no-border">
+              <h3>New Orders</h3>
+            </div>
+            <div class="order-card-body">
+              <div class="row g-sm-4 g-3">
+                <div class="col-xxl-4 col-md-4 col-sm-4">
+                  <div class="prooduct-details-box">
+                    <div class="d-flex">
+                      <div class="event-img">
+                        <img class="align-self-center img-fluid img-60"
+                          src="https://cdn-icons-png.flaticon.com/512/703/703213.png" alt="#">
+                      </div>
+                      <div class="flex-grow-1">
+                        <div class="product-name">
+                          <h6>Weeding</h6>
+                        </div>
+
+
+                        <div class="avaiabilty mt-2">
+                          <div class="text-success">100 Members</div>
+                        </div>
+                      </div>
+                      <div>
+                        <a class="btn btn-primary btn-xs" href="#">Processing</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-md-4 col-sm-4">
+                  <div class="prooduct-details-box">
+                    <div class="d-flex">
+                      <div class="event-img">
+                        <img class="align-self-center img-fluid img-60"
+                          src="https://cdn-icons-png.flaticon.com/512/703/703213.png" alt="#">
+                      </div>
+                      <div class="flex-grow-1">
+                        <div class="product-name">
+                          <h6>Weeding</h6>
+                        </div>
+
+
+                        <div class="avaiabilty mt-2">
+                          <div class="text-success">100 Members</div>
+                        </div>
+                      </div>
+                      <div>
+                        <a class="btn btn-primary btn-xs" href="#">Processing</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-md-4 col-sm-4">
+                  <div class="prooduct-details-box">
+                    <div class="d-flex">
+                      <div class="event-img">
+                        <img class="align-self-center img-fluid img-60"
+                          src="https://cdn-icons-png.flaticon.com/512/703/703213.png" alt="#">
+                      </div>
+                      <div class="flex-grow-1">
+                        <div class="product-name">
+                          <h6>Weeding</h6>
+                        </div>
+
+
+                        <div class="avaiabilty mt-2">
+                          <div class="text-success">100 Members</div>
+                        </div>
+                      </div>
+                      <div>
+                        <a class="btn btn-primary btn-xs" href="#">Processing</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+
+              </div>
+            </div>
+          </div>
+          <div class="order-card">
+            <div class="order-card-header order-card-no-border">
+              <h3>Complted Orders</h3>
+            </div>
+            <div class="order-card-body">
+              <div class="row g-sm-4 g-3">
+                                <div class="col-xxl-4 col-md-4 col-sm-4">
+                  <div class="prooduct-details-box">
+                    <div class="d-flex">
+                      <div class="event-img">
+                        <img class="align-self-center img-fluid img-60"
+                          src="https://cdn-icons-png.flaticon.com/512/703/703213.png" alt="#">
+                      </div>
+                      <div class="flex-grow-1">
+                        <div class="product-name">
+                          <h6>Weeding</h6>
+                        </div>
+
+
+                        <div class="avaiabilty mt-2">
+                          <div class="text-success">100 Members</div>
+                        </div>
+                      </div>
+                      <div>
+                        <a class="btn btn-success btn-xs" href="#">Completed</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 <div class="col-xxl-4 col-md-4 col-sm-4">
+                  <div class="prooduct-details-box">
+                    <div class="d-flex">
+                      <div class="event-img">
+                        <img class="align-self-center img-fluid img-60"
+                          src="https://cdn-icons-png.flaticon.com/512/703/703213.png" alt="#">
+                      </div>
+                      <div class="flex-grow-1">
+                        <div class="product-name">
+                          <h6>Weeding</h6>
+                        </div>
+
+
+                        <div class="avaiabilty mt-2">
+                          <div class="text-success">100 Members</div>
+                        </div>
+                      </div>
+                      <div>
+                        <a class="btn btn-success btn-xs" href="#">Completed</a>
+                      </div>
+                    </div>
+                  </div>
+                </div> <div class="col-xxl-4 col-md-4 col-sm-4">
+                  <div class="prooduct-details-box">
+                    <div class="d-flex">
+                      <div class="event-img">
+                        <img class="align-self-center img-fluid img-60"
+                          src="https://cdn-icons-png.flaticon.com/512/703/703213.png" alt="#">
+                      </div>
+                      <div class="flex-grow-1">
+                        <div class="product-name">
+                          <h6>Weeding</h6>
+                        </div>
+
+
+                        <div class="avaiabilty mt-2">
+                          <div class="text-success">100 Members</div>
+                        </div>
+                      </div>
+                      <div>
+                        <a class="btn btn-success btn-xs" href="#">Completed</a>
+                      </div>
+                    </div>
+                  </div>
+                </div> <div class="col-xxl-4 col-md-4 col-sm-4">
+                  <div class="prooduct-details-box">
+                    <div class="d-flex">
+                      <div class="event-img">
+                        <img class="align-self-center img-fluid img-60"
+                          src="https://cdn-icons-png.flaticon.com/512/703/703213.png" alt="#">
+                      </div>
+                      <div class="flex-grow-1">
+                        <div class="product-name">
+                          <h6>Weeding</h6>
+                        </div>
+
+
+                        <div class="avaiabilty mt-2">
+                          <div class="text-success">100 Members</div>
+                        </div>
+                      </div>
+                      <div>
+                        <a class="btn btn-success btn-xs" href="#">Completed</a>
+                      </div>
+                    </div>
+                  </div>
+                </div> <div class="col-xxl-4 col-md-4 col-sm-4">
+                  <div class="prooduct-details-box">
+                    <div class="d-flex">
+                      <div class="event-img">
+                        <img class="align-self-center img-fluid img-60"
+                          src="https://cdn-icons-png.flaticon.com/512/703/703213.png" alt="#">
+                      </div>
+                      <div class="flex-grow-1">
+                        <div class="product-name">
+                          <h6>Weeding</h6>
+                        </div>
+
+
+                        <div class="avaiabilty mt-2">
+                          <div class="text-success">100 Members</div>
+                        </div>
+                      </div>
+                      <div>
+                        <a class="btn btn-success btn-xs" href="#">Completed</a>
+                      </div>
+                    </div>
+                  </div>
+                </div> <div class="col-xxl-4 col-md-4 col-sm-4">
+                  <div class="prooduct-details-box">
+                    <div class="d-flex">
+                      <div class="event-img">
+                        <img class="align-self-center img-fluid img-60"
+                          src="https://cdn-icons-png.flaticon.com/512/703/703213.png" alt="#">
+                      </div>
+                      <div class="flex-grow-1">
+                        <div class="product-name">
+                          <h6>Weeding</h6>
+                        </div>
+
+
+                        <div class="avaiabilty mt-2">
+                          <div class="text-success">100 Members</div>
+                        </div>
+                      </div>
+                      <div>
+                        <a class="btn btn-success btn-xs" href="#">Completed</a>
+                      </div>
+                    </div>
+                  </div>
+                </div> <div class="col-xxl-4 col-md-4 col-sm-4">
+                  <div class="prooduct-details-box">
+                    <div class="d-flex">
+                      <div class="event-img">
+                        <img class="align-self-center img-fluid img-60"
+                          src="https://cdn-icons-png.flaticon.com/512/703/703213.png" alt="#">
+                      </div>
+                      <div class="flex-grow-1">
+                        <div class="product-name">
+                          <h6>Weeding</h6>
+                        </div>
+
+
+                        <div class="avaiabilty mt-2">
+                          <div class="text-success">100 Members</div>
+                        </div>
+                      </div>
+                      <div>
+                        <a class="btn btn-success btn-xs" href="#">Completed</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+               
+              </div>
+            </div>
+          </div>
+          <div class="order-card">
+            <div class="order-card-header order-card-no-border">
+              <h3>Cancelled Orders</h3>
+            </div>
+            <div class="order-card-body">
+              <div class="row g-sm-4 g-3">
+                
+                
+                 <div class="col-xxl-4 col-md-4 col-sm-4">
+                  <div class="prooduct-details-box">
+                    <div class="d-flex">
+                      <div class="event-img">
+                        <img class="align-self-center img-fluid img-60"
+                          src="https://cdn-icons-png.flaticon.com/512/703/703213.png" alt="#">
+                      </div>
+                      <div class="flex-grow-1">
+                        <div class="product-name">
+                          <h6>Weeding</h6>
+                        </div>
+
+
+                        <div class="avaiabilty mt-2">
+                          <div class="text-success">100 Members</div>
+                        </div>
+                      </div>
+                      <div>
+                        <a class="btn btn-danger btn-xs" href="#">Cancelled</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 <div class="col-xxl-4 col-md-4 col-sm-4">
+                  <div class="prooduct-details-box">
+                    <div class="d-flex">
+                      <div class="event-img">
+                        <img class="align-self-center img-fluid img-60"
+                          src="https://cdn-icons-png.flaticon.com/512/703/703213.png" alt="#">
+                      </div>
+                      <div class="flex-grow-1">
+                        <div class="product-name">
+                          <h6>Weeding</h6>
+                        </div>
+
+
+                        <div class="avaiabilty mt-2">
+                          <div class="text-success">100 Members</div>
+                        </div>
+                      </div>
+                      <div>
+                        <a class="btn btn-danger btn-xs" href="#">Cancelled</a>
+                      </div>
+                    </div>
+                  </div>
+                </div> <div class="col-xxl-4 col-md-4 col-sm-4">
+                  <div class="prooduct-details-box">
+                    <div class="d-flex">
+                      <div class="event-img">
+                        <img class="align-self-center img-fluid img-60"
+                          src="https://cdn-icons-png.flaticon.com/512/703/703213.png" alt="#">
+                      </div>
+                      <div class="flex-grow-1">
+                        <div class="product-name">
+                          <h6>Weeding</h6>
+                        </div>
+
+
+                        <div class="avaiabilty mt-2">
+                          <div class="text-success">100 Members</div>
+                        </div>
+                      </div>
+                      <div>
+                        <a class="btn btn-danger btn-xs" href="#">Cancelled</a>
+                      </div>
+                    </div>
+                  </div>
+                </div> <div class="col-xxl-4 col-md-4 col-sm-4">
+                  <div class="prooduct-details-box">
+                    <div class="d-flex">
+                      <div class="event-img">
+                        <img class="align-self-center img-fluid img-60"
+                          src="https://cdn-icons-png.flaticon.com/512/703/703213.png" alt="#">
+                      </div>
+                      <div class="flex-grow-1">
+                        <div class="product-name">
+                          <h6>Weeding</h6>
+                        </div>
+
+
+                        <div class="avaiabilty mt-2">
+                          <div class="text-success">100 Members</div>
+                        </div>
+                      </div>
+                      <div>
+                        <a class="btn btn-danger btn-xs" href="#">Cancelled</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 <div class="col-xxl-4 col-md-4 col-sm-4">
+                  <div class="prooduct-details-box">
+                    <div class="d-flex">
+                      <div class="event-img">
+                        <img class="align-self-center img-fluid img-60"
+                          src="https://cdn-icons-png.flaticon.com/512/703/703213.png" alt="#">
+                      </div>
+                      <div class="flex-grow-1">
+                        <div class="product-name">
+                          <h6>Weeding</h6>
+                        </div>
+
+
+                        <div class="avaiabilty mt-2">
+                          <div class="text-success">100 Members</div>
+                        </div>
+                      </div>
+                      <div>
+                        <a class="btn btn-danger btn-xs" href="#">Cancelled</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 <div class="col-xxl-4 col-md-4 col-sm-4">
+                  <div class="prooduct-details-box">
+                    <div class="d-flex">
+                      <div class="event-img">
+                        <img class="align-self-center img-fluid img-60"
+                          src="https://cdn-icons-png.flaticon.com/512/703/703213.png" alt="#">
+                      </div>
+                      <div class="flex-grow-1">
+                        <div class="product-name">
+                          <h6>Weeding</h6>
+                        </div>
+
+
+                        <div class="avaiabilty mt-2">
+                          <div class="text-success">100 Members</div>
+                        </div>
+                      </div>
+                      <div>
+                        <a class="btn btn-danger btn-xs" href="#">Cancelled</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <footer id="footer" class="footer light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="../../../assets/home-logo.png" style="width: 145px;">
+          </a>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
+            donna mare fermentum iaculis eu non diam phasellus.</p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Marriage</a></li>
+            <li><a href="#">Baby Shower</a></li>
+            <li><a href="#">Engagement</a></li>
+            <li><a href="#">Birthday</a></li>
+            <li><a href="#">Puberty Ceremony</a></li>
+            <li><a href="#">Funeral</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>A108 Adam Street</p>
+          <p>New York, NY 535022</p>
+          <p>United States</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+          <p><strong>Email:</strong> <span>infoexample.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>Copyright © 2025, All Right Reserved Bhagona</p>
+
+    </div>
+
+  </footer>
 </ion-content>
