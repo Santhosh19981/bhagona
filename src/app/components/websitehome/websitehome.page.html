@@ -17,7 +17,7 @@
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
+          <li><a (click)="gotoOrders()">Orders</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#services">Services</a></li>
 
@@ -190,7 +190,7 @@
 
     <!-- Events Section -->
     <section id="Events" class="Events section bg_color-dark-1">
-      <div class="events-data">
+      <div class="events-data" *ngIf="isEvents">
         <!-- Section Title -->
         <div class="container section-title aos-init aos-animate" data-aos="fade-up">
           <h2 class="text-white">Our <span>Events</span></h2>
@@ -310,7 +310,7 @@
 
         </div>
       </div>
-      <div class="menu-data">
+      <div class="menu-data" *ngIf="isMenu">
 
         <!-- Section Title -->
         <div class="container section-title aos-init aos-animate" data-aos="fade-up">
@@ -607,7 +607,7 @@
                       </div>
                       <div class="col-md-12 show-more-btn mx-auto text-center mt-5 cont-sec">
                         <a class="bhagona-btn-2" data-toggle="collapse" data-target="#non-veg">Show More</a>
-                        <a class="bhagona-btn-2">continue </a>
+                        <a class="bhagona-btn-2" (click)="gotocheff()">continue </a>
                       </div>
                     </div>
                   </div>
@@ -972,7 +972,7 @@
                     </div>
                     <div class="col-md-12 show-more-btn mx-auto text-center mt-5 cont-sec">
                       <a class="bhagona-btn-2" data-toggle="collapse" data-target="#veg">Show More</a>
-                      <a class="bhagona-btn-2">continue </a>
+                      <a class="bhagona-btn-2" (click)="gotocheff()">continue </a>
                     </div>
                   </div>
 
@@ -982,7 +982,7 @@
           </div>
         </div>
       </div>
-      <div class="cheff-data">
+      <div class="cheff-data" *ngIf="ischeffs">
 
         <!-- Section Title -->
         <div class="container section-title aos-init aos-animate" data-aos="fade-up">
@@ -1281,7 +1281,7 @@
           <div class="col-md-12 show-more-btn mx-auto text-center mt-5 cont-sec">
             <a data-toggle="collapse" data-target="#cheff-data"
               class="bhagona-btn-2">Show More</a>
-              <a class="bhagona-btn-2">continue </a>
+              <a class="bhagona-btn-2" (click)="gotoCheckout()">continue </a>
             </div>
 
         </div>

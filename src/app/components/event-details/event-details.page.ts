@@ -17,16 +17,15 @@ export class EventDetailsPage implements OnInit {
   ngOnInit() {
   }
   gotomenu() {
-    if (this.from == "websitehome") {
+    if (this.from === 'websitehome') {
       const returnData = {
         message: 'User closed the modal',
         timestamp: new Date()
       };
-
       this.modalCtrl.dismiss(returnData, 'closed');
-    }
-    else
+    } else {
       this.router.navigate(['/menu']);
+    }
   }
 
   gottoHome() {

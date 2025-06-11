@@ -14,6 +14,6 @@ export class OrderconfirmPage implements OnInit {
   ngOnInit() {
   }
   gotoHome(){
-    this.router.navigate(['/home']);
+    this.router.navigate(['/websitehome']);
   }
 }

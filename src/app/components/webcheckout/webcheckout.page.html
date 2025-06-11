@@ -17,7 +17,7 @@
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
+          <li><a (click)="gotoOrders()">Orders</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#services">Services</a></li>
 
@@ -302,8 +302,8 @@
         </div>
         <div class="tright mt-5">
                               <a><button class="movebtn movebtnre" type="Reset"><i class="fa fa-long-arrow-left"
-                                    aria-hidden="true"></i> Back </button></a>
-                              <a><button class="movebtn movebtnsu" type="Submit">Proceed <i
+                                    aria-hidden="true"></i> Back </button></a> 
+                              <a><button class="movebtn movebtnsu" type="Submit" (click)="gotoOrdder()">Proceed <i
                                     class="fa fa-fw fa-paper-plane"></i></button></a>
                             </div>
       </div>
