@@ -3404,10 +3404,10 @@ section-title {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color:#000;
     padding: 18px 15px;
     font-size: 16px;
-    font-family: var(--nav-font);
+    text-decoration: none;
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -3432,6 +3432,7 @@ section-title {
   .navmenu .active,
   .navmenu .active:focus {
     color: #000;
+    text-decoration: none;
   }
 
   .navmenu .dropdown ul {
@@ -3468,7 +3469,8 @@ section-title {
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
   .navmenu .dropdown ul li:hover>a {
-    color: var(--nav-dropdown-hover-color);
+    color: #000;
+    text-decoration: none;
   }
 
   .navmenu .dropdown:hover>ul {
