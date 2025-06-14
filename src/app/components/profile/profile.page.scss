@@ -1,0 +1,352 @@
+.profile {
+    background: #f9f7f7;
+    padding: 100px 0;
+}
+
+.custom-card .card-header {
+    background: linear-gradient(247deg, #ffc5451a 0.99%, #ff4a0d1a 97.77%);
+}
+
+.custom-card .card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+/* Start:: Profile */
+.profile-card .profile-avatar.profile-avatar-xxl {
+    width: 11rem;
+    height: 11rem;
+    position: absolute;
+    inset-block-start: 6.5rem;
+    border-radius: 50%;
+    inset-inline-start: 40px;
+}
+
+.profile-card .profile-avatar.profile-avatar-xxl img {
+    border: 4px solid #ff5a2980;
+    border-radius: 50%;
+}
+
+.profile-card .profile-banner-img {
+    position: relative;
+}
+
+.profile-banner-img img {
+    height: 146px;
+}
+
+.profile-card .profile-banner-img:before {
+    content: "";
+    position: absolute;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e4c81542;
+    border-radius: 0.3rem;
+}
+
+.job-profile-card .profile-avatar.profile-avatar-xxl {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    inset-block-start: -3rem;
+    inset-inline-start: 40px;
+}
+
+.job-profile-card .profile-avatar.profile-avatar-xxl img {
+    border: 4px solid #ff5a2980;
+}
+
+.job-profile-card .profile-banner-img {
+    position: relative;
+}
+
+.job-profile-card .profile-banner-img:before {
+    content: "";
+    position: absolute;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #735dff4d;
+    border-radius: 0.3rem;
+}
+
+.profile-card h5 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: left;
+}
+
+.fw-medium {
+    font-weight: 600;
+
+}
+
+.profile-card span {
+    color: #000;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.profile-timeline {
+    margin-block-end: 0;
+}
+
+.profile-timeline li {
+    padding-inline-start: 3.313rem;
+    position: relative;
+    margin-block-end: 1.75rem;
+}
+
+.profile-timeline li .profile-timeline-profile-avatar {
+    position: absolute;
+    inset-inline-start: -0.1rem;
+    inset-block-start: 0.188rem;
+}
+
+.profile-timeline li:last-child {
+    margin-block-end: 0;
+}
+
+.profile-timeline li:last-child::before {
+    display: none;
+}
+
+.profile-timeline li::before {
+    content: "";
+    background-color: transparent;
+    border: 1px dashed #000;
+    height: 100%;
+    position: absolute;
+    inset-inline-start: 0.813rem;
+    inset-block-start: 1.813rem;
+}
+
+.profile-timeline .dropdown-menu li {
+    padding-inline-start: 0px;
+    margin: 0px;
+}
+
+.profile-timeline .dropdown-menu li:before {
+    display: none;
+}
+
+.profile-timeline .profile-activity-media img {
+    width: 4rem;
+    height: 3rem;
+    border-radius: 0.25rem;
+    margin: 0.25rem;
+}
+
+/* End:: Profile */
+
+.main-card-icon .profile-avatar {
+    opacity: 1;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 0.8rem;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-avatar.profile-avatar-md svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.svg-primary svg {
+    fill: #735dff;
+}
+
+.svg-secondary svg {
+    fill: #ff5a29;
+}
+
+.svg-success svg {
+    fill: #0cc763;
+}
+
+.border.border-secondary.border-opacity-25 {
+    border-color: #ff5a2940 !important;
+}
+
+.bg-secondary-transparent {
+    background-color: #ffe6df !important;
+    color: #ff5a29 !important;
+}
+
+.bg-primary-transparent {
+    background-color: #735dff26 !important;
+    color: #735dff !important;
+}
+
+.bg-success-transparent {
+    background-color: #dbf7e8 !important;
+    color: #0cc763 !important;
+    border-color: #0cc763 !important;
+}
+
+.main-card-content h4 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+    text-align: left;
+}
+
+.main-card-content p {
+    font-size: 12px;
+    font-weight: normal;
+    color: #9E9E9E;
+    margin: 0;
+}
+   
+    /* Hide radio buttons */
+    input[type="radio"] {
+      display: none;
+    }
+
+    /* Tab labels */
+    .tabs {
+      display: flex;
+      border-bottom: 2px solid #e4c815;
+      background: #e4c815;
+    }
+
+    .tabs label {
+      flex: 1;
+      text-align: center;
+      padding: 14px 0;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .tabs label:hover {
+      background-image: linear-gradient(to right, #fb923c 0%, #ea580c 50%, #fb923c 100%);
+    }
+
+    /* Active tab */
+    input#tab1:checked ~ .tabs label[for="tab1"],
+    input#tab2:checked ~ .tabs label[for="tab2"],
+    input#tab3:checked ~ .tabs label[for="tab3"] {
+      background-image: linear-gradient(to right, #fb923c 0%, #ea580c 50%, #fb923c 100%);
+    }
+
+    /* Content sections */
+    .tab-content {
+      display: none;
+      padding: 12px;
+      text-align: left;
+    }
+
+    #tab1:checked ~ #content1,
+    #tab2:checked ~ #content2,
+    #tab3:checked ~ #content3 {
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      .tabs {
+        flex-direction: column;
+      }
+    }
+    
+    .order-history-container {
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead {
+      background-color: #e4c815;
+      color: white;
+    }
+
+    th, td {
+      padding: 10px 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      font-size: 13px;
+    }
+
+    tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    .status {
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .delivered {
+      background-color: #d4edda;
+      color: #155724;
+    }
+
+    .transit {
+      background-color: #fff3cd;
+      color: #856404;
+    }
+
+    .cancelled {
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        margin-bottom: 20px;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 10px;
+      }
+
+      td {
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+      }
+
+      td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 16px;
+        width: 45%;
+        padding-right: 10px;
+        font-weight: bold;
+        text-align: left;
+      }
+    }
