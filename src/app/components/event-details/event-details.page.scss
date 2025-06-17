@@ -82,7 +82,7 @@
 
 .ac-state:checked ~ .ac-content {
 	grid-template-rows: 1fr;
-    background: #f7e9dd;
+    background: #031119;
     border-radius: 0 0 1rem 1rem;
 }
 .page-wrapper .heading{
@@ -92,6 +92,7 @@ border-bottom: 4px solid #ec7233;
     font-size: 19px;
     font-weight: 600;
     margin: 0;
+	color: #fff;
 }
 .heading_space {
     margin-bottom: 30px;
