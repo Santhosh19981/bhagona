@@ -1,4 +1,3 @@
-
 <!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
@@ -6,82 +5,85 @@
     </ion-title>
   </ion-toolbar>
 </ion-header> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <ion-content [fullscreen]="true">
   <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
   </ion-header> -->
- <!-- Reciept top-half -->
+  <!-- Reciept top-half -->
 
-  <section>
-  <header class="mobile-header">
-    <div class="header-box">
-      <input type="checkbox" name="check" id="check">
-      <div class="logo-container">
-        <img src="../../../assets/home-logo.png" style="width: 145px;">
-      </div>
-      
-      <div class="nav-btn">
-        <div class="nav-links">
-          <ul>
-            <li class="nav-link" style="--i: .6s">
-              <a >Home</a>
-            </li>
-            <li class="nav-link" style="--i: .6s">
-              <a >About Us</a>
-            </li>
-            <li class="nav-link" style="--i: .6s">
-              <a >Chef</a>
-            </li>
-            <li class="nav-link" style="--i: .6s">
-              <a >Services</a>
-            </li>
-            <li class="nav-link" style="--i: .6s">
-              <a >menu</a>
-            </li>
-            <li class="nav-link" style="--i: .6s" (click)="logout()">
-              <a >Logout</a>
-            </li>
-          </ul>
+  <section class="bg_color-dark-1">
+    <header class="mobile-header">
+      <div class="header-box">
+        <input type="checkbox" name="check" id="check">
+        <div class="logo-container">
+          <img src="../../../assets/home-logo.png" style="width: 145px;">
         </div>
-        
-        <div class="log-sign desktop" style="--i: 1.8s">
-          <span class="fa-stack fa-2x has-badge" data-count="5">
-  <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-  <i style="" class="fa fa-shopping-cart fa-stack-2x red-cart"></i>
-</span>
-        </div>
-      </div>
 
-      <div class="hamburger-menu-container">
-        <div class="log-sign mobile" style="--i: 1.8s">
-          <span class="fa-stack fa-2x has-badge" data-count="5">
-  <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-  <i style="" class="fa fa-shopping-cart fa-stack-2x red-cart"></i>
-</span>
+        <div class="nav-btn">
+          <div class="nav-links">
+            <ul>
+              <li class="nav-link" style="--i: .6s">
+                <a>Home</a>
+              </li>
+              <li class="nav-link" style="--i: .6s">
+                <a>About Us</a>
+              </li>
+              <li class="nav-link" style="--i: .6s">
+                <a>Chef</a>
+              </li>
+              <li class="nav-link" style="--i: .6s">
+                <a>Services</a>
+              </li>
+              <li class="nav-link" style="--i: .6s">
+                <a>menu</a>
+              </li>
+              <li class="nav-link" style="--i: .6s" (click)="logout()">
+                <a>Logout</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="log-sign desktop" style="--i: 1.8s">
+            <span class="fa-stack fa-2x has-badge" data-count="5">
+              <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+              <i style="" class="fa fa-shopping-cart fa-stack-2x red-cart"></i>
+            </span>
+          </div>
         </div>
-        <div class="hamburger-menu">
-          <div></div>
+
+        <div class="hamburger-menu-container">
+          <div class="log-sign mobile" style="--i: 1.8s">
+            <span class="fa-stack fa-2x has-badge" data-count="5">
+              <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+              <i style="" class="fa fa-shopping-cart fa-stack-2x red-cart"></i>
+            </span>
+          </div>
+          <div class="hamburger-menu">
+            <div></div>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-    <div class="container my-4">
+    </header>
+    <div class="container p-4">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
         </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
 
           <div class="item active">
-            <img src="../../../assets/banner-1.png" alt="Marraige Events" style="width:100%;border-radius: 22px;">
+            <img src="../../../assets/Events/3.png" alt="Marraige Events" style="width:100%;border-radius: 22px;">
             <div class="carousel-caption">
               <h3>Marraige Events</h3>
               <p>LA is always so much fun!</p>
@@ -89,7 +91,7 @@
           </div>
 
           <div class="item">
-            <img src="../../../assets/banner-2.png" alt="Marraige Events" style="width:100%;border-radius: 22px">
+            <img src="../../../assets/Events/2.png" alt="Marraige Events" style="width:100%;border-radius: 22px">
             <div class="carousel-caption">
               <h3>Marraige Events</h3>
               <p>Thank you, Marraige Events!</p>
@@ -97,7 +99,15 @@
           </div>
 
           <div class="item">
-            <img src="../../../assets/banner-3.png" alt="Marraige Events" style="width:100%;border-radius: 22px">
+            <img src="../../../assets/Events/4.png" alt="Marraige Events" style="width:100%;border-radius: 22px">
+            <div class="carousel-caption">
+              <h3>Marraige Events</h3>
+              <p>We love the Big Apple!</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="../../../assets/Events/5.png" alt="Marraige Events" style="width:100%;border-radius: 22px">
             <div class="carousel-caption">
               <h3>Marraige Events</h3>
               <p>We love the Big Apple!</p>
@@ -118,198 +128,437 @@
       </div>
     </div>
 
-     <div class="products bg-orange">
+    <div class="products bg_color-dark-1">
+      <div class="container menu-data">
+        <div class="row">
+          <div class="">
+            <!-- Nav tabs -->
+            <div class="">
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                    data-toggle="tab"><i class="fa-solid fa-helmet-safety pr-2"></i> Events </a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i
+                      class="fa-solid fa-utensils pr-2"></i> Services </a></li>
+
+              </ul>
+              <!-- Tab panes -->
+              <div class="tab-content p-0">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                  <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                      <div class="Product-Card">
+                        <div class="card-inner" (click)="gotoevent()">
+                          <div class="image-area">
+                            <a>
+                              <img src="../../../assets/Events/1.png" alt="">
+                            </a>
+                          </div>
+                          <div class="blog-content">
+                            <p class="tag color-two">
+
+                              <span>Marriage </span>
+                            </p>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                      <div class="Product-Card">
+                        <div class="card-inner" (click)="gotoevent()">
+                          <div class="image-area">
+                            <a>
+                              <img
+                                src="../../../assets/Events/2.png"
+                                alt="">
+                            </a>
+                          </div>
+                          <div class="blog-content">
+                            <p class="tag color-two">
+
+                              <span>Baby Shower </span>
+                            </p>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                      <div class="Product-Card">
+                        <div class="card-inner" (click)="gotoevent()">
+                          <div class="image-area">
+                            <a>
+                              <img
+                                src="../../../assets/Events/3.png"
+                                alt="">
+                            </a>
+                          </div>
+                          <div class="blog-content">
+                            <p class="tag color-two">
+
+                              <span>Engagement </span>
+                            </p>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                      <div class="Product-Card">
+                        <div class="card-inner" (click)="gotoevent()">
+                          <div class="image-area">
+                            <a>
+                              <img
+                                src="../../../assets/Events/4.png"
+                                alt="">
+                            </a>
+                          </div>
+                          <div class="blog-content">
+                            <p class="tag color-two">
+
+                              <span>Birthday </span>
+                            </p>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                      <div class="Product-Card">
+                        <div class="card-inner" (click)="gotoevent()">
+                          <div class="image-area">
+                            <a>
+                              <img src="../../../assets/Events/5.png"
+                                alt="">
+                            </a>
+                          </div>
+                          <div class="blog-content">
+                            <p class="tag color-two">
+
+                              <span>Puberty Ceremony </span>
+                            </p>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                      <div class="Product-Card">
+                        <div class="card-inner" (click)="gotoevent()">
+                          <div class="image-area">
+                            <a>
+                              <img
+                                src="../../../assets/Events/6.png"
+                                alt="">
+                            </a>
+                          </div>
+                          <div class="blog-content">
+                            <p class="tag color-two">
+
+                              <span>Funeral </span>
+                            </p>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile">
+                   <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                      <div class="Product-Card">
+                        <div class="card-inner" (click)="gotoevent()">
+                          <div class="image-area">
+                            <a>
+                              <img src="../../../assets/Services/10.png" alt="">
+                            </a>
+                          </div>
+                          <div class="blog-content">
+                            <p class="tag color-two">
+
+                              <span>⁠Function halls </span>
+                            </p>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                      <div class="Product-Card">
+                        <div class="card-inner" (click)="gotoevent()">
+                          <div class="image-area">
+                            <a>
+                              <img
+                                src="../../../assets/Services/1.png"
+                                alt="">
+                            </a>
+                          </div>
+                          <div class="blog-content">
+                            <p class="tag color-two">
+
+                              <span>Kirana/grocery </span>
+                            </p>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                      <div class="Product-Card">
+                        <div class="card-inner" (click)="gotoevent()">
+                          <div class="image-area">
+                            <a>
+                              <img
+                                src="../../../assets/Services/5.png"
+                                alt="">
+                            </a>
+                          </div>
+                          <div class="blog-content">
+                            <p class="tag color-two">
+
+                              <span>Vegetables & leafs </span>
+                            </p>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                      <div class="Product-Card">
+                        <div class="card-inner" (click)="gotoevent()">
+                          <div class="image-area">
+                            <a>
+                              <img
+                                src="../../../assets/Services/2.png"
+                                alt="">
+                            </a>
+                          </div>
+                          <div class="blog-content">
+                            <p class="tag color-two">
+
+                              <span>Poultry & Mutton </span>
+                            </p>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                      <div class="Product-Card">
+                        <div class="card-inner" (click)="gotoevent()">
+                          <div class="image-area">
+                            <a>
+                              <img src="../../../assets/Services/3.png"
+                                alt="">
+                            </a>
+                          </div>
+                          <div class="blog-content">
+                            <p class="tag color-two">
+
+                              <span>⁠Tenthouse </span>
+                            </p>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                      <div class="Product-Card">
+                        <div class="card-inner" (click)="gotoevent()">
+                          <div class="image-area">
+                            <a>
+                              <img
+                                src="../../../assets/Services/4.png"
+                                alt="">
+                            </a>
+                          </div>
+                          <div class="blog-content">
+                            <p class="tag color-two">
+
+                              <span>Dairy products </span>
+                            </p>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row collapse" id="veg">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                      <div class="Product-Card">
+                        <div class="card-inner" (click)="gotoevent()">
+                          <div class="image-area">
+                            <a>
+                              <img src="../../../assets/Services/7.png" alt="">
+                            </a>
+                          </div>
+                          <div class="blog-content">
+                            <p class="tag color-two">
+
+                              <span>⁠Photography</span>
+                            </p>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                      <div class="Product-Card">
+                        <div class="card-inner" (click)="gotoevent()">
+                          <div class="image-area">
+                            <a>
+                              <img
+                                src="../../../assets/Services/8.png"
+                                alt="">
+                            </a>
+                          </div>
+                          <div class="blog-content">
+                            <p class="tag color-two">
+
+                              <span>⁠Catering Service</span>
+                            </p>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                      <div class="Product-Card">
+                        <div class="card-inner" (click)="gotoevent()">
+                          <div class="image-area">
+                            <a>
+                              <img
+                                src="../../../assets/Services/9.png"
+                                alt="">
+                            </a>
+                          </div>
+                          <div class="blog-content">
+                            <p class="tag color-two">
+
+                              <span>⁠Decorators/ Decoration</span>
+                            </p>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                      <div class="Product-Card">
+                        <div class="card-inner" (click)="gotoevent()">
+                          <div class="image-area">
+                            <a>
+                              <img
+                                src="../../../assets/Services/6.png"
+                                alt="">
+                            </a>
+                          </div>
+                          <div class="blog-content">
+                            <p class="tag color-two">
+
+                              <span>⁠Water Supply </span>
+                            </p>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="col-md-12 show-more-btn mx-auto text-center mt-5 cont-sec">
+                      <a class="bhagona-btn-2" data-toggle="collapse" data-target="#veg">Show More</a>
+                      <a class="bhagona-btn-2">continue </a>
+                    </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+
+
+
+
+  <footer class="footer-section">
     <div class="container">
-    <div class="row">
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
-        <div class="Product-Card">
-          <div class="card-inner" (click)="gotoevent()">
-            <div class="image-area">
-              <a >
-                <img
-                  src="https://static.vecteezy.com/system/resources/previews/031/848/553/large_2x/indian-wedding-couple-ai-generated-free-photo.jpg"
-                  alt="">
-              </a>
-            </div>
-            <div class="blog-content">
-              <p class="tag color-two">
-                
-                <span>Marriage </span>
-              </p>
-
+      <div class="footer-cta pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="fa fa-map-marker"></i>
+              <div class="cta-text">
+                <h4>Find us</h4>
+                <span>1010 Avenue, sw 54321, chandigarh</span>
+              </div>
             </div>
           </div>
-          
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="fa fa-phone"></i>
+              <div class="cta-text">
+                <h4>Call us</h4>
+                <span>9876543210 0</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="fa fa-envelope-open"></i>
+              <div class="cta-text">
+                <h4>Mail us</h4>
+                <span>mailinfo.com</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
-        <div class="Product-Card">
-          <div class="card-inner" (click)="gotoevent()">
-            <div class="image-area">
-              <a >
-                <img
-                  src="https://img.freepik.com/free-psd/3d-blue-pink-gender-reveal-podium-with-toys_23-2150816968.jpg?semt=ais_hybrid&w=740"
-                  alt="">
-              </a>
-            </div>
-            <div class="blog-content">
-              <p class="tag color-two">
-                
-                <span>Baby Shower </span>
-              </p>
-
+    </div>
+    <div class="copyright-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 text-center">
+            <div class="copyright-text">
+              <p>Copyright &copy; 2025, All Right Reserved <a>Bhagona</a></p>
             </div>
           </div>
-          
-        </div>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
-        <div class="Product-Card">
-          <div class="card-inner" (click)="gotoevent()">
-            <div class="image-area">
-              <a >
-                <img src="https://img.freepik.com/premium-photo/engaged-couple-with-rings_908985-39841.jpg" alt="">
-              </a>
-            </div>
-            <div class="blog-content">
-              <p class="tag color-two">
-               
-                <span>Engagement </span>
-              </p>
 
-            </div>
-          </div>
-          
-        </div>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
-        <div class="Product-Card">
-          <div class="card-inner" (click)="gotoevent()">
-            <div class="image-area">
-              <a >
-                <img
-                  src="https://img.freepik.com/premium-photo/happy-birthday-background-wallpaper-illustration_492154-7372.jpg"
-                  alt="">
-              </a>
-            </div>
-            <div class="blog-content">
-              <p class="tag color-two">
-               
-                <span>Birthday </span>
-              </p>
-
-            </div>
-          </div>
-          
-        </div>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
-        <div class="Product-Card">
-          <div class="card-inner" (click)="gotoevent()">
-            <div class="image-area">
-              <a >
-                <img
-                  src="https://koala.sh/api/image/v2-ggrb4-uzcpp.jpg?width=1216&height=832&dream"
-                  alt="">
-              </a>
-            </div>
-            <div class="blog-content">
-              <p class="tag color-two">
-               
-                <span>Puberty Ceremony </span>
-              </p>
-
-            </div>
-          </div>
-          
-        </div>
-      </div>
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
-        <div class="Product-Card">
-          <div class="card-inner" (click)="gotoevent()">
-            <div class="image-area">
-              <a >
-                <img
-                  src="https://img.freepik.com/premium-photo/funeral-service-group-men-carrying-casket_921860-82546.jpg?w=360"
-                  alt="">
-              </a>
-            </div>
-            <div class="blog-content">
-              <p class="tag color-two">
-               
-                <span>Funeral </span>
-              </p>
-
-            </div>
-          </div>
-          
         </div>
       </div>
     </div>
-
-  </div>
-  </div>
+  </footer>
 
 
-  
-  </section>
- 
-
-  
 
 
-<footer class="footer-section">
-        <div class="container">
-            <div class="footer-cta pt-5 pb-5">
-                <div class="row">
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fa fa-map-marker"></i>
-                            <div class="cta-text">
-                                <h4>Find us</h4>
-                                <span>1010 Avenue, sw 54321, chandigarh</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fa fa-phone"></i>
-                            <div class="cta-text">
-                                <h4>Call us</h4>
-                                <span>9876543210 0</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fa fa-envelope-open"></i>
-                            <div class="cta-text">
-                                <h4>Mail us</h4>
-                                <span>mailinfo.com</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        <div class="copyright-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12 col-lg-12 text-center">
-                        <div class="copyright-text">
-                            <p>Copyright &copy; 2025, All Right Reserved <a >Bhagona</a></p>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </footer>
-  
-
-
-    
 
 </ion-content>

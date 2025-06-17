@@ -54,7 +54,7 @@
 
 .products{
   padding: 15px 0;
-  background: #e4c815;
+  background: #fff;
 }
 
 .bg{
@@ -75,13 +75,14 @@
 .Product-Card {
     position: relative;
     z-index: 1;
-    margin-bottom: 25px;
+   
 }
 .Product-Card .card-inner {
     padding: 20px 20px;
     border-radius: 20px;
-    background: linear-gradient(180.2deg, #ffffdb -8.53%, #ffffdb 109.43%);
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    background: #fff;
+    box-shadow: #e4c81566 0px 5px, #e4c8154d 0px 10px, #e4c81533 0px 15px;
+    // box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     // clip-path: polygon(0% 9.276%, 0% 9.276%, 0.157% 7.772%, 0.613% 6.344%, 1.342% 5.013%, 2.319% 3.798%, 3.52% 2.717%, 4.921% 1.79%, 6.496% 1.035%, 8.22% 0.473%, 10.07% 0.121%, 12.019% 0%, 87.981% 0%, 87.981% 0%, 89.93% 0.121%, 91.78% 0.473%, 93.504% 1.035%, 95.079% 1.79%, 96.48% 2.717%, 97.681% 3.798%, 98.658% 5.013%, 99.387% 6.344%, 99.843% 7.772%, 100% 9.276%, 100% 82.629%, 100% 82.629%, 99.99% 82.925%, 99.959% 83.219%, 99.909% 83.511%, 99.839% 83.799%, 99.749% 84.085%, 99.64% 84.366%, 99.512% 84.643%, 99.364% 84.914%, 99.198% 85.18%, 99.014% 85.439%, 90.069% 97.244%, 90.069% 97.244%, 89.65% 97.736%, 89.171% 98.186%, 88.638% 98.592%, 88.057% 98.951%, 87.432% 99.262%, 86.77% 99.521%, 86.074% 99.727%, 85.351% 99.877%, 84.606% 99.969%, 83.844% 100%, 12.019% 100%, 12.019% 100%, 10.07% 99.879%, 8.22% 99.527%, 6.496% 98.965%, 4.921% 98.21%, 3.52% 97.283%, 2.319% 96.202%, 1.342% 94.987%, 0.613% 93.656%, 0.157% 92.228%, 0% 90.724%, 0% 9.276%);
 }
 .Product-Card .card-inner .image-area {
@@ -128,10 +129,12 @@
     gap: 10px;
     font-weight: 500;
     padding: 9px 22px 7px;
-    border: 1px solid #00000061;
+    border: 1px solid #f5f5f5;
     max-width: max-content;
     border-radius: 100px;
-    color: #000;
+    color: #fff;
+    background: #e4c815;
+    letter-spacing: 1.2px;
     font-size: 14px;
     font-weight: 700;
     margin: 0 auto;
@@ -258,6 +261,10 @@
   .payment-card{
     width:350px !important;
   }
+  .key-feature{
+padding: 25px !important;
+  }
+  
   .single-cta i{
     font-size: 20px;
   }
@@ -272,7 +279,7 @@
     margin: 0 !important;
   }
   .Product-Card{
-    margin:8px !important;
+    margin:5px 8px 25px 8px !important;
   }
   .Product-Card .card-inner .blog-content .tag img{
     display: none !important;
@@ -296,15 +303,15 @@
     padding:20px 35px 20px 0px !important;
   }
 .option_item .option_inner .tickmark img{
-    width: 60px !important;
+    width: 40px !important;
 }
 .option_item{
     margin: 0 !important;
-    margin-bottom: 15px !important;
+    padding: 10px;
 }
 .option_item .option_inner .tickmark{
-    top: 6px !important;
-    right: -10px !important;
+    top: 12px !important;
+    right: -12px !important;
 }
 .Menu-List .popular-inner-box .popular-inner-item .text h5{
     overflow: hidden !important;
@@ -787,7 +794,7 @@ input[type="checkbox"] {
 }
 
 .Event-Menu-List-section{
-    padding: 0;
+    padding: 0px;
 }
 .Event-Menu-List {
   display: flex;
@@ -798,6 +805,11 @@ input[type="checkbox"] {
  border-radius: 0;
  flex-direction: column;
  align-items: center;
+//  position: fixed;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     width: 90%;
 }
 .Event-Menu-List:hover .Event-Menu-List-img img {
   transform: scale(1.2);
@@ -3644,7 +3656,7 @@ section-title {
   line-height: 1.1;
     font-weight: 800;
     margin-bottom: 1rem;
-    font-size: 3rem;
+    font-size: 1.8rem;
     color: #f2f8fe;
 }
 .carousel-caption p{
@@ -3656,8 +3668,12 @@ section-title {
 .carousel-inner>.item{
   background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
 }
-.carousel-control.left,.carousel-control.right,.carousel-inner{
-  border-radius: 22px;
+.carousel-control.left,.carousel-control.right{
+  border-radius: 12px;
+}
+.carousel-inner{
+  border-radius: 12px;
+  border: 1px solid #fff;
 }
 
 /** Logo Section **/
@@ -3718,11 +3734,13 @@ border-radius: 20px !important;
     position: relative;
     overflow: hidden;
     z-index: 1;
+    text-decoration: none;
 }
 
-.bhagona-btn-2:hover {
+.bhagona-btn-2:hover,.bhagona-btn-2:active,.bhagona-btn-2:focus {
     background-position: right center;
     text-decoration: none;
+    color: #fff;
 }
 
 // h1 {
@@ -4306,12 +4324,14 @@ border: 3.5px dashed transparent;
             border: none;
             color: #fff4b8;
             font-size: 16px;
+             text-decoration: none;
         }
          .menu-data .nav-tabs>li.active>a,
          .menu-data .nav-tabs>li>a:hover {
             border: none;
             color: #e4c815 !important;
             background: transparent;
+            text-decoration: none;
         }
          .menu-data .nav-tabs>li>a::after {
             content: "";
@@ -4353,3 +4373,50 @@ border: 3.5px dashed transparent;
 
 
   
+  
+.key-feature {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+border-radius: 8px !important;
+padding: 1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    position: relative;
+    border: 1px solid #e0e0e0;
+background: #fcfcfc96;
+}
+.flex-1 {
+    flex: 1 1 0%;
+}
+.key-feature h6{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+.key-feature .price{
+    color: #fc791a;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+.key-feature .icon {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), to(rgba(239, 94, 43, 0.15)));
+    background: linear-gradient(90deg, transparent, rgba(239, 94, 43, 0.15));
+}
+.key-feature:hover {
+    box-shadow: 0 5px 13px rgba(60, 72, 88, 0.2) !important;
+}
