@@ -12,5 +12,5 @@ export class CustomerordersPage implements OnInit {
 
   ngOnInit() {
   }
-
+  toggleCart(){}
 }

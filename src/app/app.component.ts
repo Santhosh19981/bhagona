@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
+import { Platform } from '@ionic/angular';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +9,31 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class AppComponent {
-  constructor() {}
+  private platform = inject(Platform);
+  private router = inject(Router);
+
+  constructor() {
+    this.initializeApp();
+  }
+
+  initializeApp() {
+    const isMobile = this.platform.is('cordova') || this.platform.is('capacitor') || this.platform.is('mobile') || this.isMobileBrowser();
+
+    const isLoggedIn = !!localStorage.getItem('user'); // Replace with your login check
+
+    if (isMobile) {
+      if (isLoggedIn) {
+        this.router.navigate(['/home']);
+      } else {
+        this.router.navigate(['/login']);
+      }
+    } else {
+      this.router.navigate(['/websitehome']);
+    }
+  }
+
+  isMobileBrowser(): boolean {
+    const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
+    return /android|iphone|ipad|mobile/i.test(userAgent);
+  }
 }
