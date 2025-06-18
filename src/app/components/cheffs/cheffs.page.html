@@ -15,10 +15,13 @@
 
     <!-- Cart Button with Badge -->
     <ion-buttons slot="end">
-      <span class="fa-stack fa-2x has-badge" data-count="5">
-  <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-  <i style="" class="fa fa-shopping-cart fa-stack-2x red-cart"></i>
-</span>
+      <div class="header-social-links">
+        <div class="cart-icon" onclick="toggleCart()">
+          <img src="https://cdn-icons-png.flaticon.com/512/777/777205.png" style="width: 30px;">
+          <span class="cart-count">0</span>
+        </div>
+       
+      </div>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -39,7 +42,7 @@
 <section class="menu-list ">
     <div class="row p-2">
       <h2 class="title">Select Cheff</h2>
-      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+      <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
         <label class="option_item">
           <input type="checkbox" class="checkbox">
           <div class="option_inner facebook">
@@ -139,7 +142,7 @@
             </div>
           </div>
         </label>
-      </div>
+      </div> -->
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
         <label class="option_item">
           <input type="checkbox" class="checkbox">

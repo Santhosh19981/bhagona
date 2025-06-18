@@ -1668,7 +1668,7 @@ a {
 @media (max-width: 920px) {
   .hamburger-menu-container {
     display: flex;
-    column-gap: 20px;
+    column-gap: 12px;
   }
 .fa-stack-2x{
   font-size: 1.6em;
@@ -4420,4 +4420,7 @@ background: #fcfcfc96;
 }
 .key-feature:hover {
     box-shadow: 0 5px 13px rgba(60, 72, 88, 0.2) !important;
+}
+.sc-ion-buttons-ios-h{
+  padding: 20px !important;
 }
