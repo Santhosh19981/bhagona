@@ -3103,6 +3103,8 @@ section-title {
   background: #031119;
   position: relative;
   z-index: 1;
+  overflow: auto;
+  height: 100vh;
   // margin-bottom: 100px;
 }
 .bg_color-dark-1::after{
@@ -4386,7 +4388,8 @@ justify-content: center;
 box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
     position: relative;
     border: 1px solid #e0e0e0;
-background: #fcfcfc96;
+background: #fff;
+margin-bottom: 15px;
 }
 .flex-1 {
     flex: 1 1 0%;
