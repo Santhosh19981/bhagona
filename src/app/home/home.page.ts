@@ -13,7 +13,15 @@ export class HomePage {
   gotoevent(){
     this.router.navigate(['/event-details']);
   }
+  gotoservice(){
+    this.router.navigate(['/service-details']);
+  }
   logout(){
+    localStorage.clear();
     this.router.navigate(['/login']);
+  }
+
+  chefforders(){
+    this.router.navigate(['/chefforders']);
   }
 }

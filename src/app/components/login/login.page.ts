@@ -9,13 +9,13 @@ import { Router } from '@angular/router';
 })
 export class LoginPage implements OnInit {
 
-   mobileNumber: string = '';
+  mobileNumber: string = '';
   otp: string = '';
   errorMessage: string = '';
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
   handleLogin() {
     const validOtp = '1234'; // static OTP for testing
@@ -26,19 +26,29 @@ export class LoginPage implements OnInit {
     }
 
     if (this.otp === validOtp) {
-      localStorage.setItem('user', this.mobileNumber); // set login flag
-      this.router.navigate(['/home']);
+      localStorage.setItem('user', this.mobileNumber);
+      if (this.mobileNumber == '6300358759') {
+        localStorage.setItem('userType', 'cheff');
+        this.router.navigate(['/chefforders']);
+      }
+      else {
+        localStorage.setItem('userType', 'customer');
+        this.router.navigate(['/home']);
+      }
+
+      // set login flag
+
     } else {
       this.errorMessage = 'Invalid OTP. Please try again.';
     }
   }
 
   allowOnlyNumbers(event: KeyboardEvent) {
-  const charCode = event.which ? event.which : event.keyCode;
-  // Allow only number keys (0–9)
-  if (charCode < 48 || charCode > 57) {
-    event.preventDefault();
+    const charCode = event.which ? event.which : event.keyCode;
+    // Allow only number keys (0–9)
+    if (charCode < 48 || charCode > 57) {
+      event.preventDefault();
+    }
   }
-}
 
 }
