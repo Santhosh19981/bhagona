@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,9 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['home.page.scss'],
   standalone: false,
 })
-export class HomePage {
+export class HomePage implements OnInit {
 
   constructor(private router: Router,) {}
+   
   gotoevent(){
     this.router.navigate(['/event-details']);
   }
@@ -24,4 +25,14 @@ export class HomePage {
   chefforders(){
     this.router.navigate(['/chefforders']);
   }
+  orders(){
+     this.router.navigate(['/customerorders']);
+    
+  }
+   ngOnInit() { 
+      const userType =  localStorage.getItem('userType')
+      if(userType && userType == 'cheff')
+        this.chefforders();
+    }
+
 }

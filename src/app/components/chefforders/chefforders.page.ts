@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-chefforders',
@@ -7,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   standalone: false,
 })
 export class CheffordersPage implements OnInit {
-
-  constructor() { }
+  isDetailsPage:boolean = false;
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+   logout(){
+    localStorage.clear();
+    this.router.navigate(['/login']);
+  }
+  view(){
+    this.isDetailsPage = true;
+  }
 }
