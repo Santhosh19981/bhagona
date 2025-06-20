@@ -1,6 +1,6 @@
 
 <!-- Mobile header -->
-<ion-header style="display: none;">
+<ion-header *ngIf="isMobile">
   <ion-toolbar class="custom-toolbar">
     <!-- Back Button -->
     <ion-buttons slot="start">
@@ -11,17 +11,20 @@
     <ion-title class="custom-title">Order Confirm</ion-title>
 
     <!-- Cart Button with Badge -->
-    <ion-buttons slot="end">
-      <span class="fa-stack fa-2x has-badge" data-count="5">
-  <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-  <i style="" class="fa fa-shopping-cart fa-stack-2x red-cart"></i>
-</span>
+  <ion-buttons slot="end">
+      <div class="header-social-links">
+        <div class="cart-icon" onclick="toggleCart()">
+          <img src="https://cdn-icons-png.flaticon.com/512/777/777205.png" style="width: 30px;">
+          <span class="cart-count">0</span>
+        </div>
+       
+      </div>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 <!-- Mobile header -->
 <ion-content>
-   <header id="header" class="header d-flex align-items-center sticky-top">
+   <header id="header" class="header d-flex align-items-center sticky-top" *ngIf="!isMobile">
     <div
       class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
