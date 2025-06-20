@@ -4,8 +4,31 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<ion-header *ngIf="isMobile">
+  <ion-toolbar class="custom-toolbar">
+    <!-- Back Button -->
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <!-- Page Title -->
+    <ion-title class="custom-title">Review</ion-title>
+
+    <!-- Cart Button with Badge -->
+  <ion-buttons slot="end">
+      <div class="header-social-links">
+        <div class="cart-icon" onclick="toggleCart()">
+          <img src="https://cdn-icons-png.flaticon.com/512/777/777205.png" style="width: 30px;">
+          <span class="cart-count">0</span>
+        </div>
+       
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content [fullscreen]="true">
-  <header id="header" class="header d-flex align-items-center sticky-top">
+  <header id="header" class="header d-flex align-items-center sticky-top" *ngIf="!isMobile"> 
     <div
       class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
@@ -113,7 +136,7 @@
       </div>
     </div>
   </div>
-  <footer id="footer" class="footer light-background">
+  <footer id="footer" class="footer light-background" *ngIf="!isMobile">
 
     <div class="container footer-top">
       <div class="row gy-4">

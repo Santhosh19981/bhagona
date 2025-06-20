@@ -52,7 +52,7 @@ export class WebsitehomePage implements OnInit {
   }
 
   gotoOrders(){
-      this.router.navigate(['/customerorders']);
+      this.router.navigate(['/review']);
   }
 
 }
