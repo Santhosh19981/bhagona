@@ -38,7 +38,7 @@ margin: auto;
 .login-box {
   position: relative;
   width: 450px;
-  border: 3px solid #e4c815;
+  border: 3px solid #7251A2;
   border-radius: 15px;
   padding: 7.5em 2.5em 4em 2.5em;
   background-color: #ffffff;
@@ -54,7 +54,7 @@ margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e4c815;
+  background-color: #7251A2;
   width: 150px;
   height: 80px;
   border-radius: 0 0 20px 20px;
@@ -78,7 +78,7 @@ margin: auto;
   height: 30px;
   border-top-right-radius: 50%;
   background: transparent;
-  box-shadow: 15px 0 0 0 #e4c815;
+  box-shadow: 15px 0 0 0 #7251A2;
 }
 
 .login-header::after {
@@ -90,7 +90,7 @@ margin: auto;
   height: 30px;
   border-top-left-radius: 50%;
   background: transparent;
-  box-shadow: -15px 0 0 0 #e4c815;
+  box-shadow: -15px 0 0 0 #7251A2;
 }
 
 .input_box {
@@ -107,7 +107,7 @@ margin: auto;
   background: transparent;
   color: #000000;
   padding-inline: 20px 50px;
-  border: 2px solid #e4c815;
+  border: 2px solid #7251A2;
   border-radius: 30px;
   outline: none;
 }
@@ -132,7 +132,7 @@ margin: auto;
   top: -10px;
   left: 20px;
   font-size: 14px;
-  background-color: #e4c815;
+  background-color: #7251A2;
   border-radius: 30px;
   color: #fff;
   padding: 3px 10px;
@@ -163,7 +163,7 @@ margin: auto;
 .input-submit {
   width: 100%;
   height: 35px;
-  background: #e4c815;
+  background: #7251A2;
   font-size: 16px;
   font-weight: 500;
   border: none;
@@ -186,7 +186,7 @@ margin: auto;
 }
 
 a {
-  color: #e4c815;
+  color: #7251A2;
 }
 
 @media only screen and (max-width: 564px) {
@@ -288,7 +288,7 @@ input[type="checkbox"] {
 }
 
 .bg-orange{
-  background: linear-gradient(to right, #FDDE90, #e4c815);
+  background: linear-gradient(to right, #FDDE90, #7251A2);
  
 }
 
@@ -437,7 +437,7 @@ input[type="checkbox"] {
     color: #555;
     background-color: #fff;
     background-image: none;
-    border: 1px solid #e4c815;
+    border: 1px solid #7251A2;
     border-radius: 4px;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
@@ -517,19 +517,19 @@ button:hover {
     height: 0;
     z-index: 99;
     border-left: 20px solid transparent;
-    border-right: 30px solid #e4c815;
-    border-bottom: 34px solid #e4c815;
+    border-right: 30px solid #7251A2;
+    border-bottom: 34px solid #7251A2;
     transition: all 0.15s ease-in-out;
 
 }
 .form-control:focus{
-    border-color: #e4c815;
+    border-color: #7251A2;
     // box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgb(30, 102, 195);
 }
 .relative input:focus + i.fa{
     border-left: 20px solid transparent;
-    border-right: 30px solid #e4c815;
-    border-bottom: 34px solid #e4c815;
+    border-right: 30px solid #7251A2;
+    border-bottom: 34px solid #7251A2;
 }
 .relative input:focus + i.fa:before{
     color: #fff;
@@ -586,9 +586,9 @@ button:hover {
     color:#ff5501;
 }
 .movebtnsu {
-    border: 2px solid #e4c815;
-    box-shadow: inset 0 0 0 0 #e4c815;
-    color: #e4c815;
+    border: 2px solid #7251A2;
+    box-shadow: inset 0 0 0 0 #7251A2;
+    color: #7251A2;
 }
 .movebtnre:focus,
 .movebtnre:hover,
@@ -603,8 +603,8 @@ button:hover {
 .movebtnsu:active {
     background-color: transparent;
     color: #FFF;
-    border-color: #e4c815;
-    box-shadow: inset 96px 0 0 0 #e4c815;
+    border-color: #7251A2;
+    box-shadow: inset 96px 0 0 0 #7251A2;
 }
 
 
