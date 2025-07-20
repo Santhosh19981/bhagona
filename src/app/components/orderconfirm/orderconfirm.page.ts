@@ -21,6 +21,13 @@ export class OrderconfirmPage implements OnInit {
     return /android|iphone|ipad|mobile/i.test(userAgent);
   }
   gotoHome(){
-    this.router.navigate(['/websitehome']);
+    if(this.isMobile)
+    this.router.navigate(['/home']);
+    else
+    this.router.navigate(['/websitehome']);    
+  }
+
+  gotoOrders(){
+      this.router.navigate(['/customerorders']);
   }
 }

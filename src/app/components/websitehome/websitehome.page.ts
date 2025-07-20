@@ -3,6 +3,7 @@ import { EventDetailsPage } from '../event-details/event-details.page';
 import { CommonModule } from '@angular/common';
 import { IonicModule, ModalController } from '@ionic/angular';
 import { Router } from '@angular/router';
+import { ServiceDetailsPage } from '../service-details/service-details.page';
 
 @Component({
   selector: 'app-websitehome',
@@ -19,7 +20,8 @@ export class WebsitehomePage implements OnInit {
 
   ngOnInit() {
   }
-   async openEventDetailsModal() {
+
+  async openEventDetailsModal() {
     const modal = await this.modalCtrl.create({
       component: EventDetailsPage,
       componentProps: {
@@ -29,30 +31,44 @@ export class WebsitehomePage implements OnInit {
 
     await modal.present();
 
+    console.log('Waiting for modal to dismiss...');
     const { data, role } = await modal.onDidDismiss();
+    console.log('Modal dismissed with:', data, role);
+
     if (role === 'closed') {
       this.onModalClosed(data);
     }
   }
 
+    async openServiceDetailsModal() {
+    const modal = await this.modalCtrl.create({
+      component: ServiceDetailsPage,
+      componentProps: {
+        from: 'websitehome'
+      }
+    });
+
+    await modal.present();
+  }
+
   onModalClosed(returnedData: any) {
+    console.log('Modal closed with data:', returnedData);
     if (returnedData) {
       this.isEvents = false;
       this.isMenu = true;
     }
-    console.log('Modal closed with data:', returnedData);
   }
 
-  gotocheff(){
-      this.isMenu = false;
-      this.ischeffs = true;
-  }
-  gotoCheckout(){
-      this.router.navigate(['/webcheckout']);
+  gotocheff() {
+    this.isMenu = false;
+    this.ischeffs = true;
   }
 
-  gotoOrders(){
-      this.router.navigate(['/review']);
+  gotoCheckout() {
+    this.router.navigate(['/webcheckout']);
   }
 
+  gotoOrders() {
+    this.router.navigate(['/customerorders']);
+  }
 }

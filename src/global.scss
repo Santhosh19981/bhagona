@@ -55,6 +55,7 @@
 .products{
   padding: 15px 0;
   background: #fff;
+  width: 100%;
 }
 
 .bg{
@@ -258,21 +259,39 @@
 
 /** Chef CSS Start **/
 @media (min-width: 300px) and (max-width: 776px) {
+//   .bg_color-dark-1 {
+//     background: #031119;
+//     position: relative;
+//     z-index: 1;
+//     height: 100%;
+//     overflow: hidden auto;
+//     padding: 20px;
+// }
   .payment-card{
     width:350px !important;
   }
   .key-feature{
 padding: 25px !important;
   }
-  
+  .review-img{
+        text-align: center;
+    padding: 30px 0;
+  }
+  .review-img img{
+            width: 250px;
+        height: auto;
+  }
   .single-cta i{
     font-size: 20px;
+  }
+  .website-body{
+    padding: 15px 0 !important;
   }
   .col-sm-4{
     width: 50% !important;
     padding: 0 !important;
   }
-  .col-sm-6,.col-md-12{
+  .col-sm-6,.col-md-12,.col-sm-12{
     padding: 0 !important;
   }
   .row{
@@ -880,7 +899,7 @@ input[type="checkbox"] {
 }
 .Event-Menu-List .popular-inner-box {
       width: 100%;
-    padding: 20px;
+    padding: 31px;
 }
 .Event-Menu-List .popular-inner-box .Event-Menu-List-text {
   padding: 0px 0 5px 0;
@@ -2032,7 +2051,7 @@ ul {
 .website-body {
 
   scroll-behavior: smooth;
-  
+  // padding: 100px 0;
   // background: #031119;
 
 }
@@ -3103,8 +3122,7 @@ section-title {
   background: #031119;
   position: relative;
   z-index: 1;
-  overflow: auto;
-  height: 100vh;
+ 
   // margin-bottom: 100px;
 }
 .bg_color-dark-1::after{
@@ -4423,7 +4441,4 @@ margin-bottom: 15px;
 }
 .key-feature:hover {
     box-shadow: 0 5px 13px rgba(60, 72, 88, 0.2) !important;
-}
-.sc-ion-buttons-ios-h{
-  padding: 20px !important;
 }

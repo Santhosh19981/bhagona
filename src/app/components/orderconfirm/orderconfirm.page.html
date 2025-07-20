@@ -11,7 +11,9 @@
     <ion-title class="custom-title">Order Confirm</ion-title>
 
     <!-- Cart Button with Badge -->
-  <ion-buttons slot="end">
+  <ion-buttons slot="end" style="    padding-right: 17px !important;
+    padding-top: 8px;
+">
       <div class="header-social-links">
         <div class="cart-icon" onclick="toggleCart()">
           <img src="https://cdn-icons-png.flaticon.com/512/777/777205.png" style="width: 30px;">
@@ -32,14 +34,13 @@
         <img src="../../../assets/home-logo.png" style="width: 145px;">
       </a>
 
-      <nav id="navmenu" class="navmenu">
+       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#Orders">Orders</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>          
+          <li><a href="#Events">Events</a></li>
           <li><a href="#services">Services</a></li>
-
+          <li><a (click)="gotoOrders()">Orders</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-x"></i>
@@ -93,10 +94,10 @@
   <!-- Reciept CTA -->
   <div class="payment-card">
     <div class="cta-row">
-      <button class="secondary" (click)="gotoHome()">
+      <button type="button" class="secondary" (click)="gotoHome()">
         Back to Home
       </button>
-      <button>
+      <button type="button" (click)="gotoHome()">
         Next Booking
       </button>
     </div>

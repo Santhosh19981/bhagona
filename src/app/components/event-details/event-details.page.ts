@@ -11,15 +11,17 @@ import { IonicModule, ModalController } from '@ionic/angular';
   imports: [CommonModule, IonicModule]
 })
 export class EventDetailsPage implements OnInit {
-  @Input() from: string | undefined;
-  constructor(private router: Router, private modalCtrl: ModalController) { }
+@Input() from: string | undefined;
 
-  ngOnInit() {
-  }
+  constructor(private modalCtrl: ModalController, private router: Router) {}
+
+  ngOnInit() {}
+
   gotomenu() {
     if (this.from === 'websitehome') {
+      console.log('Returning from modal with data and role');
       const returnData = {
-        message: 'User closed the modal',
+        message: 'User chose to go to menu',
         timestamp: new Date()
       };
       this.modalCtrl.dismiss(returnData, 'closed');
@@ -29,9 +31,6 @@ export class EventDetailsPage implements OnInit {
   }
 
   gottoHome() {
-    if (this.from == "websitehome")
-      this.modalCtrl.dismiss();
-    else
       this.router.navigate(['/home']);
   }
 }

@@ -1,13 +1,198 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>service-details</ion-title>
-  </ion-toolbar>
-</ion-header>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">service-details</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+<ion-header>
+  <ion-toolbar class="custom-toolbar">
+    <!-- Back Button -->
+    <ion-buttons slot="start">
+      <ion-back-button (click)="gottoHome()"></ion-back-button>
+    </ion-buttons>
+
+    <!-- Page Title -->
+    <ion-title class="custom-title">Service Details</ion-title>
+
+    <!-- Cart Button with Badge -->
+    <ion-buttons slot="end" *ngIf="from != 'websitehome'">
+      <div class="header-social-links">
+        <div class="cart-icon" onclick="toggleCart()">
+          <img src="https://cdn-icons-png.flaticon.com/512/777/777205.png" style="width: 30px;">
+          <span class="cart-count">0</span>
+        </div>
+
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+
+
+  <div class="products bg_color-dark-1">
+    <div class="menu-data">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="image-area">
+            <img src="../../../assets/Services/2.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="d-flex key-feature my-3">
+
+            <div class="flex-1">
+              <div class="">
+                <select class="form-control">
+                  <option>Chicken</option>
+                  <option>Mutton</option>
+                  <option>Prawans</option>
+                </select>
+              </div>
+            </div>
+            <div class="flex-none">
+              <span class="input input--kuro">
+                <input class="input__field input__field--kuro" type="text" id="input-7" />
+                <label class="input__label input__label--kuro" for="input-7">
+                  <span class="input__label-content input__label-content--kuro">In Kgs</span>
+                </label>
+              </span>
+            </div>
+            <div>
+              <div class="button_plus"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <table class="content-table">
+            <thead>
+              <tr>
+                <th width="45%">Items</th>
+                <th width="45%">Quantity</th>
+                <th width="10%">Actions</th>
+
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr class="active-row">
+                <td>Chicken</td>
+                <td>50 kgs</td>
+                <td>
+                  <div class="text-center">
+                    <i class="fa fa-trash-alt"></i>
+                  </div>
+                </td>
+
+              </tr>
+              <tr class="active-row">
+                <td>Mutton</td>
+                <td>100 kgs</td>
+                <td>
+                  <div class="text-center">
+                    <i class="fa fa-trash-alt"></i>
+                  </div>
+                </td>
+
+              </tr>
+              <tr class="active-row">
+                <td>Prawans</td>
+                <td>25 kgs</td>
+                <td>
+                  <div class="text-center">
+                    <i class="fa fa-trash-alt"></i>
+                  </div>
+                </td>
+
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-12 show-more-btn mx-auto text-center mt-5 cont-sec">
+          <a class="bhagona-btn-2">Add To
+            Cart</a>
+          <a class="bhagona-btn-2" (click)="continue()">continue </a>
+        </div>
+      </div>
+      <div class="row" style="display: none;">
+        <div class="col-md-12">
+          <div class="image-area">
+            <img src="../../../assets/Services/5.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="d-flex key-feature my-3">
+
+            <div class="flex-1">
+              <div class="">
+                <select class="form-control">
+                  <option>Chicken</option>
+                  <option>Mutton</option>
+                  <option>Prawans</option>
+                </select>
+              </div>
+            </div>
+            <div class="flex-none">
+              <span class="input input--kuro">
+                <input class="input__field input__field--kuro" type="text" id="input-7" />
+                <label class="input__label input__label--kuro" for="input-7">
+                  <span class="input__label-content input__label-content--kuro">In Kgs</span>
+                </label>
+              </span>
+            </div>
+            <div>
+              <div class="button_plus"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <table class="content-table">
+            <thead>
+              <tr>
+                <th width="45%">Items</th>
+                <th width="45%">Quantity</th>
+                <th width="10%">Actions</th>
+
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr class="active-row">
+                <td>Chicken</td>
+                <td>50 kgs</td>
+                <td>
+                  <div class="text-center">
+                    <i class="fa fa-trash-alt"></i>
+                  </div>
+                </td>
+
+              </tr>
+              <tr class="active-row">
+                <td>Mutton</td>
+                <td>100 kgs</td>
+                <td>
+                  <div class="text-center">
+                    <i class="fa fa-trash-alt"></i>
+                  </div>
+                </td>
+
+              </tr>
+              <tr class="active-row">
+                <td>Prawans</td>
+                <td>25 kgs</td>
+                <td>
+                  <div class="text-center">
+                    <i class="fa fa-trash-alt"></i>
+                  </div>
+                </td>
+
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-12 show-more-btn mx-auto text-center mt-5 cont-sec"><a class="bhagona-btn-2">Add To
+            Cart</a><a class="bhagona-btn-2">continue </a></div>
+      </div>
+    </div>
+  </div>
+
+</ion-header>

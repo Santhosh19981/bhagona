@@ -24,4 +24,12 @@ export class ReviewPage implements OnInit {
   gotoHome(){
     this.router.navigate(['/websitehome']);
   }
+
+  submit(){
+    if(this.isMobile)
+      this.router.navigate(['/home']);
+      else
+      this.router.navigate(['/websitehome']);
+
+  }
 }

@@ -8,6 +8,7 @@ import { WebsitehomePageRoutingModule } from './websitehome-routing.module';
 
 import { WebsitehomePage } from './websitehome.page';
 import { EventDetailsPage } from '../event-details/event-details.page';
+import { ServiceDetailsPage } from '../service-details/service-details.page';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { EventDetailsPage } from '../event-details/event-details.page';
     IonicModule,
     WebsitehomePageRoutingModule,
     WebsitehomePage,
-    EventDetailsPage
+    EventDetailsPage,
+    ServiceDetailsPage
   ],
   declarations: []
 })

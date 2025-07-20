@@ -12,21 +12,26 @@ export class AppComponent {
   private platform = inject(Platform);
   private router = inject(Router);
 
+  private hasInitialized = false; // Prevent double init
+
   constructor() {
     this.initializeApp();
   }
 
   initializeApp() {
-    const isMobile = this.platform.is('cordova') || this.platform.is('capacitor') || this.platform.is('mobile') || this.isMobileBrowser();
+    if (this.hasInitialized) return;
+    this.hasInitialized = true;
 
-    const isLoggedIn = !!localStorage.getItem('user'); // Replace with your login check
+    const isMobile =
+      this.platform.is('cordova') ||
+      this.platform.is('capacitor') ||
+      this.platform.is('mobile') ||
+      this.isMobileBrowser();
+
+    const isLoggedIn = !!localStorage.getItem('user');
 
     if (isMobile) {
-      if (isLoggedIn) {
-        this.router.navigate(['/home']);
-      } else {
-        this.router.navigate(['/login']);
-      }
+      this.router.navigate([isLoggedIn ? '/home' : '/login']);
     } else {
       this.router.navigate(['/websitehome']);
     }

@@ -13,8 +13,9 @@ import { ServiceDetailsPage } from './service-details.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    ServiceDetailsPageRoutingModule
+    ServiceDetailsPageRoutingModule,
+    ServiceDetailsPage
   ],
-  declarations: [ServiceDetailsPage]
+  declarations: []
 })
 export class ServiceDetailsPageModule {}
