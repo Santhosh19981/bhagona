@@ -16,7 +16,7 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>          
+          <li><a href="#about">About</a></li>
           <li><a href="#Events">Events</a></li>
           <li><a href="#services">Services</a></li>
           <li><a (click)="gotoOrders()">Orders</a></li>
@@ -348,7 +348,7 @@
                                   <h4>Chicken Biryani</h4>
                                   <p>Juicy chicken cooked with aromatic spices and layered with fragrant basmati rice
                                   </p>
-                                   <a class="Bhagona-Btn mt-2">Add To Cart</a>
+                                  <a class="Bhagona-Btn mt-2">Add To Cart</a>
                                 </div>
                               </div>
                             </div>
@@ -604,10 +604,14 @@
 
 
                       </div>
-                      <div class="col-md-12 show-more-btn mx-auto text-center mt-5 cont-sec">
+                      <div class="col-md-12 show-more-btn mx-auto text-center mt-5 book-sec">
                         <a class="bhagona-btn-2" data-toggle="collapse" data-target="#non-veg">Show More</a>
-                        <a class="bhagona-btn-2" (click)="gotocheff()">continue </a>
+                        <a class="bhagona-btn-2" (click)="gotocheff()"><span style="font-size: 33px;">🧑‍🍳</span> Book
+                          a Chef </a>
+                        <a class="bhagona-btn-2" (click)="gotovendors()"> <span style="font-size: 33px;">🍽️</span>Book
+                          Catering</a>
                       </div>
+
                     </div>
                   </div>
                   <div role="tabpanel" class="tab-pane" id="profile">
@@ -1274,14 +1278,511 @@
               </label>
 
             </div>
-            
+
 
           </div>
           <div class="col-md-12 show-more-btn mx-auto text-center mt-5 cont-sec">
-            <a data-toggle="collapse" data-target="#cheff-data"
-              class="bhagona-btn-2">Show More</a>
-              <a class="bhagona-btn-2" (click)="gotoCheckout()">continue </a>
+            <a data-toggle="collapse" data-target="#cheff-data" class="bhagona-btn-2">Show More</a>
+            <a class="bhagona-btn-2" (click)="gotoCheckout()">continue </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="cheff-data" *ngIf="isvendors">
+
+        <!-- Section Title -->
+        <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+          <h2 class="text-white">Our <span>Catering Vendor's</span></h2>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+
+          <!-- <div class="row">
+
+            <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Classic Veg Catering </h5>
+                      <p>A wholesome vegetarian meal with roti, sabzi, rice, dal, and sweet.</p>
+                      <a class="Bhagona-Btn mt-2">2 Years Experience</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
             </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Executive Chef </h5>
+                      <p>Oversees the entire kitchen, manages staff, and designs the menu.</p>
+                      <a class="Bhagona-Btn mt-2">2 Years Experience</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Executive Chef </h5>
+                      <p>Oversees the entire kitchen, manages staff, and designs the menu.</p>
+                      <a class="Bhagona-Btn mt-2">2 Years Experience</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Executive Chef </h5>
+                      <p>Oversees the entire kitchen, manages staff, and designs the menu.</p>
+                      <a class="Bhagona-Btn mt-2">2 Years Experience</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
+
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Executive Chef </h5>
+                      <p>Oversees the entire kitchen, manages staff, and designs the menu.</p>
+                      <a class="Bhagona-Btn mt-2">2 Years Experience</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Executive Chef </h5>
+                      <p>Oversees the entire kitchen, manages staff, and designs the menu.</p>
+                      <a class="Bhagona-Btn mt-2">2 Years Experience</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
+            </div>
+         <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Executive Chef </h5>
+                      <p>Oversees the entire kitchen, manages staff, and designs the menu.</p>
+                      <a class="Bhagona-Btn mt-2">2 Years Experience</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Executive Chef </h5>
+                      <p>Oversees the entire kitchen, manages staff, and designs the menu.</p>
+                      <a class="Bhagona-Btn mt-2">2 Years Experience</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
+            </div>
+
+          </div> -->
+
+          <div class="row">
+            <!-- 1. Classic Veg Catering -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"
+                        alt="Classic Veg" />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Classic Veg Catering</h5>
+                      <p>A wholesome vegetarian meal with roti, sabzi, rice, dal, and sweet.</p>
+                      <a class="Bhagona-Btn mt-2">₹180 per plate</a>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+
+            <!-- 2. South Indian Delight -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid" src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"
+                        alt="South Indian" />
+                    </div>
+                    <div class="box-desc">
+                      <h5>South Indian Delight</h5>
+                      <p>Authentic combo – idli, dosa, sambar, chutneys, and dessert.</p>
+                      <a class="Bhagona-Btn mt-2">₹200 per plate</a>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+
+            <!-- 3. North Indian Feast -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"
+                        alt="North Indian" />
+                    </div>
+                    <div class="box-desc">
+                      <h5>North Indian Feast</h5>
+                      <p>Roti, paneer curry, dal makhani, rice, and gulab jamun.</p>
+                      <a class="Bhagona-Btn mt-2">₹220 per plate</a>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+
+            <!-- 4. Premium Non-Veg Combo -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"
+                        alt="Non-Veg Combo" />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Premium Non-Veg Combo</h5>
+                      <p>Chicken biryani, chicken curry, salad, and dessert.</p>
+                      <a class="Bhagona-Btn mt-2">₹300 per plate</a>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+
+            <!-- 5. Budget Catering -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"
+                        alt="Budget Meal" />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Budget Catering</h5>
+                      <p>Simple vegetarian meal ideal for small functions or gatherings.</p>
+                      <a class="Bhagona-Btn mt-2">₹120 per plate</a>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+
+            <!-- 6. Royal Wedding Package -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"
+                        alt="Wedding Package" />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Royal Wedding Package</h5>
+                      <p>3-course meal with starters, mains, desserts (veg & non-veg).</p>
+                      <a class="Bhagona-Btn mt-2">₹450 per plate</a>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+
+            <!-- 7. Kids’ Party Catering -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"
+                        alt="Kids Party" />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Kids’ Party Catering</h5>
+                      <p>Finger foods, noodles, mini pizzas, juice, and dessert.</p>
+                      <a class="Bhagona-Btn mt-2">₹200 per plate</a>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+
+            <!-- 8. Corporate Lunch Buffet -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"
+                        alt="Corporate Lunch" />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Corporate Lunch Buffet</h5>
+                      <p>Balanced buffet meal for offices and conferences.</p>
+                      <a class="Bhagona-Btn mt-2">₹250 per plate</a>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- <div class="row collapse" id="cheff-data">
+
+            <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://static.vecteezy.com/system/resources/thumbnails/046/822/712/small/a-chef-in-uniform-holding-a-tray-of-food-isolated-on-a-transparent-background-png.png"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Executive Chef </h5>
+                      <p>Oversees the entire kitchen, manages staff, and designs the menu.</p>
+                      <a class="Bhagona-Btn mt-2">2 Years Experience</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://static.vecteezy.com/system/resources/thumbnails/044/813/614/small/chef-crossed-arms-isolated-on-transparent-background-png.png"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Executive Chef </h5>
+                      <p>Oversees the entire kitchen, manages staff, and designs the menu.</p>
+                      <a class="Bhagona-Btn mt-2">2 Years Experience</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://png.pngtree.com/png-clipart/20250515/original/pngtree-confident-man-chef-displaying-his-signature-dish-png-image_20984944.png"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Executive Chef </h5>
+                      <p>Oversees the entire kitchen, manages staff, and designs the menu.</p>
+                      <a class="Bhagona-Btn mt-2">2 Years Experience</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 m-b30">
+              <label class="option_item">
+                <input type="checkbox" class="checkbox">
+                <div class="option_inner facebook">
+                  <div class="tickmark">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+                  </div>
+                  <div class="box shadow-sm p-4">
+                    <div class="image-wrapper mb-3">
+                      <img class="img-fluid"
+                        src="https://png.pngtree.com/png-vector/20231125/ourmid/pngtree-cooking-culinary-and-people-concept-happy-smiling-male-chef-in-toque-png-image_10718552.png"
+                        alt="..." />
+                    </div>
+                    <div class="box-desc">
+                      <h5>Executive Chef </h5>
+                      <p>Oversees the entire kitchen, manages staff, and designs the menu.</p>
+                      <a class="Bhagona-Btn mt-2">2 Years Experience</a>
+                    </div>
+
+                  </div>
+                </div>
+              </label>
+
+            </div>
+
+
+          </div> -->
+          <div class="col-md-12 show-more-btn mx-auto text-center mt-5 cont-sec">
+            <a data-toggle="collapse" data-target="#cheff-data" class="bhagona-btn-2">Show More</a>
+            <a class="bhagona-btn-2" (click)="gotoCheckout()">continue </a>
+          </div>
 
         </div>
       </div>
@@ -1306,7 +1807,7 @@
           <div class="col-xl-4 col-md-4">
             <div class="service-item">
               <div class="img">
-                <img src="../../../assets/Services/10.png" class="img-fluid" alt="">
+                <img src="https://i.pinimg.com/originals/f4/94/1c/f4941c861d1afda64c43967450f8a016.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
 
@@ -1325,7 +1826,7 @@
           <div class="col-xl-4 col-md-4">
             <div class="service-item">
               <div class="img">
-                <img src="../../../assets/Services/1.png" class="img-fluid" alt="">
+                <img src="https://www.shutterstock.com/image-photo/composition-different-kinds-dry-food-260nw-2003503223.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
 
@@ -1335,14 +1836,14 @@
                 <p>Two hearts become one, a journey just begun. Wishing love, laughter, and a happily ever after.
                 </p>
               </div>
-              <a class="thm-btn product-card_btn"(click)="openServiceDetailsModal()">Book Service<span></span></a>
+              <a class="thm-btn product-card_btn" (click)="openServiceDetailsModal()">Book Service<span></span></a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-4 col-md-4">
             <div class="service-item">
               <div class="img">
-                <img src="../../../assets/Services/2.png" class="img-fluid" alt="">
+                <img src="https://www.shutterstock.com/image-photo/tight-wellcomposed-image-showcasing-fresh-600nw-2599519253.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
 
@@ -1352,13 +1853,13 @@
                 <p>Little hands and tiny feet, a bundle of joy we can’t wait to meet.
                 </p>
               </div>
-              <a class="thm-btn product-card_btn"(click)="openServiceDetailsModal()">Book Service<span></span></a>
+              <a class="thm-btn product-card_btn" (click)="openServiceDetailsModal()">Book Service<span></span></a>
             </div>
           </div><!-- End Service Item -->
           <div class="col-xl-4 col-md-4">
             <div class="service-item">
               <div class="img">
-                <img src="../../../assets/Services/5.png" class="img-fluid" alt="">
+                <img src="https://img.freepik.com/premium-photo/organic-food-background-vegetables-basket_135427-233.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
 
@@ -1369,13 +1870,13 @@
                   Welcoming a new role with pride in place.</p>
                 <a class="stretched-link"></a>
               </div>
-              <a class="thm-btn product-card_btn"(click)="openServiceDetailsModal()">Book Service<span></span></a>
+              <a class="thm-btn product-card_btn" (click)="openServiceDetailsModal()">Book Service<span></span></a>
             </div>
           </div><!-- End Service Item -->
           <div class="col-xl-4 col-md-4">
             <div class="service-item">
               <div class="img">
-                <img src="../../../assets/Services/3.png" class="img-fluid" alt="">
+                <img src="https://www.shaadidukaan.com/user_files/d_c_images/4-44.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
 
@@ -1385,7 +1886,7 @@
                 <p>They found each other, and love found its way.
                   A promise made for a beautiful forever.</p>
               </div>
-              <a class="thm-btn product-card_btn"(click)="openServiceDetailsModal()">Book Service<span></span></a>
+              <a class="thm-btn product-card_btn" (click)="openServiceDetailsModal()">Book Service<span></span></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -1393,7 +1894,7 @@
           <div class="col-xl-4 col-md-4">
             <div class="service-item">
               <div class="img">
-                <img src="../../../assets/Services/4.png" class="img-fluid" alt="">
+                <img src="https://www.eurokidsindia.com/blog/wp-content/uploads/2023/11/dairy-delights-870x570.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
 
@@ -1406,7 +1907,7 @@
                 </p>
                 <a class="stretched-link"></a>
               </div>
-              <a class="thm-btn product-card_btn"(click)="openServiceDetailsModal()">Book Service<span></span></a>
+              <a class="thm-btn product-card_btn" (click)="openServiceDetailsModal()">Book Service<span></span></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -1431,7 +1932,7 @@
                   <p>Two hearts become one, a journey just begun. Wishing love, laughter, and a happily ever after.
                   </p>
                 </div>
-                <a class="thm-btn product-card_btn"(click)="openServiceDetailsModal()">Book Service<span></span></a>
+                <a class="thm-btn product-card_btn" (click)="openServiceDetailsModal()">Book Service<span></span></a>
               </div>
             </div><!-- End Service Item -->
 
@@ -1448,7 +1949,7 @@
                   <p>Little hands and tiny feet, a bundle of joy we can’t wait to meet.
                   </p>
                 </div>
-                <a class="thm-btn product-card_btn"(click)="openServiceDetailsModal()">Book Service<span></span></a>
+                <a class="thm-btn product-card_btn" (click)="openServiceDetailsModal()">Book Service<span></span></a>
               </div>
             </div><!-- End Service Item -->
 
@@ -1465,7 +1966,7 @@
                   <p>They found each other, and love found its way.
                     A promise made for a beautiful forever.</p>
                 </div>
-                <a class="thm-btn product-card_btn"(click)="openServiceDetailsModal()">Book Service<span></span></a>
+                <a class="thm-btn product-card_btn" (click)="openServiceDetailsModal()">Book Service<span></span></a>
               </div>
             </div><!-- End Service Item -->
             <div class="col-xl-4 col-md-4">
@@ -1482,7 +1983,7 @@
                     Gone from sight, but in our hearts eternally.</p>
                   <a class="stretched-link"></a>
                 </div>
-                <a class="thm-btn product-card_btn"(click)="openServiceDetailsModal()">Book Service<span></span></a>
+                <a class="thm-btn product-card_btn" (click)="openServiceDetailsModal()">Book Service<span></span></a>
               </div>
             </div><!-- End Service Item -->
 

@@ -16,6 +16,7 @@ export class WebsitehomePage implements OnInit {
   isEvents:boolean = true;
   isMenu:boolean = false;
   ischeffs:boolean =false;
+  isvendors:boolean = false;
   constructor(private modalCtrl: ModalController,private router: Router) { }
 
   ngOnInit() {
@@ -63,6 +64,11 @@ export class WebsitehomePage implements OnInit {
     this.isMenu = false;
     this.ischeffs = true;
   }
+  gotovendors(){
+    this.isMenu = false;
+    this.isvendors = true;
+  }
+
 
   gotoCheckout() {
     this.router.navigate(['/webcheckout']);
