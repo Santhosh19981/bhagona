@@ -16,4 +16,7 @@ export class MenuPage implements OnInit {
  gotocheff(){
      this.router.navigate(['/cheffs']);
   }
+  gotoVendors(){
+     this.router.navigate(['/catering-services']);
+  }
 }

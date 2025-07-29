@@ -1,0 +1,263 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<ion-header>
+  <ion-toolbar class="custom-toolbar">
+    <!-- Back Button -->
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <!-- Page Title -->
+    <ion-title class="custom-title">Catering's </ion-title>
+
+    <!-- Cart Button with Badge -->
+    <ion-buttons slot="end" style="    padding-right: 17px !important;
+    padding-top: 8px;
+">
+      <div class="header-social-links">
+        <div class="cart-icon" onclick="toggleCart()">
+          <img src="https://cdn-icons-png.flaticon.com/512/777/777205.png" style="width: 30px;">
+          <span class="cart-count">0</span>
+        </div>
+       
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">menu</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+  <div >
+<div class="container bg_color-dark-1" style="padding: 0;">
+				<div class="row">
+					<div class="col-md-12">
+
+
+
+<section class="menu-list ">
+    <div class="row p-2">
+      <h2 class="title">Select Catering </h2>
+     
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+        <label class="option_item" >
+          <input type="checkbox" class="checkbox">
+          <div class="option_inner facebook">
+            <div class="tickmark">
+              <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+            </div>
+            <div class="Menu-List">
+              <div class="Menu-List-img">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="thumb">
+
+                <div class="Menu-List-img-overlay" style="top: 15px;">
+                  <div class="icon">
+                    <span>
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.361 2.72748C9.03157 1.3148 10.9691 1.3148 11.6396 2.72748L12.7986 5.16895C13.0649 5.72993 13.5796 6.11875 14.175 6.20871L16.7664 6.60021C18.2659 6.82675 18.8646 8.74259 17.7796 9.84221L15.9044 11.7426C15.4736 12.1793 15.277 12.8084 15.3787 13.425L15.8213 16.1084C16.0775 17.6611 14.51 18.8452 13.1689 18.1121L10.851 16.8451C10.3184 16.554 9.68221 16.554 9.14964 16.8451L6.8318 18.1121C5.49065 18.8452 3.92318 17.6611 4.17931 16.1084L4.62198 13.425C4.72369 12.8084 4.52709 12.1793 4.09623 11.7426L2.22105 9.84221C1.13605 8.74259 1.73477 6.82675 3.23421 6.60021L5.82564 6.20871C6.42107 6.11875 6.9358 5.72993 7.20208 5.16895L8.361 2.72748Z"
+                          fill="#FFB23E"></path>
+                      </svg>
+                    </span>
+                  </div>
+
+                  
+                </div>
+
+              </div>
+
+              <div class="box-desc">
+                      <h5 class="catnaem">Classic Veg Catering</h5>
+                      <p>A wholesome vegetarian meal with roti, sabzi, rice, dal, and sweet.</p>
+                      <a class="Bhagona-Btn mt-2">₹180 per plate</a>
+                    </div>
+
+
+            </div>
+          </div>
+        </label>
+
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+        <label class="option_item" >
+          <input type="checkbox" class="checkbox">
+          <div class="option_inner facebook">
+            <div class="tickmark">
+              <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+            </div>
+            <div class="Menu-List">
+              <div class="Menu-List-img">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="thumb">
+
+                <div class="Menu-List-img-overlay" style="top: 15px;">
+                  <div class="icon">
+                    <span>
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.361 2.72748C9.03157 1.3148 10.9691 1.3148 11.6396 2.72748L12.7986 5.16895C13.0649 5.72993 13.5796 6.11875 14.175 6.20871L16.7664 6.60021C18.2659 6.82675 18.8646 8.74259 17.7796 9.84221L15.9044 11.7426C15.4736 12.1793 15.277 12.8084 15.3787 13.425L15.8213 16.1084C16.0775 17.6611 14.51 18.8452 13.1689 18.1121L10.851 16.8451C10.3184 16.554 9.68221 16.554 9.14964 16.8451L6.8318 18.1121C5.49065 18.8452 3.92318 17.6611 4.17931 16.1084L4.62198 13.425C4.72369 12.8084 4.52709 12.1793 4.09623 11.7426L2.22105 9.84221C1.13605 8.74259 1.73477 6.82675 3.23421 6.60021L5.82564 6.20871C6.42107 6.11875 6.9358 5.72993 7.20208 5.16895L8.361 2.72748Z"
+                          fill="#FFB23E"></path>
+                      </svg>
+                    </span>
+                  </div>
+
+                  
+                </div>
+
+              </div>
+
+             <div class="box-desc">
+                      <h5 class="catnaem">South Indian Delight</h5>
+                      <p>Authentic combo – idli, dosa, sambar, chutneys, and dessert.</p>
+                      <a class="Bhagona-Btn mt-2">₹200 per plate</a>
+                    </div>
+
+
+            </div>
+          </div>
+        </label>
+
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+        <label class="option_item" >
+          <input type="checkbox" class="checkbox">
+          <div class="option_inner facebook">
+            <div class="tickmark">
+              <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+            </div>
+            <div class="Menu-List">
+              <div class="Menu-List-img">
+                <img
+                  src="data:image/png;base64,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"
+                  alt="thumb">
+
+                <div class="Menu-List-img-overlay" style="top: 15px;">
+                  <div class="icon">
+                    <span>
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.361 2.72748C9.03157 1.3148 10.9691 1.3148 11.6396 2.72748L12.7986 5.16895C13.0649 5.72993 13.5796 6.11875 14.175 6.20871L16.7664 6.60021C18.2659 6.82675 18.8646 8.74259 17.7796 9.84221L15.9044 11.7426C15.4736 12.1793 15.277 12.8084 15.3787 13.425L15.8213 16.1084C16.0775 17.6611 14.51 18.8452 13.1689 18.1121L10.851 16.8451C10.3184 16.554 9.68221 16.554 9.14964 16.8451L6.8318 18.1121C5.49065 18.8452 3.92318 17.6611 4.17931 16.1084L4.62198 13.425C4.72369 12.8084 4.52709 12.1793 4.09623 11.7426L2.22105 9.84221C1.13605 8.74259 1.73477 6.82675 3.23421 6.60021L5.82564 6.20871C6.42107 6.11875 6.9358 5.72993 7.20208 5.16895L8.361 2.72748Z"
+                          fill="#FFB23E"></path>
+                      </svg>
+                    </span>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="box-desc">
+                      <h5 class="catnaem">North Indian Feast</h5>
+                      <p>Roti, paneer curry, dal makhani, rice, and gulab jamun.</p>
+                      <a class="Bhagona-Btn mt-2">₹220 per plate</a>
+                    </div>
+
+
+            </div>
+          </div>
+        </label>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+        <label class="option_item">
+          <input type="checkbox" class="checkbox">
+          <div class="option_inner facebook">
+            <div class="tickmark">
+              <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+            </div>
+            <div class="Menu-List">
+              <div class="Menu-List-img">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxMPtOpEzEQUCr-sFRm7u35yPmgLdqAiS-zh_fUqo7a_tgIATwKxcVS4A&s"
+                  alt="thumb">
+
+                <div class="Menu-List-img-overlay"  style="top: 15px;">
+                  <div class="icon">
+                    <span>
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.361 2.72748C9.03157 1.3148 10.9691 1.3148 11.6396 2.72748L12.7986 5.16895C13.0649 5.72993 13.5796 6.11875 14.175 6.20871L16.7664 6.60021C18.2659 6.82675 18.8646 8.74259 17.7796 9.84221L15.9044 11.7426C15.4736 12.1793 15.277 12.8084 15.3787 13.425L15.8213 16.1084C16.0775 17.6611 14.51 18.8452 13.1689 18.1121L10.851 16.8451C10.3184 16.554 9.68221 16.554 9.14964 16.8451L6.8318 18.1121C5.49065 18.8452 3.92318 17.6611 4.17931 16.1084L4.62198 13.425C4.72369 12.8084 4.52709 12.1793 4.09623 11.7426L2.22105 9.84221C1.13605 8.74259 1.73477 6.82675 3.23421 6.60021L5.82564 6.20871C6.42107 6.11875 6.9358 5.72993 7.20208 5.16895L8.361 2.72748Z"
+                          fill="#FFB23E"></path>
+                      </svg>
+                    </span>
+                  </div>
+
+                  
+                </div>
+
+              </div>
+
+              <div class="box-desc">
+                      <h5 class="catnaem">Premium Non-Veg Combo</h5>
+                      <p>Chicken biryani, chicken curry, salad, and dessert.</p>
+                      <a class="Bhagona-Btn mt-2">₹300 per plate</a>
+                    </div>
+
+
+            </div>
+          </div>
+        </label>
+
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+        <label class="option_item" >
+          <input type="checkbox" class="checkbox">
+          <div class="option_inner facebook">
+            <div class="tickmark">
+              <img src="https://www.pngplay.com/wp-content/uploads/12/Check-Mark-Tick-Transparent-File.png">
+            </div>
+            <div class="Menu-List">
+              <div class="Menu-List-img">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuunCWA-aZIBtGTgcNtdWtRpwxd4wCHYfLRZcZR4uNe8x4mCT-qzV5Cp8&s"
+                  alt="thumb">
+
+                <div class="Menu-List-img-overlay" style="top: 15px;">
+                  <div class="icon">
+                    <span>
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.361 2.72748C9.03157 1.3148 10.9691 1.3148 11.6396 2.72748L12.7986 5.16895C13.0649 5.72993 13.5796 6.11875 14.175 6.20871L16.7664 6.60021C18.2659 6.82675 18.8646 8.74259 17.7796 9.84221L15.9044 11.7426C15.4736 12.1793 15.277 12.8084 15.3787 13.425L15.8213 16.1084C16.0775 17.6611 14.51 18.8452 13.1689 18.1121L10.851 16.8451C10.3184 16.554 9.68221 16.554 9.14964 16.8451L6.8318 18.1121C5.49065 18.8452 3.92318 17.6611 4.17931 16.1084L4.62198 13.425C4.72369 12.8084 4.52709 12.1793 4.09623 11.7426L2.22105 9.84221C1.13605 8.74259 1.73477 6.82675 3.23421 6.60021L5.82564 6.20871C6.42107 6.11875 6.9358 5.72993 7.20208 5.16895L8.361 2.72748Z"
+                          fill="#FFB23E"></path>
+                      </svg>
+                    </span>
+                  </div>
+
+                  
+                </div>
+
+              </div>
+
+             <div class="box-desc">
+                      <h5 class="catnaem">South Indian Delight</h5>
+                      <p>Authentic combo – idli, dosa, sambar, chutneys, and dessert.</p>
+                      <a class="Bhagona-Btn mt-2">₹200 per plate</a>
+                    </div>
+
+
+            </div>
+          </div>
+        </label>
+
+      </div>
+      
+      <div class="next-btn md:px-5 py-3" style="padding-bottom: 5rem !important;">
+        <!-- <a  class="Bhagona-Btn float-start" >Cart <i class="fa fa-cart-plus" aria-hidden="true"></i></a> -->
+        <a  class="Bhagona-Btn float-end" (click)="gotoCheckoput()">Continue <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+</section>
+            </div>
+            </div>
+            </div>
+
+</div>
+  
+</ion-content>
